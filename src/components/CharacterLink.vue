@@ -2,7 +2,6 @@
 import { useCategoryStore } from '@/stores/categories';
 import { useRoute } from 'vue-router';
 import { onMounted, onUpdated, ref, watch } from 'vue';
-import CharacterLink from '@/components/CharacterLink.vue';
 
 const categoryStore = useCategoryStore();
 const route = useRoute();
@@ -15,31 +14,29 @@ watch(() => route.params, () => {
 </script>
 
 <template>
-  <main>
-    <article class="info">
-      <h2>{{ category.name }}</h2>
-      <p>{{ category.description }}</p>
+    <article>
+        <RouterLink v-for="(character, i) in category.characters" :key="i" :to="{name: 'character', params: {id : character.id}}">{{ character.name }}</RouterLink>
     </article>
-    <CharacterLink></CharacterLink>
-  </main>
 </template>
 
 <style lang="scss" scoped>
 @use '../mixins.scss' as mixins;
 
-  main{
-    gap: 30px;
-  }
-
-  .info{
-    @include mixins.flex-column;
-    width: 50%;
-    text-align: center;
-    gap: 10px;
-
-    p{
-      line-height: 30px;
-      font-size: 1.2em;
+    article{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
     }
-  }
+
+    a{
+        @include mixins.flex-row;
+        text-decoration: none;
+        color: white;
+        font-size: 2em;
+        font-weight: 600;
+        width: 250px;
+        height: 250px;
+        border-radius: 10px;
+        background: linear-gradient(0deg, rgba(14,26,143,1) 0%, rgba(8,12,49,1) 100%);
+    }
 </style>

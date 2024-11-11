@@ -86,7 +86,7 @@ button{
   width: 25%;
   padding: 10px;
   position: absolute;
-  right: 0px;
+  right: 0;
   background-color: #FFF5E0;
   box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
@@ -103,16 +103,10 @@ button{
   color: white;
   background: linear-gradient(0deg, rgba(14,26,143,1) 0%, rgba(8,12,49,1) 100%);
   transition: 0.3s all ease;
-
-  &:hover{
-    background: linear-gradient(0deg, rgba(8,12,49,1) 0%, rgba(14,26,143,1) 100%);
-  }
 }
 
 .active{
-  display: flex;
-  flex-direction: column;
+  @include mixins.flex-column;
   gap: 10px;
-  align-items: center;
 }
 </style>
