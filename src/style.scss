@@ -1,3 +1,5 @@
+@use './mixins.scss';
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -44,7 +46,7 @@ table {
 body{
   width: 100%;
   background-color: #F9EDD3;
-  background-image: url(./ornament.png);
+  background-image: url(./assets/ornament.png);
   background-size: 100%;
 }
 
