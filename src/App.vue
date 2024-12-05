@@ -23,9 +23,9 @@ onUpdated(() => {
     </nav>
   </header>
   <article class="menu" :class="{ 'active': active }">
-    <RouterLink class="link" to="/">Mytologie</RouterLink>
-    <RouterLink v-for="(category, i) in categoryStore.categories" :key="i" class="link" :to="{name: 'category', params: {id: category.id}}">{{ category.name }}</RouterLink>
-    <RouterLink class="link" to="/about">O stránce</RouterLink>
+    <RouterLink @click="active = !active" class="link" to="/">Mytologie</RouterLink>
+    <RouterLink @click="active = !active" v-for="(category, i) in categoryStore.categories" :key="i" class="link" :to="{name: 'category', params: {id: category.id}}">{{ category.name }}</RouterLink>
+    <RouterLink @click="active = !active" class="link" to="/about">O stránce</RouterLink>
   </article>
 
   <RouterView />
@@ -92,6 +92,7 @@ button{
   text-align: center;
   font-weight: 600;
   border-radius: 5px;
+  z-index: 1;
 }
 
 .link{

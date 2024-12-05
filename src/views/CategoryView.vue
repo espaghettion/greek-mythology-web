@@ -9,7 +9,6 @@ const route = useRoute();
 const category = ref(categoryStore.categories.find(c => c.id == route.params.id));
 
 watch(() => route.params, () => {
-  console.log(route.params.id);
   category.value = categoryStore.categories.find(c => c.id == route.params.id);
 })
 </script>
