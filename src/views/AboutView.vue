@@ -1,8 +1,12 @@
+<script setup>
+import InfoCard from '@/components/InfoCard.vue';
+</script>
+
 <template>
-  <div class="about">
-    <h1>Herro?</h1>
-  </div>
+  <InfoCard info-category="O stránce" info-content="hi" />
+  <InfoCard info-category="Upozornění" info-content="hi" />
+  <InfoCard info-category="Kontakt" info-content="hi" />
 </template>
 
-<style>
+<style lang="scss" scoped>
 </style>

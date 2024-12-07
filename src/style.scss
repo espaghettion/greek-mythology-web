@@ -65,6 +65,8 @@ main{
 	background-color: #FDF6E8;
 	border-radius: 5px;
 	box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.25);
+	width: 40%;
+	margin: 10px;
 
 	h3{
 		background: linear-gradient(0deg, rgba(14,26,143,1) 0%, rgba(8,12,49,1) 100%);
@@ -78,16 +80,19 @@ h1{
 	font-size: 3em;
 	font-weight: 700;
 	text-align: center;
+	padding: 10px;
 }
 
 h2{
 	font-size: 2.8em;
 	font-weight: 600;
 	text-align: center;
+	padding: 10px;
 }
 
 h3{
 	font-size: 2.5em;
 	font-weight: 500;
 	text-align: center;
+	padding: 10px;
 }
