@@ -14,7 +14,7 @@ watch(() => route.params, () => {
 
 <template>
     <article>
-        <RouterLink v-for="(character, i) in category.characters" :key="i" :to="{name: 'character', params: {id : character.id}}">{{ character.name }}</RouterLink>
+        <RouterLink v-for="(character, i) in category.characters" :key="i" :style="{ backgroundImage: `url(${character.image})` }" :to="{name: 'character', params: {id : character.id}}">{{ character.name }}</RouterLink>
     </article>
 </template>
 
@@ -36,6 +36,6 @@ watch(() => route.params, () => {
         width: 250px;
         height: 250px;
         border-radius: 10px;
-        background: linear-gradient(0deg, rgba(14,26,143,1) 0%, rgba(8,12,49,1) 100%);
+        background-size: cover;
     }
 </style>

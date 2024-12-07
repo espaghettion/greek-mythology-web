@@ -19,7 +19,7 @@ function nextCard(){
 <template>
   <main>
     <h1>Co je to řecká mytologie?</h1>
-    <p>SHUT THE FUCK UP! THIS ENTIRE PAGE IS BULLSHIT AND YOU WILL DIE IN 7 DAYS.</p>
+    <p>Lorem.</p>
 
     <section class="category-link">
       <button class="previous-btn" @click="previousCard()"><i class="fa-solid fa-chevron-left"></i></button>
