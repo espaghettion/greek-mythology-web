@@ -14,7 +14,9 @@ watch(() => route.params, () => {
 
 <template>
     <article>
-        <RouterLink v-for="(character, i) in category.characters" :key="i" :style="{ backgroundImage: `url(${character.image})` }" :to="{name: 'character', params: {id : character.id}}">{{ character.name }}</RouterLink>
+        <RouterLink v-for="(character, i) in category.characters" :key="i" :style="{ backgroundImage: `url(${character.image})` }" :to="{name: 'character', params: {id : character.id}}">
+            <p>{{ character.name }}</p>
+        </RouterLink>
     </article>
 </template>
 
@@ -23,6 +25,7 @@ watch(() => route.params, () => {
 
     article{
         display: grid;
+        width: 70%;
         grid-template-columns: repeat(4, 1fr);
         gap: 25px;
     }
@@ -33,9 +36,23 @@ watch(() => route.params, () => {
         color: white;
         font-size: 2em;
         font-weight: 600;
-        width: 250px;
-        height: 250px;
+        aspect-ratio: 1;
         border-radius: 10px;
         background-size: cover;
+        transition: 0.3s ease all;
+        background-position: center;
+
+        p{
+            @include mixins.flex-row;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            transition: 0.3s ease all;
+            backdrop-filter: brightness(40%);
+
+            &:hover{
+                opacity: 0;
+            }
+        }
     }
 </style>

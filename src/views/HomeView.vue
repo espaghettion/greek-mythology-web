@@ -23,7 +23,9 @@ function nextCard(){
 
     <section class="category-link">
       <button class="previous-btn" @click="previousCard()"><i class="fa-solid fa-chevron-left"></i></button>
-      <RouterLink :to="{name: 'category', params: {id: categoryStore.categories[selectedCard].id}}" :style="{ backgroundImage: `${categoryStore.categories[selectedCard].image}` }">{{ categoryStore.categories[selectedCard].name }}</RouterLink>
+      <RouterLink :to="{name: 'category', params: {id: categoryStore.categories[selectedCard].id}}" :style="{ backgroundImage: `url(${categoryStore.categories[selectedCard].image})` }">
+        <p>{{ categoryStore.categories[selectedCard].name }}</p>
+      </RouterLink>
       <button class="next-btn" @click="nextCard()"><i class="fa-solid fa-chevron-right"></i></button>
     </section>
   </main>
@@ -71,7 +73,7 @@ function nextCard(){
     background-size: cover;
     background-position: center;
     -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-    mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    mask-image: linear-gradient(to top, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
   }
 }
 </style>
