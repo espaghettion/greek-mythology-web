@@ -28,6 +28,22 @@ watch(() => route.params, () => {
         width: 70%;
         grid-template-columns: repeat(4, 1fr);
         gap: 25px;
+
+        @include mixins.responsive(smartphone-portrait){
+            grid-template-columns: 1fr;
+        }
+
+        @include mixins.responsive(smartphone-landscape){
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include mixins.responsive(tablet){
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include mixins.responsive(laptop){
+            grid-template-columns: repeat(4, 1fr);
+        }
     }
 
     a{
