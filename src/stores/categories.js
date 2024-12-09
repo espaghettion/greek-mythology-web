@@ -10,7 +10,7 @@ export const useCategoryStore = defineStore('categories', () => {
         image: "https://cdn.pixabay.com/photo/2024/04/02/08/47/zeus-8670349_960_720.jpg",
         description: "Řecká mytologie je plná bohů. Patří k nim samozřejmě 12 Olympanů, ale také prvotní božstva, které spíše reprezentují obecné koncepty. Také existuje mnoho dalších bohů, ke kterým se vážou více specifické věci.",
         characters: [
-          { name: "Zeus", id: "zeus", image: "/zeus.jpg" },
+          { name: "Zeus", id: "zeus", image: "/zeus.png" },
           { name: "Poseidón", id: "poseidon", image: "/poseidon.jpg" },
           { name: "Héra", id: "hera", image: "/hera.jpg" },
           { name: "Árés", id: "ares", image: "/ares.jpg" },

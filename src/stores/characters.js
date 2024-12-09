@@ -3,7 +3,7 @@ import { defineStore } from 'pinia'
 
 export const useCharacterStore = defineStore('characters', () => {
   const characters = ref([
-    { name: "Zeus", id: "zeus", image: "/zeus.jpg" },
+    { name: "Zeus", id: "zeus", image: "/zeus.png" },
     { name: "Poseidón", id: "poseidon", image: "/poseidon.jpg" },
     { name: "Héra", id: "hera", image: "/hera.jpg" },
     { name: "Árés", id: "ares", image: "/ares.jpg" },
