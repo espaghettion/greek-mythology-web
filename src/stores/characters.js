@@ -3,7 +3,11 @@ import { defineStore } from 'pinia'
 
 export const useCharacterStore = defineStore('characters', () => {
   const characters = ref([
-    { name: "Zeus", id: "zeus", image: "/zeus.png" },
+    { name: "Zeus", id: "zeus", image: "/zeus.png", symbols: ["Blesk", "Orel"], father: "kronos", mother: "rhea", children: ["afrodita", "appolon", "artemis"], home: "Hora Olymp", partners: ["hera"], siblings: ["hestia", "hades", "hera", "poseidon", "demeter"],
+      info: [""],
+      occurences: [""],
+      facts: [""]
+    },
     { name: "Poseidón", id: "poseidon", image: "/poseidon.jpg" },
     { name: "Héra", id: "hera", image: "/hera.jpg" },
     { name: "Árés", id: "ares", image: "/ares.jpg" },

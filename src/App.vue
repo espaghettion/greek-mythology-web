@@ -136,14 +136,10 @@ header {
 }
 
 .link{
-  text-decoration: none;
+  @include mixins.decorated-text;
+  width: 95%;
   padding: 10px;
   font-size: 1.8em;
-  border-radius: 5px;
-  width: 95%;
-  color: white;
-  background: linear-gradient(0deg, rgba(14,26,143,1) 0%, rgba(8,12,49,1) 100%);
-  transition: 0.3s all ease;
 }
 
 .active{
