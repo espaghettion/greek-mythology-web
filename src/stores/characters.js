@@ -3,7 +3,7 @@ import { defineStore } from 'pinia'
 
 export const useCharacterStore = defineStore('characters', () => {
   const characters = ref([
-    { name: "Zeus", id: "zeus", image: "/zeus.png", symbols: ["Blesk", "Orel"], father: "kronos", mother: "rhea", children: ["afrodita", "appolon", "artemis"], home: "Hora Olymp", partners: ["hera"], siblings: ["hestia", "hades", "hera", "poseidon", "demeter"],
+    { name: "Zeus", id: "zeus", image: "/zeus.png", symbols: ["Blesk", "Orel"], father: ["kronos"], mother: ["rhea"], children: ["afrodita", "appolon", "artemis"], home: ["Hora Olymp"], partners: ["hera"], siblings: ["hestia", "hades", "hera", "poseidon", "demeter"],
       info: ["Zeus je olympský bůh oblohy a hromu, král všech ostatních bohů a lidí, a je tak vnímán jako hlavní postava řecké mytologie.", "Většinou bývá zobrazen s žezlem v jedné ruce a s bleskem v druhé, obě symbolizují jeho autoritu. Homérem byl často popisován jako \"nositel egidy\", což je obrovský štít, který s sebou občas nosil.", "Často byl spojován s moudrostí, vědomím, autoritou, osudem, bitvami a mocí."],
       bio: ["Je paradoxně nejstarším i nejmladším synem titánů Krona a Rhei. Kronos, který svrhnul svého otce Urana, se dozvěděl, že jeden z jeho potomků ho také svrhne a tak je začal hned po narození polykat. Takto bylo spolknuto jeho pět sourozenců. Zeus by byl také spolykán, ale Rhea místo toho dala Kronovi zabalený kámen a Dia schovala v jeskyni na krétské hoře Ida.",
             "V této jeskyni byl vychován nymfami a poznal svou první manželku, Métis - bohyni rozumu. Díky jejím radám se přestrojil jako olympijský nosič pohárů a přiměl Krona, aby vypil otrávené víno. Z tohoto vína zvracel natolik, že vyzvracel Diovy sourozence, kteří byli připraveni na pomstu.",

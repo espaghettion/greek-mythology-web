@@ -1,7 +1,7 @@
 <script setup>
 defineProps({
     infoCategory: String,
-    infoContent: String,
+    infoContent: Array,
 })
 </script>
 

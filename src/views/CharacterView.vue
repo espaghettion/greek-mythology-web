@@ -3,6 +3,7 @@ import { useCharacterStore } from '@/stores/characters';
 import { useRoute } from 'vue-router';
 import { onMounted, onUpdated, ref, watch } from 'vue';
 import InfoCard from '@/components/InfoCard.vue';
+import CharacterRelations from '@/components/CharacterRelations.vue';
 
 const characterStore = useCharacterStore();
 const route = useRoute();
@@ -16,42 +17,21 @@ watch(() => route.params, () => {
 <template>
   <main>
     <article class="info">
-      <InfoCard :info-category="character.name" :info-content="character.info" />
-      <InfoCard info-category="Životopis" :info-content="character.bio" />
-      <InfoCard info-category="Zajímavosti" :info-content="character.facts" />
+      <InfoCard :info-category="character.name" :info-content="character.info"/>
+      <InfoCard info-category="Životopis" :info-content="character.bio"/>
+      <InfoCard info-category="Zajímavosti" :info-content="character.facts"/>
     </article>
     <article class="relations">
       <section>
         <img :src="character.image" :alt="character.name">
       </section>
-      <section v-if="character.symbols" class="relation">
-        <p class="relation-category">Symboly</p>
-        <p class="relation-content" v-for="(symbol, i) in character.symbols" :key="i">{{ symbol }}</p>
-      </section>
-      <section v-if="character.father" class="relation">
-        <p class="relation-category">Otec</p>
-        <RouterLink class="relation-content" :to="{name: 'character', params: {id : character.father}}">{{ characterStore.characters.find(f => f.id == character.father).name }}</RouterLink>
-      </section>
-      <section v-if="character.mother" class="relation">
-        <p class="relation-category">Matka</p>
-        <RouterLink class="relation-content" :to="{name: 'character', params: {id : character.mother}}">{{ characterStore.characters.find(m => m.id == character.mother).name }}</RouterLink>
-      </section>
-      <section v-if="character.children" class="relation">
-        <p class="relation-category">Děti</p>
-        <RouterLink class="relation-content" v-for="(child, i) in character.children" :key="i" :to="{name: 'character', params: {id : child}}">{{ characterStore.characters.find(c => c.id == child).name }}</RouterLink>
-      </section>
-      <section v-if="character.home" class="relation">
-        <p class="relation-category">Domov</p>
-        <p class="relation-content">{{ character.home }}</p>
-      </section>
-      <section v-if="character.partners" class="relation">
-        <p class="relation-category">Partneři</p>
-        <RouterLink class="relation-content" v-for="(partner, i) in character.partners" :key="i" :to="{name: 'character', params: {id : partner}}">{{ characterStore.characters.find(p => p.id == partner).name }}</RouterLink>
-      </section>
-      <section v-if="character.siblings" class="relation">
-        <p class="relation-category">Sourozenci</p>
-        <RouterLink class="relation-content" v-for="(sibling, i) in character.siblings" :key="i" :to="{name: 'character', params: {id : sibling}}">{{ characterStore.characters.find(s => s.id == sibling).name }}</RouterLink>
-      </section>
+      <CharacterRelations v-if="character.symbols" relation-category="Symboly" :relation-content="character.symbols"/>
+      <CharacterRelations v-if="character.father" relation-category="Otec" :relation-content="character.father"/>
+      <CharacterRelations v-if="character.mother" relation-category="Matka" :relation-content="character.mother"/>
+      <CharacterRelations v-if="character.children" relation-category="Děti" :relation-content="character.children"/>
+      <CharacterRelations v-if="character.home" relation-category="Domov" :relation-content="character.home"/>
+      <CharacterRelations v-if="character.partners" relation-category="Partneři" :relation-content="character.partners"/>
+      <CharacterRelations v-if="character.siblings" relation-category="Sourozenci" :relation-content="character.siblings"/>
     </article>
   </main>
 </template>
@@ -109,26 +89,6 @@ watch(() => route.params, () => {
 
       @include mixins.responsive(tablet){
         height: 200px;
-      }
-    }
-
-    .relation{
-      @include mixins.flex-column;
-      width: 95%;
-      gap: 5px;
-
-      .relation-category{
-        @include mixins.decorated-text;
-        width: 100%;
-        padding: 5px;
-        font-size: 1.2em;
-      }
-
-      .relation-content{
-        text-decoration: none;
-        color: #0F154E;
-        line-height: 20px;
-        font-size: 1.05em;
       }
     }
   }
