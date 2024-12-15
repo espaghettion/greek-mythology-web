@@ -9,7 +9,7 @@ defineProps({
   <main>
     <section class="info-card">
       <h3>{{ infoCategory }}</h3>
-      <p>{{ infoContent }}</p>
+      <p v-for="(info, i) in infoContent" :key="i">{{ info }}</p>
     </section>
   </main>
 </template>

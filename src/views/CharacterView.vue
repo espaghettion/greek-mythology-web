@@ -16,9 +16,9 @@ watch(() => route.params, () => {
 <template>
   <main>
     <article class="info">
-      <InfoCard :info-category="character.name" info-content="herro?" />
-      <InfoCard info-category="Výskyty" info-content="herro?" />
-      <InfoCard info-category="Zajímavosti" info-content="herro?" />
+      <InfoCard :info-category="character.name" :info-content="character.info" />
+      <InfoCard info-category="Životopis" :info-content="character.bio" />
+      <InfoCard info-category="Zajímavosti" :info-content="character.facts" />
     </article>
     <article class="relations">
       <section>
@@ -64,11 +64,27 @@ watch(() => route.params, () => {
     width: 100%;
     gap: 5%;
     align-items: start;
+
+    @include mixins.responsive(smartphone-portrait){
+      @include mixins.flex-column;
+    }
   }
 
   .info{
     @include mixins.flex-column;
     width: 40%;
+
+    @include mixins.responsive(smartphone-portrait){
+      width: 90%;
+    }
+
+    @include mixins.responsive(smartphone-landscape){
+      width: 75%;
+    }
+
+    @include mixins.responsive(tablet){
+      width: 55%;
+    }
   }
 
   .relations{
@@ -79,9 +95,21 @@ watch(() => route.params, () => {
     margin: 10px;
     gap: 25px;
 
+    @include mixins.responsive(smartphone-landscape){
+      padding: 20px;
+    }
+
     img{
       height: 250px;
       border-radius: 5px;
+
+      @include mixins.responsive(smartphone-landscape){
+        height: 150px;
+      }
+
+      @include mixins.responsive(tablet){
+        height: 200px;
+      }
     }
 
     .relation{
