@@ -1,7 +1,14 @@
 <script setup>
+import { ref } from 'vue';
 import { useCharacterStore } from '@/stores/characters';
+import Dialog from '@/components/Dialog.vue';
 
 const characterStore = useCharacterStore();
+const showDialog = ref(false);
+
+function closeDialog(){
+  showDialog.value = false;
+}
 
 defineProps({
     relationCategory: String,
@@ -10,15 +17,22 @@ defineProps({
 </script>
 
 <template>
-  <main>
     <section class="relation">
       <p class="relation-category">{{ relationCategory }}</p>
-      <section v-for="(relation, i) in relationContent" :key="i">
+      <section v-for="(relation, i) in relationContent.slice(0, 5)" :key="i">
         <RouterLink v-if="characterStore.characters.find(c => c.id == relation)" class="relation-content" :to="{name: 'character', params: {id : relation}}">{{ characterStore.characters.find(c => c.id == relation).name }}</RouterLink>
         <p v-if="!characterStore.characters.find(c => c.id == relation)" class="relation-content">{{ relation }}</p>
       </section>
+      <section v-if="relationContent.length > 5">
+        <button @click="showDialog = true">Zobrazit další</button>
+        <Dialog
+        :visible="showDialog"
+        :title="relationCategory"
+        :close="closeDialog"
+        :dialog-category="relationCategory"
+        :dialog-content="relationContent"/>
+      </section>
     </section>
-  </main>
 </template>
 
 <style lang="scss" scoped>
@@ -42,5 +56,18 @@ defineProps({
         line-height: 20px;
         font-size: 1.05em;
       }
+    }
+
+    button{
+        font-family: 'Bitter', sans-serif;
+        border: none;
+        background: linear-gradient(0deg, rgba(14,26,143,1) 0%, rgba(8,12,49,1) 100%);
+        border-radius: 5px;
+        color: white;
+        font-size: 1.1em;
+
+        &:hover{
+          cursor: pointer;
+        }
     }
 </style>

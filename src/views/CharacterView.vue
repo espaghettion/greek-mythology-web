@@ -4,6 +4,7 @@ import { useRoute } from 'vue-router';
 import { onMounted, onUpdated, ref, watch } from 'vue';
 import InfoCard from '@/components/InfoCard.vue';
 import CharacterRelations from '@/components/CharacterRelations.vue';
+import Dialog from '@/components/Dialog.vue';
 
 const characterStore = useCharacterStore();
 const route = useRoute();
