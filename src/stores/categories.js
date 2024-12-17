@@ -8,7 +8,7 @@ export const useCategoryStore = defineStore('categories', () => {
         name: "Bohové",
         id: "gods",
         image: "https://cdn.pixabay.com/photo/2024/04/02/08/47/zeus-8670349_960_720.jpg",
-        description: "Řecká mytologie je plná bohů. Patří k nim samozřejmě 12 Olympanů, ale také prvotní božstva, které spíše reprezentují obecné koncepty. Také existuje mnoho dalších bohů, ke kterým se vážou více specifické věci.",
+        description: "Řecká mytologie je plná bohů. Rozdělují se na mnoho skupin, nejznámějšímí jsou Olympané, kteří všem vládnou s Diem v čele. Existuje však mnoho dalších bohů, co existovali před nebo při vládě Olympanů.",
         characters: [
           { name: "Zeus", id: "zeus", image: "/zeus.png" },
           { name: "Poseidón", id: "poseidon", image: "/poseidon.jpg" },
@@ -46,7 +46,7 @@ export const useCategoryStore = defineStore('categories', () => {
         name: "Titáni",
         id: "titans",
         image: "https://cdn.pixabay.com/photo/2024/04/02/08/47/titan-8670350_960_720.jpg",
-        description: "ssss",
+        description: "Mezi titány řadíme staré bohy, kteří jsou potomci Urana a Gaii a vládli před nástupem olympských bohů. V čele stál Kronos, který svrhnul Urana, než ho také svrhnul jeho vlastní syn Zeus. Nastala velká válka mezi Titány a Olympany, kterou byla vláda Titánů nadobro ukončena.",
         characters: [
           { name: "Kronos", id: "kronos", image: "/kronos.jpg" },
           { name: "Okeanos", id: "okeanos", image: "/okeanos.jpg" },
@@ -71,7 +71,7 @@ export const useCategoryStore = defineStore('categories', () => {
         name: "Hrdinové",
         id: "heroes",
         image: "https://cdn.pixabay.com/photo/2024/04/02/08/47/hero-8670351_960_720.jpg",
-        description: "wewewew",
+        description: "Hrdinové byli v řecké mytologii lidé, kteří za svůj život vykonali nějaké speciální nadlidské činy a byli spojeni se sílou a odvahou. Často byli také potomky některých bohů.",
         characters: [
           { name: "Perseus", id: "perseus", image: "/perseus.jpg" },
           { name: "Odysseus", id: "odysseus", image: "/odysseus.jpg" },
@@ -86,7 +86,7 @@ export const useCategoryStore = defineStore('categories', () => {
         name: "Nadlidské stvoření",
         id: "creatures",
         image: "https://cdn.pixabay.com/photo/2024/04/02/08/47/creature-8670352_960_720.jpg",
-        description: "",
+        description: "Nadlidské stvoření v řecké mytologii se nepočítala jako bohové, ale také se nedala zařadit mezi lidi, jelikož měla nadlidské rysy a schopnosti.",
         characters: [
           { name: "Kentauři", id: "kentauri", image: "/kentauri.jpg" },
           { name: "Dryády", id: "dryady", image: "/dryady.jpg" },

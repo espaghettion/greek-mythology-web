@@ -18,8 +18,10 @@ function nextCard(){
 
 <template>
   <main>
-    <h1>Co je to řecká mytologie?</h1>
-    <p>Lorem.</p>
+    <article class="info">
+      <h1>Co je to řecká mytologie?</h1>
+      <p>Do řecké mytologie patří všechny příběhy a mýty a bozích, hrdinech a bytostech. Byla také částí náboženství starověkého Řecka, proto bohové v těchto příbězích figurují tak silně. </p>
+    </article>
 
     <section class="category-link">
       <button class="previous-btn" @click="previousCard()"><i class="fa-solid fa-chevron-left"></i></button>
@@ -33,6 +35,13 @@ function nextCard(){
 
 <style lang="scss" scoped>
 @use '../mixins.scss' as mixins;
+
+.info{
+  @include mixins.flex-column;
+  width: 50%;
+  text-align: center;
+  gap: 5px;
+}
 
 .category-link{
   @include mixins.flex-row;
