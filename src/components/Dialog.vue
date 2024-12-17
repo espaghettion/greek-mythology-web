@@ -16,9 +16,11 @@ const characterStore = useCharacterStore();
     <section v-if="visible" class="dialog-overlay">
         <section class="info-card" v-if="dialogContent && dialogCategory">
             <h3>{{ dialogCategory }}</h3>
-            <section v-for="(relation, i) in dialogContent" :key="i">
-              <RouterLink v-if="characterStore.characters.find(c => c.id == relation)" class="relation-content" :to="{name: 'character', params: {id : relation}}">{{ characterStore.characters.find(c => c.id == relation).name }}</RouterLink>
-              <p v-if="!characterStore.characters.find(c => c.id == relation)" class="relation-content">{{ relation }}</p>
+            <section class="relations-wrapper">
+              <section class="relation" v-for="(relation, i) in dialogContent" :key="i">
+                <RouterLink v-if="characterStore.characters.find(c => c.id == relation)" class="relation-content" :to="{name: 'character', params: {id : relation}}">{{ characterStore.characters.find(c => c.id == relation).name }}</RouterLink>
+                <p v-else class="relation-content">{{ relation }}</p>
+              </section>
             </section>
         </section>
         <button @click="close">Zavřít</button>
@@ -33,21 +35,44 @@ const characterStore = useCharacterStore();
       position: fixed;
       top: 0;
       left: 0;
+      min-height: 100vh;
       width: 100%;
       height: 100%;
       background: rgba(0, 0, 0, 0.5);
       z-index: 2;
 
       .info-card{
+        display: flex;
+        flex-direction: column;
         width: 30%;
+        height: 50%;
         font-size: 1.2em;
 
-        >section{
-          @include mixins.flex-column;
-          padding: 5px;
-          
-          p{
-            padding: 0;
+        @include mixins.responsive(smartphone-portrait){
+          width: 70%;
+        }
+
+        @include mixins.responsive(smartphone-landscape){
+          width: 50%;
+        }
+
+        @include mixins.responsive(tablet){
+          width: 40%;
+        }
+
+        .relations-wrapper{
+          overflow-y: scroll;
+          height: 80%;
+          flex-grow: 1;
+
+          .relation{
+            @include mixins.flex-column;
+            padding: 5px;
+            
+            
+            p{
+              padding: 0;
+            }
           }
         }
       }
@@ -71,5 +96,17 @@ const characterStore = useCharacterStore();
         &:hover{
           cursor: pointer;
         }
+    }
+
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #0F154E;
     }
 </style>

@@ -21,7 +21,7 @@ defineProps({
       <p class="relation-category">{{ relationCategory }}</p>
       <section v-for="(relation, i) in relationContent.slice(0, 5)" :key="i">
         <RouterLink v-if="characterStore.characters.find(c => c.id == relation)" class="relation-content" :to="{name: 'character', params: {id : relation}}">{{ characterStore.characters.find(c => c.id == relation).name }}</RouterLink>
-        <p v-if="!characterStore.characters.find(c => c.id == relation)" class="relation-content">{{ relation }}</p>
+        <p v-else class="relation-content">{{ relation }}</p>
       </section>
       <section v-if="relationContent.length > 5">
         <button @click="showDialog = true">Zobrazit další</button>

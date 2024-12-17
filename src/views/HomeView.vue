@@ -46,6 +46,7 @@ function nextCard(){
     color: white;
     height: 600px;
     padding: 20px;
+    z-index: 1;
 
     &:hover{
       cursor: pointer;
