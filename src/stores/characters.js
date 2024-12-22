@@ -10,7 +10,7 @@ export const useCharacterStore = defineStore('characters', () => {
       symbols: ["Blesk", "Orel", "Egida", "Dub", "Býk"], 
       father: ["kronos"], 
       mother: ["rhea"], 
-      children: ["afrodita", "appolon", "ares", "artemis", "athena", "dionysos", "hefaistos", "hermes", "herakles", "perseus", "gracie", "Aeakus", "Angelos", "Eileithýia", "Enýó", "Eris", "Ersa", "Hébé", "Helena Trójská", "Harmonia", "Mínós", "Nemesis", "Pandia", "Persefona", "Rhadamanthys", "Hóry"], 
+      children: ["afrodita", "apollon", "ares", "artemis", "athena", "dionysos", "hefaistos", "hermes", "herakles", "perseus", "gracie", "Aeakus", "Angelos", "Eileithýia", "Enýó", "Eris", "Ersa", "Hébé", "Helena Trójská", "Harmonia", "Mínós", "Nemesis", "Pandia", "Persefona", "Rhadamanthys", "Hóry"], 
       home: ["Hora Olymp"], 
       partners: ["hera", "leto", "mnemosyne", "themis", "Métis", "Európa", "Íó", "Semelé", "Nemesis", "Persefona", "Danaé", "Thálie", "Kallistó", "Ganymédés", "Dióna", "Alkméné"], 
       siblings: ["hestia", "hades", "hera", "poseidon", "demeter", "Cheirón"],
@@ -88,7 +88,7 @@ export const useCharacterStore = defineStore('characters', () => {
       children: ["Amazonky", "Anterós", "Adrasteia", "Deimos", "Enyaliós", "Erós", "Fobos", "Flegyas", "Harmonia", "Oenomaus", "Thrax"],
       home: ["Hora Olymp"],
       partners: ["afrodita", "Kalliopé", "Otréré"],
-      siblings: ["afrodita", "appolon", "artemis", "athena", "dionysos", "hefaistos", "hermes", "herakles", "muzy", "perseus", "gracie", "Aeakus", "Angelos", "Eileithýia", "Enýó", "Eris", "Ersa", "Hébé", "Helena Trójská", "Litai", "Mínós", "Moiry", "Pandia", "Persefona", "Rhadamanthys", "Hóry"],
+      siblings: ["afrodita", "apollon", "artemis", "athena", "dionysos", "hefaistos", "hermes", "herakles", "muzy", "perseus", "gracie", "Aeakus", "Angelos", "Eileithýia", "Enýó", "Eris", "Ersa", "Hébé", "Helena Trójská", "Litai", "Mínós", "Moiry", "Pandia", "Persefona", "Rhadamanthys", "Hóry"],
       info: [
         "Árés je jedním z dvanácti Olympanů. Je to bůh války, narozdíl od Athény však představuje pouze její ničivou schopnost a je zosobněním čistého násilí a brutality. Kvůli tomuto nebyl milován bohy ani lidmi kromě Afrodity, s kterou měl mnoho dětí.",
         "Vetšinou je zobrazován s helmou a oštěpem, řídí válečný vůz se čtyřmi koni a je doprovázený psy a supy."
@@ -111,7 +111,7 @@ export const useCharacterStore = defineStore('characters', () => {
       father: ["zeus"],
       mother: ["Métis"],
       home: ["Hora Olymp"],
-      siblings: ["afrodita", "appolon", "artemis", "ares", "dionysos", "hefaistos", "hermes", "herakles", "muzy", "perseus", "gracie", "Aeakus", "Angelos", "Eileithýia", "Enýó", "Eris", "Ersa", "Hébé", "Helena Trójská", "Litai", "Mínós", "Moiry", "Pandia", "Persefona", "Rhadamanthys", "Hóry"],
+      siblings: ["afrodita", "apollon", "artemis", "ares", "dionysos", "hefaistos", "hermes", "herakles", "muzy", "perseus", "gracie", "Aeakus", "Angelos", "Eileithýia", "Enýó", "Eris", "Ersa", "Hébé", "Helena Trójská", "Litai", "Mínós", "Moiry", "Pandia", "Persefona", "Rhadamanthys", "Hóry"],
       info: [
         "Athéna je jednou z dvanácti Olympanů. Je bohyní války a moudrosti a také milovanou patronkou Athén.",
         "Je také jednou z panenských bohyní, neměla tedy nikdy žádné partnery nebo děti. Díky její moudrosti všichni hrdinové žádali o její pomoc a rady.",
@@ -128,34 +128,48 @@ export const useCharacterStore = defineStore('characters', () => {
       ]
     },
     {
-      name: "Appolón",
-      id: "appolon",
+      name: "Apollón",
+      id: "apollon",
       image: "/apollon.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      symbols: ["Lyra", "Luk a šípy", "Vavřínový věnec", "Krajta", "Havran"],
+      father: ["zeus"],
+      mother: ["leto"],
+      children: ["Aristaios", "Asklépios", "orfeus", "Tróilos"],
+      home: ["Hora Olymp"],
+      partners: ["Dafné", "Hyakinthos", "Kassandra", "Korónis", "Kyparissos"],
+      siblings: ["afrodita", "athena", "artemis", "ares", "dionysos", "hefaistos", "hermes", "herakles", "muzy", "perseus", "gracie", "Aeakus", "Angelos", "Eileithýia", "Enýó", "Eris", "Ersa", "Hébé", "Helena Trójská", "Litai", "Mínós", "Moiry", "Pandia", "Persefona", "Rhadamanthys", "Hóry"],
+      info: [
+        "Apollón je jedním z Olympanů. Je bohem světla, hudby, poezie, léčení, pohrom, proroctví, vědění, řádu, krásy, lukostřelby a zemědělství. Je ztělesněním harmonie, rozumu a umírněnosti. V mytologii se objevuje skoro tolik, jako sám Zeus."
+      ],
+      bio: [
+        "Apollónova matka Létó svým vztahem s Diem rozčílila Héru, která na ni seslala draka Pýthóna a ten jí pronásledoval ve všech zemích a zakázal jí rodit na pevné zemi. Nikdo ji nechtěl přijmout kromě ostrova Délos, kde Létó porodila Artemidu přitom, co balancovala své tělo na větvi olivovníku. Artemis poté pomohla své matce porodit Apollóna.",
+        "Byl krmený jenom nektarem a ambrózií, díky kterým plně vyrostl jen za čtyři dny a byl připravený na pomstu. Došel přímo na Parnas k Pýthónovi a zranil ho svými šípy. Tomu se podařilo uprchnout a ukrýt se ve svatyni Gaii v Delfách. Apollóna to rozzuřilo a dovolil si posvátnost tohoto místa pošpinit Pýthónovou krví. Zeus nařídil Apollónovi, aby se očistil. Po této očistě se vrátil do Delf a získal svatyni ve svém jméně."
+      ],
+      facts: [
+        "Svou lyru získal od mladšího bratra Hermése jako omluvu za to, že mu ukradl jeho dobytek."
+      ]
     },
     {
       name: "Afrodita",
       id: "afrodita",
       image: "/afrodita.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      symbols: ["Hřebenatka", "Delfín", "Růže", "Myrta", "Hrdlička", "Vrabec", "Zrcadlo", "Opasek", "Labuť"],
+      father: ["uranos"],
+      children: ["Aineiás", "Anterós", "Deimós", "Erós", "Fobos", "Harmonia", "Pothos", "Himerós", "Hermafrodítos", "Rhodos", "Eryx", "Peithó", "Priapos"],
+      home: ["Hora Olymp"],
+      partners: ["Adónis", "Anchísés", "ares", "dionysos", "hefaistos", "hermes", "poseidon"],
+      siblings: ["apollon", "athena", "artemis", "ares", "dionysos", "hefaistos", "hermes", "herakles", "muzy", "perseus", "gracie", "Aeakus", "Angelos", "Eileithýia", "Enýó", "Eris", "Ersa", "Hébé", "Helena Trójská", "Litai", "Mínós", "Moiry", "Pandia", "Persefona", "Rhadamanthys", "Hóry"],
+      info: [
+        "Afrodita je jednou z Olympanů. Je bohyní lásky, krásy a sexuálního uspokojení. Je zobrazována jako nádherná, nenasytná a zároveň nedosažitelná. Sice byla vdaná za Hefaista, ale měla vztahy se skoro všemi Olympany a mnoha lidmi."
+      ],
+      bio: [
+        "Narození Afrodity má dvě verze. V jedné verzi byla Afrodita dcerou a Dia a titánky Dióny. V té druhé mnohem známější verzi jejímu narození předchází kastrace Urana jeho synem Kronem. Uranovy varlata tak padají do moře a Afrodita je zrozena z hřebenatky nahá, více nádherná než cokoliv, co kdy kdo viděl.",
+        "Afrodita byla tak nádherná, že jenom tři panenské bohyně jí dokázaly odolat. Toto byl na Olympu problém, protože ji ihned všichni chtěli pro sebe a tak ji Zeus provdal za Hefaista, jednoho z nejošklivějších Olympanů. Toto však problém nevyřešilo, protože Afrodita neměla v plánu být věrná.",
+        "Jejím nejznámějším milencem byl bůh války Árés. Hélios je však zahlédl a informoval o tom Hefaista. Ten na ně vyzrál tak, že vytvořil bronzovou síť, kterou dal na postel, ve které spolu měli ležet. Když se nechali chytit, vtrhnul do pokoje s dalšími olympskými bohy a oběma se jim smáli několik dní. Přesto spolu však měli mnoho dětí."
+      ],
+      facts: [
+        "Když zjistila, že Hippolytos preferoval Artemidu, přiměla jeho nevlastní matku, aby se do něj zamilovala, což skončilo smrtí obou."
+      ]
     },
     {
       name: "Hermés",

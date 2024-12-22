@@ -15,7 +15,7 @@ export const useCategoryStore = defineStore('categories', () => {
           { name: "Héra", id: "hera", image: "/hera.jpg" },
           { name: "Árés", id: "ares", image: "/ares.jpg" },
           { name: "Athéna", id: "athena", image: "/athena.jpg" },
-          { name: "Appolón", id: "appolon", image: "/apollon.jpg" },
+          { name: "Apollón", id: "apollon", image: "/apollon.jpg" },
           { name: "Afrodita", id: "afrodita", image: "/afrodita.jpg" },
           { name: "Hermés", id: "hermes", image: "/hermes.jpg" },
           { name: "Artemis", id: "artemis", image: "/artemis.jpg" },
