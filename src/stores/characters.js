@@ -15,14 +15,14 @@ export const useCharacterStore = defineStore('characters', () => {
       partners: ["hera", "leto", "mnemosyne", "themis", "Métis", "Európa", "Íó", "Semelé", "Nemesis", "Persefona", "Danaé", "Thálie", "Kallistó", "Ganymédés", "Dióna", "Alkméné"], 
       siblings: ["hestia", "hades", "hera", "poseidon", "demeter", "Cheirón"],
       info: [
-        "Zeus je olympský bůh oblohy a hromu, král všech ostatních bohů a lidí, a je tak vnímán jako hlavní postava řecké mytologie.", 
+        "Zeus je jedním z dvanácti Olympanů. Je to bůh oblohy a hromu, král všech ostatních bohů a lidí a je tak vnímán jako hlavní postava řecké mytologie.", 
         "Většinou bývá zobrazen s žezlem v jedné ruce a s bleskem v druhé, obě symbolizují jeho autoritu. Homérem byl často popisován jako \"nositel egidy\", což je obrovský štít, který s sebou občas nosil.", 
         "Často byl spojován s moudrostí, vědomím, autoritou, osudem, bitvami a mocí."
       ],
       bio: [
         "Je paradoxně nejstarším i nejmladším synem titánů Krona a Rhei. Kronos, který svrhnul svého otce Urana, se dozvěděl, že jeden z jeho potomků ho také svrhne a tak je začal hned po narození polykat. Takto bylo spolknuto jeho pět sourozenců. Zeus by byl také spolykán, ale Rhea místo toho dala Kronovi zabalený kámen a Dia schovala v jeskyni na krétské hoře Ida.",
         "V této jeskyni byl vychován nymfami a poznal svou první manželku, Métis - bohyni rozumu. Díky jejím radám se přestrojil jako olympijský nosič pohárů a přiměl Krona, aby vypil otrávené víno. Z tohoto vína zvracel natolik, že vyzvracel Diovy sourozence, kteří byli připraveni na pomstu.",
-        "Tímto začala válka mezi Titány a Olympskými bohy, která skončila nevyhnutelným svržením Krona.", 
+        "Tímto začala válka mezi titány a Olympskými bohy, která skončila nevyhnutelným svržením Krona.", 
         "Po svržení svého otce byl čas rozdělit svět mezi jeho tři syny. Udělali to formou losování, Poseidón dostal moře, Hádés podsvětí a Zeus nebe. Poté byl korunován jako vládce všech bohů."
       ],
       facts: [
@@ -35,61 +35,97 @@ export const useCharacterStore = defineStore('characters', () => {
       name: "Poseidón",
       id: "poseidon",
       image: "/poseidon.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      symbols: ["Trojzubec", "Ryba", "Delfín", "Kůň", "Býk"],
+      father: ["kronos"],
+      mother: ["rhea"],
+      children: ["Agénór", "Areión", "Bélos", "Benthesikyme", "Chrýsáór", "Nauplios", "Néleus", "Orion", "Pegas", "Polyfémos", "Rhodé", "theseus", "Tritón"],
+      home: ["Hora Olymp"],
+      partners: ["Kainis", "Medúsa", "demeter", "Amymóné", "Aithra", "Amfitríta"],
+      siblings: ["hestia", "hades", "hera", "demeter", "zeus", "Cheirón"],
+      info: [
+        "Poseidón je jeden z dvanácti Olympanů. Je to velice vznětlivý a násilný bůh moře, což způsobilo jeho mnohé spory s ostatními bohy a lidmi.",
+        "Jeho nejznámějším symbolem je jeho trojzubec, s kterým je často zobrazován, ačkoli jeho syn Tritón ho má také."
+      ],
+      bio: [
+        "Je jedním z šesti dětí titánů Krona a Rhei a stejně jako všechny ostatní kromě Dia byl po narození spolykán svým otcem. Poté, co Zeus zachránil své sourozence, se k němu přidal ve válce proti titánům.",
+        "Po válce s titány si Poseidón, Zeus a Hádés losovali části světa, kterým budou vládnout. Poseidón si vylosoval moře a stal se tak bohem moře.",
+        "Poseidónova vznětlivost tvořila časté spory mezi ním a ostatními bohy i lidmi. Příkladem je jeho spor s Diem, když nevydržel jeho arogantní chování a tak se spojil s Hérou a Athénou, ale Zeus tento spor vyhrál.", 
+        "Jeho spor s Athénou začal, když od ní chtěl získat Athény a řekl, že by pro ně byl mnohem víc užitečný. Svým trojzubcem uděřil do skály a vytovřil tak proud mořské vody, který vytryskl v chrámu Erechtheion. Athéna zasadila olivovník a první král Athén se rozhodl, že bude více užitečný, jelikož z něj získají olivy, olej a dřevo, Athéna tak tento spor vyhrála."
+      ],
+      facts: [
+        "Když se Démétér přeměnila na kobylu, protože o Poseidóna neměla zájem, přeměnil se na hřebce a zplodili Despoinu a Areióna.",
+        "Říká se, že svým trojzubcem Poseidón vytvořil prvního koně."
+      ]
     },
     {
       name: "Héra",
       id: "hera",
-      image: "/hera.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      image: "/hera.png",
+      symbols: ["Královské žezlo", "Diadém"],
+      father: ["kronos"],
+      mother: ["rhea"],
+      children: ["ares", "Eileithýia", "Eris", "Hébé", "hefaistos"],
+      home: ["Hora Olymp"],
+      partners: ["zeus"],
+      siblings: ["demeter", "hestia", "hades", "poseidon", "zeus", "Cheirón"],
+      info: [
+        "Héra je jednou z dvanácti Olympanů a manželkou Dia, je tedy také královnou Olympu. Je bohyní manželství a je spojována s rodinou a blahobytem žen a dětí. Toto je poněkud ironické, jelikož její manželství s Diem bylo nešťastné a mnohokrát ji podvedl."
+      ],
+      bio: [
+        "Je jednou z šesti dětí titánů Krona a Rhei a stejně jako všechny ostatní kromě Dia byla po narození spolykána svým otcem. Poté, co Zeus zachránil své sourozence, se k němu přidala ve válce proti titánům.",
+        "Hera byla Diem obelstěna, aby si ho vzala. Věděl, že miluje zvířata a tak se přeměnil na kukačku, která potřebovala pomoc. Přeměnil se zpátky poté, co si ho Héra vzala k prsu, aby ho zahřála. Héra se styděla za to, že bylo takto zneužita a tak odsouhlasila sňatek.",
+        "Toto manželství však bylo nešťastné a Zeus ji mnohokrát podvedl. Dokonce ji podváděl s lidmi a nymfami, což ji rozčílilo mnohem víc, protože oproti ní to byly podřadné bytosti. Byla velice pomstychtivá a když její pomsta proti Diovi dopadla špatně, rozhodla se, že svůj hněv bude mířit spíše na jeho partnerky a děti."
+      ],
+      facts: ["Podle jedné z bájí vznikla Mléčná dráha, když se po obloze rozstříklo Héřino mateřské mléko poté, co od svého prsa oddělila malého Hérakla."]
     },
     {
       name: "Árés",
       id: "ares",
       image: "/ares.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      symbols: ["Meč", "Oštěp", "Štít", "Helma", "Válečný vůz"],
+      father: ["zeus"],
+      mother: ["hera"],
+      children: ["Amazonky", "Anterós", "Adrasteia", "Deimos", "Enyaliós", "Erós", "Fobos", "Flegyas", "Harmonia", "Oenomaus", "Thrax"],
+      home: ["Hora Olymp"],
+      partners: ["afrodita", "Kalliopé", "Otréré"],
+      siblings: ["afrodita", "appolon", "artemis", "athena", "dionysos", "hefaistos", "hermes", "herakles", "muzy", "perseus", "gracie", "Aeakus", "Angelos", "Eileithýia", "Enýó", "Eris", "Ersa", "Hébé", "Helena Trójská", "Litai", "Mínós", "Moiry", "Pandia", "Persefona", "Rhadamanthys", "Hóry"],
+      info: [
+        "Árés je jedním z dvanácti Olympanů. Je to bůh války, narozdíl od Athény však představuje pouze její ničivou schopnost a je zosobněním čistého násilí a brutality. Kvůli tomuto nebyl milován bohy ani lidmi kromě Afrodity, s kterou měl mnoho dětí.",
+        "Vetšinou je zobrazován s helmou a oštěpem, řídí válečný vůz se čtyřmi koni a je doprovázený psy a supy."
+      ],
+      bio: [
+        "Árés byl nejstarším synem Dia a Héry. Jelikož byl bohem války, byl všemi nenáviděný, dokonce i Zeus ho nazval nejvíce nenávistným bohem ze všech poté, co byl v boji s Diomédem zraněn.",
+        "Je ještě mnohokrát poražen, například behem Trójské války, kde ho Athéna porazila pomocí jednoho kamene a pak se mu vysmívala a chlubila se výhrou.",
+        "Jeho nejznámější ženou byla bohyně lásky Afrodita, která během jejich vztahu byla vdaná za jeho bratra Hefaista. Ten na ně vyzrál tak, že vytvořil bronzovou síť, kterou dal na postel, ve které spolu měli ležet. Když se nechali chytit, vtrhnul do pokoje s dalšími olympskými bohy a oběma se jim smáli několik dní.",
+        "Toto však pár nezastavilo a později spolu měli mnoho dětí."
+      ],
+      facts: [
+        "Byl nenáviděný mnoha lidmi, ale mezi bojovníky (např. ve Spartě) byl respektován a vnímán jako ztělesnění odvahy a strategie."
+      ]
     },
     {
       name: "Athéna",
       id: "athena",
       image: "/athena.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      symbols: ["Sovy", "Olivovník", "Hadi", "Egida", "Brnění", "Helma", "Oštěp", "Hlava gorgony"],
+      father: ["zeus"],
+      mother: ["Métis"],
+      home: ["Hora Olymp"],
+      siblings: ["afrodita", "appolon", "artemis", "ares", "dionysos", "hefaistos", "hermes", "herakles", "muzy", "perseus", "gracie", "Aeakus", "Angelos", "Eileithýia", "Enýó", "Eris", "Ersa", "Hébé", "Helena Trójská", "Litai", "Mínós", "Moiry", "Pandia", "Persefona", "Rhadamanthys", "Hóry"],
+      info: [
+        "Athéna je jednou z dvanácti Olympanů. Je bohyní války a moudrosti a také milovanou patronkou Athén.",
+        "Je také jednou z panenských bohyní, neměla tedy nikdy žádné partnery nebo děti. Díky její moudrosti všichni hrdinové žádali o její pomoc a rady.",
+        "Často je zobrazována s přísnou tvaří, neusmívajícími rty a celá její postava vyzařuje autoritou. Bývá oděna v chitonu nebo v plné zbroji. Uprostřed její egidy bývá gorgonská hlava, která symbolizuje dárek od Persea: hlavu Medúsy."
+      ],
+      bio: [
+        "Když Zeus zjistil, že jeho dítě s Métis by ho mohlo svrhnout, zachoval se jako svůj otec a rozhodl se svou těhotnou manželku spolknout. Když nastal čas porodu, cítil hrozné bolesti hlavy, které nedokázal vydžet a tak ho Hefaistós udeřil svou sekerou a v tu chvíli Athéna vyskočila z jeho čela plně ozbrojená s mohutným výkřikem. V tu chvíli byl Zeus na svou dceru velice pyšný.",
+        "V mládí měla přítele jménem Pallas, kterého si vážila ze všeho nejvíce. Jednoho dne, když trénovali bojová cvičení ho omylem zabila. Chtěla zachovat jeho památku a tak si přidala jeho jméno ke svému a mezi mnoha lidmi je známá jako Pallas Athéna.",
+        "S Poseidónem měla velice veřejný spor, protože Poseidón chtěl, aby mu předala Athény a řekl, že by pro ně byl mnohem užitečnější. Svým trojzubcem uděřil do skály a vytovřil tak proud mořské vody, který vytryskl v chrámu Erechtheion. Athéna zasadila olivovník a první král Athén se rozhodl, že bude více užitečný, jelikož z něj získají olivy, olej a dřevo, Athéna tak tento spor vyhrála."
+      ],
+      facts: [
+        "Připisuje se jí vznik flétny a trubky.",
+        "Kromě sov, které symbolizují moudrost, byla také spojována s hady, kteří symbolizují transformaci, znovuzrození a schopnost se orientovat v obtížných situacích."
+      ]
     },
     {
       name: "Appolón",
@@ -785,51 +821,35 @@ export const useCharacterStore = defineStore('characters', () => {
       name: "Kentauři",
       id: "kentauri",
       image: "/kentauri.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      info: [
+        "Kentauři jsou napůl muži a napůl koně. Mají hlavu a torzo muže, ale tělo koně.",
+        "Nejznámějším kentaurem je Cheirón. Většina kentaurů byla zobrazována jako divoké bytosti, Cheirón byl však moudrý a civilizovaný. Byl nesmrtelný, ale Héraklés ho omylem zranil šípem potaženým krví bílé hydry, který mu způsobil velké bolesti.",
+        "Když Héraklés prosil Dia, aby propustil Promethea, požadoval za to oběť. Cheirón se tedy obětoval, aby zachránil nejen jeho, ale i sebe od své bolesti."
+      ]
     },
     {
       name: "Dryády",
       id: "dryady",
       image: "/dryady.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      info: [
+        "Dryády jsou nymfy nebo duše stromů, které na sebe berou podobu krásných žen.",
+        "Dříve tímto názvem byly myšleny specificky nymfy dubových stromů, ale význam se později rozšířil ke všem typům stromů. Podle těchto stromů se pak dryády dělily na různé skupiny.",
+        "Mezi dryády patřily také hamadryády, při jejichž narození se také narodil strom, ke kterému byla věčně vázaná jejich duše."
+      ]
     },
     {
       name: "Najády",
       id: "najady",
       image: "/najady.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      info: [
+        "Najády jsou vodní nymfy nebo duše v podobě krásných žen, které se vyskytují u studánek, pramenů, potoků, řek a dalších sladkovodních ploch.",
+        "Byly často uctívané v místních kultech jako nezbytné pro lidi. Lidé při obřadech dosažení plnoletosti věnovali své dětské vlasy místní najádě jara. Na některých místech se jejich vodám připisovaly rituální očisty s léčebnými účinky. Rituálně se v nich topila zvířata."
+      ],
     },
     {
       name: "Nymfy",
       id: "nymfy",
-      image: "/muzy.jpg",
+      image: "/nymfy.jpg",
       symbols: [],
       father: [],
       mother: [],

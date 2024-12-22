@@ -18,9 +18,9 @@ watch(() => route.params, () => {
 <template>
   <main>
     <article class="info">
-      <InfoCard :info-category="character.name" :info-content="character.info"/>
-      <InfoCard info-category="Životopis" :info-content="character.bio"/>
-      <InfoCard info-category="Zajímavosti" :info-content="character.facts"/>
+      <InfoCard v-if="character.name" :info-category="character.name" :info-content="character.info"/>
+      <InfoCard v-if="character.bio" info-category="Životopis" :info-content="character.bio"/>
+      <InfoCard v-if="character.facts" info-category="Zajímavosti" :info-content="character.facts"/>
     </article>
     <article class="relations">
       <section>
