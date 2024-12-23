@@ -21,6 +21,14 @@
     text-decoration: none;
 }
 
+@mixin search-bar{
+    font-family: 'Bitter', sans-serif;
+    color: #ACAFCC;
+    border: 3px solid #ACAFCC;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
 @mixin responsive( $breakpoint ) {
     @if $breakpoint == smartphone-portrait {
         @media only screen and ( max-width: 575.98px ) {

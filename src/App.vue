@@ -2,9 +2,25 @@
 import { RouterLink, RouterView } from 'vue-router'
 import { onUpdated, ref } from 'vue';
 import { useCategoryStore } from './stores/categories';
+import { useCharacterStore } from './stores/characters';
+import MiniSearch from 'minisearch';
 
 const active = ref(false);
 const categoryStore = useCategoryStore();
+const characterStore = useCharacterStore();
+const results = ref([]);
+const query = ref('');
+
+const miniSearch = new MiniSearch({
+  fields: ['name', 'id', 'symbols', 'home', 'partners'], // Fields to index
+  storeFields: ['name'], // Fields to return in search results
+});
+miniSearch.addAll(characterStore.characters);
+
+function searchBar() {
+  results.value = miniSearch.search(query.value, {fuzzy: 1});
+  console.log(results.value);
+}
 </script>
 
 <template>
@@ -16,8 +32,18 @@ const categoryStore = useCategoryStore();
       <section class="homepage-link">
         <RouterLink to="/">Řecká mytologie</RouterLink>
       </section>
-      <section class="menu-btn">
-        <button @click="active = !active"><i class="fa-solid" :class="{ 'fa-xmark': active, 'fa-bars': !active }"></i></button>
+      <section class="search">
+        <section class="searchbar">
+          <input v-model="query" @input="searchBar" placeholder="Vyhledávání"/>
+          <ul v-if="results.length > 0" class="results">
+            <li v-for="(result, i) in results" :key="i">
+              <RouterLink @click="query = ''; results = []" :to="{name: 'character', params: {id: result.id}}">{{ result.name }}</RouterLink>
+            </li>
+          </ul>
+        </section>
+        <section class="menu-btn">
+          <button @click="active = !active"><i class="fa-solid" :class="{ 'fa-xmark': active, 'fa-bars': !active }"></i></button>
+        </section>
       </section>
     </nav>
   </header>
@@ -88,25 +114,50 @@ header {
       }
     }
 
-    .menu-btn{
+    .search{
       @include mixins.flex-row;
       justify-content: end;
+      gap: 20px;
+
+      .searchbar{
+        @include mixins.flex-column;
+        align-items: end;
+
+        .results{
+          position: relative;
+          width: 100%;
+          background-color: #FFF5E0;
+          padding: 5px;
+          text-decoration: none;
+
+          a{
+            text-decoration: none;
+          }
+        }
+      }
+
+      .menu-btn{
+        width: 40px;
+      }
     }
   }
 
   button{
+    @include mixins.search-bar;
     width: 40px;
     height: 40px;
-    background-color: rgba(0, 0, 0, 0.2);
-    border: 3px solid #ACAFCC;
-    border-radius: 5px;
-    color: #ACAFCC;
     font-size: 1.3em;
 
     &:hover{
       cursor: pointer;
     }
   }
+}
+
+input{
+  @include mixins.search-bar;
+  height: 35px;
+  font-size: 1.15em;
 }
 
 .menu{
