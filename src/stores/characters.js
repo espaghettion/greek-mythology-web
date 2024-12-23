@@ -142,7 +142,7 @@ export const useCharacterStore = defineStore('characters', () => {
         "Apollón je jedním z Olympanů. Je bohem světla, hudby, poezie, léčení, pohrom, proroctví, vědění, řádu, krásy, lukostřelby a zemědělství. Je ztělesněním harmonie, rozumu a umírněnosti. V mytologii se objevuje skoro tolik, jako sám Zeus."
       ],
       bio: [
-        "Apollónova matka Létó svým vztahem s Diem rozčílila Héru, která na ni seslala draka Pýthóna a ten jí pronásledoval ve všech zemích a zakázal jí rodit na pevné zemi. Nikdo ji nechtěl přijmout kromě ostrova Délos, kde Létó porodila Artemidu přitom, co balancovala své tělo na větvi olivovníku. Artemis poté pomohla své matce porodit Apollóna.",
+        "Apollónova matka Létó svým vztahem s Diem rozčílila Héru, která na ni seslala draka Pýthóna. Ten jí pronásledoval ve všech zemích a zakázal jí rodit na pevné zemi. Nikdo ji nechtěl přijmout kromě ostrova Délos, kde Létó porodila Artemidu přitom, co balancovala své tělo na větvi olivovníku. Artemis poté pomohla své matce porodit Apollóna.",
         "Byl krmený jenom nektarem a ambrózií, díky kterým plně vyrostl jen za čtyři dny a byl připravený na pomstu. Došel přímo na Parnas k Pýthónovi a zranil ho svými šípy. Tomu se podařilo uprchnout a ukrýt se ve svatyni Gaii v Delfách. Apollóna to rozzuřilo a dovolil si posvátnost tohoto místa pošpinit Pýthónovou krví. Zeus nařídil Apollónovi, aby se očistil. Po této očistě se vrátil do Delf a získal svatyni ve svém jméně."
       ],
       facts: [
@@ -175,61 +175,98 @@ export const useCharacterStore = defineStore('characters', () => {
       name: "Hermés",
       id: "hermes",
       image: "/hermes.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      symbols: ["Petasos", "Talaria", "Kaduceus", "Lyra", "Brašna"],
+      father: ["zeus"],
+      mother: ["Maia"],
+      children: ["Abdéros", "Autolykos", "Angelia", "Eurodos", "Hermafrodítos", "pan", "Týché", "Myrtilos"],
+      home: ["Hora Olymp"],
+      partners: ["afrodita", "Peithó", "Dryopé", "Hekaté", "Herse", "Chioné"],
+      siblings: ["afrodita", "apollon", "athena", "artemis", "ares", "dionysos", "hefaistos", "herakles", "muzy", "perseus", "gracie", "Aeakus", "Angelos", "Eileithýia", "Enýó", "Eris", "Ersa", "Hébé", "Helena Trójská", "Litai", "Mínós", "Moiry", "Pandia", "Persefona", "Rhadamanthys", "Hóry"],
+      info: [
+        "Hermés je jedním z Olympanů. Je jejich poslem a zvěstovatelem a je jediným olympským bohem, který dokáže překročit hranici mezi živými a mrtvými. Je to bůh cest, stád, obchodu a zlodějů, sám je taky pěkný šejdíř.",
+        "Bývá zobrazován jako atletický mladík, kterého jde poznat pomocí jeho helmy (petasos) a jeho okřídlených sandálů (talaria). Jeho okřídlená hůlka propletená dvěma hady mohla lidi uspávat nebo probouzet, často se plete s Aeskulapovou holí a proto se často nesprávně používá jako symbol medicíny."
+      ],
+      bio: [
+        "Hermés se narodil za úsvitu v jeskyni na hoře Kyllini a již v poledne se mu povedlo vynalézt lyru, na které zahrál oslavnou hymnu o svém narození. Pro vytvoření téti lyry zabil želvu, poté jí z krunýře vydlabal tělo a natáhl na něj sedm strun z ovčích střev, aby uctil Plejády.",
+        "Když Apollón zjistil, kdo ukradl jeho dobytek, byl velice rozzuřený a nejspíš by to pro Hermése dopadlo špatně, kdyby ho neuklidnil krásnou písní doprovázenou jeho lyrou. Tuto lyru Apollónovi daroval a on mu za to odpustil a sliboval, že bude navždy jeho nejbližsím přítelem. Jako důkaz mu daroval kouzelný kaduceus, který se stal jedním z Hermésových symbolů.",
+        "Přesto, že je spojovaný s plodností, se nikdy neoženil. Měl však docela dost partnerek, tou nejznámější byla bohyně lásky Afrodita."
+      ],
+      facts: [
+        "Byl uctíván jako bůh snů a staří Řekové věřili, že jim posílá sny s proroctvím."
+      ]
     },
     {
       name: "Artemis",
       id: "artemis",
       image: "/artemis.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      symbols: ["Luk a šípy", "Měsíc", "Jelen", "Lovecký pes"],
+      father: ["zeus"],
+      mother: ["leto"],
+      home: ["Hora Olymp"],
+      siblings: ["afrodita", "apollon", "athena", "ares", "dionysos", "hefaistos", "herakles", "hermes", "muzy", "perseus", "gracie", "Aeakus", "Angelos", "Eileithýia", "Enýó", "Eris", "Ersa", "Hébé", "Helena Trójská", "Litai", "Mínós", "Moiry", "Pandia", "Persefona", "Rhadamanthys", "Hóry"],
+      info: [
+        "Artemis je jednou z Olympanů. Je bohyní lovu, měsíce a cudnosti. Je jednou ze tří panenských bohyní Olympu, velmi chránila svou nevinnost i nevinnost svých kněžek.",
+        "Skoro vždy je zobrazována jako mladá lovkyně s toulcem plným šípy a lukem v ruce, nosící krátkou tuniku v doprovodu nějakého zvířete."
+      ],
+      bio: [
+        "Artemidina matka Létó svým vztahem s Diem rozčílila Héru, která na ni seslala draka Pýthóna. Ten jí pronásledoval ve všech zemích a zakázal jí rodit na pevné zemi. Nikdo ji nechtěl přijmout kromě ostrova Délos, kde Létó porodila Artemidu přitom, co balancovala své tělo na větvi olivovníku. Artemis poté pomohla své matce porodit Apollóna.",
+        "Smrtelnice Niobé se chlubila svými 14 potomky, říkala, že narozdíl od Létó porodila celý Olymp. Tohle se Artemidě a Apollónovi nelíbilo a chtěli bránit svou matku. Všechny potomky Niobé zabili, Apollón se postaral o její syny a Artemis o její dcery.",
+        "Když byla Artemis malá dívka, poprosila svého otce Dia, aby jí navždy zachoval její dívčí status. Tak zůstala stejně jako Athéna a Hestia navždy cudnou a neztratila své panenství, které bránila ještě více než ony."
+      ],
+      facts: [
+        "Když ji Aktaión spatřil nahou, přeměnila ho na jelena. Samozřejmě byl hned potom roztrhán na kusy svými psy.",
+        "Je asociována s porodem, ale žádné děti nikdy neměla."
+      ]
     },
     {
       name: "Hefaistós",
       id: "hefaistos",
       image: "/hefaistos.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      symbols: ["Kladivo", "Kovadlina", "Kleště"],
+      father: ["zeus"],
+      mother: ["hera"],
+      children: ["Eukleia", "Euthénia", "Eufémé", "Filofrosyné", "Erichthónios", "Kabeirové", "Palikové"],
+      home: ["Hora Olymp"],
+      partners: ["afrodita", "Aglaia", "gaia"],
+      siblings: ["afrodita", "apollon", "athena", "artemis", "ares", "dionysos", "hermes", "herakles", "muzy", "perseus", "gracie", "Aeakus", "Angelos", "Eileithýia", "Enýó", "Eris", "Ersa", "Hébé", "Helena Trójská", "Litai", "Mínós", "Moiry", "Pandia", "Persefona", "Rhadamanthys", "Hóry"],
+      info: [
+        'Hefaistós je jedním z Olympanů. Je bohem kovářů a ohně, říkalo se mu „nebeský umělec", ale byl spojován i s dalšími řemeslníky a se sopkami.',
+        "Je asi nejvýznačnějším členem všech Olympanů. Je ošklivý, vousatý, ochromený a nemá dokonalou fyzickou kondici jako ostatní bohové. Téměř vždy je zobrazován s kladivem a kovadlinou."
+      ],
+      bio: [
+        "Hefaistós byl synem Dia a Héry. Není jasné, jestli se narodil ochromený nebo byl ochromen, když ho Zeus svrhl z Olympu za to, že se zastal své matky v hádce.",
+        "Existují také zdroje, které uvádí, že Hefaistós je pouze synem Héry, která ho porodila partenogenezí, aby se pomstila Diovi za Athénu. Héra byla po porodu Hefaistovým vzhledem a jeho samotnou existencí tak znechucená, že ho vyhodila z Olympu.",
+        "Hefaistós se jí později pomstill. Vytvořil pro ni nádherný zlatý trůn, který ihned přijala. Jakmile se na něj posadila, byla spoutána nespočetným množstvím velmi jemných provazů, které byly neviditelné pro každého kromě jejich tvůrce. Nikdo ho nedokázal přemluvit, aby ji propustil. Učinil tak až poté, co ho Dionýsos opil."
+      ],
+      facts: [
+        "Je považován za nejošklivějšího Olympana v kontrastu se svou manželkou Afroditou, bohyní lásky.",
+        "Postavil všechna nádherná bronzová sídla, ve kterých žili ostatní Olympané."
+      ]
     },
     {
       name: "Démétér",
       id: "demeter",
       image: "/demeter.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      symbols: ["Žezlo", "Roh hojnosti", "Chléb", "Pšenice", "Kukuřice", "Pochodeň"],
+      father: ["kronos"],
+      mother: ["rhea"],
+      children: ["Arión", "Persefona", "Plútos", "Filomelos", "Chrysothemis", "Despoina", "Eubúleus"],
+      home: ["Hora Olymp"],
+      partners: ["Íasión", "poseidon", "zeus"],
+      siblings: ["hera", "hestia", "hades", "poseidon", "zeus", "Cheirón"],
+      info: [
+        "Démétér byla jednou z původních 12 Olympanů. Je bohyní obilí a zemědělství. Byla známá především jako dárkyně potravy a obilí, také se starala a životní cykly rostlin a roční období.",
+        "Bývá zobrazována jako plně oděná žena, která buď královsky sedí nebo hrdě stojí s napřaženou rukou. Někdy bývá zobrazována se svou dcerou Persefonou, která je jí vždy nablízku. Jsou si velice podobné, dokonce mají i stejné symboly."
+      ],
+      bio: [
+        "Je jednou z šesti dětí titánů Krona a Rhei a stejně jako všechny ostatní kromě Dia byla po narození spolykána svým otcem. Poté, co Zeus zachránil své sourozence, se k němu přidala ve válce proti titánům.",
+        "Ve svých raných letech se Démétér zamilovala do Íasióna a na svatbě Kadma a Harmonie ho svedla. Diovi nepřišlo vhodné, aby měla vztah s pouhým smrtelníkem a tak ho zasáhl bleskem. Démétér už byla v té době těhotná s dvojčaty: Ploutonem, bohem bohatství a Filomelem, patronem orání.",
+        "Nejdůležitějším dítětem Démétér je však Persefona a její unesení Hádésem. Hádés se do Persefony zamiloval a když jednoho dne sbírala s přítelkyněmi květiny, nalákal jí nádherným krásně vonícím narcisem a poté ji unesl svým vozem. Po deseti dnech se toto Démétér dozvěděla a šla truchlit mezi smrtleníky přestrojená za stařenu. Během této doby však začala zanedbávat své povinnosti jako bohyně plodnosti a zemědělství. Země začala chátrat a Zeus si uvědomil, že to takhle nemůže pokračovat a Persefona musí být navrácena.",
+        "Do podsvětí byl poslán Hermés, aby Persefonu navrátil matce, ale zjisil, že Persefona už snědla semínko granátového jablka, což ji zavázalo k podsvětí. Zeus věděl, že by mu to Démétér neodpustila a tak nastal kompromis: Persefona by každý rok strávila jednu třetinu s Hádésem a zbylé dvě s Démétér."
+      ],
+      facts: [
+        "Její truchlení Persefony je důvodem, proč existují zimní měsíce."
+      ]
     },
     {
       name: "Hádés",
