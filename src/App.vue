@@ -12,14 +12,13 @@ const results = ref([]);
 const query = ref('');
 
 const miniSearch = new MiniSearch({
-  fields: ['name', 'id', 'symbols', 'home', 'partners'], // Fields to index
-  storeFields: ['name'], // Fields to return in search results
+  fields: ['name', 'id', 'symbols', 'home', 'partners'],
+  storeFields: ['name']
 });
 miniSearch.addAll(characterStore.characters);
 
 function searchBar() {
-  results.value = miniSearch.search(query.value, {fuzzy: 1});
-  console.log(results.value);
+  results.value = miniSearch.search(query.value, {fuzzy: 2});
 }
 </script>
 
@@ -36,7 +35,7 @@ function searchBar() {
         <section class="searchbar">
           <input v-model="query" @input="searchBar" placeholder="Vyhledávání"/>
           <ul v-if="results.length > 0" class="results">
-            <li v-for="(result, i) in results" :key="i">
+            <li v-for="(result, i) in results" :key="i" class="result">
               <RouterLink @click="query = ''; results = []" :to="{name: 'character', params: {id: result.id}}">{{ result.name }}</RouterLink>
             </li>
           </ul>
@@ -122,16 +121,28 @@ header {
       .searchbar{
         @include mixins.flex-column;
         align-items: end;
+        width: 35%;
+        position: relative;
 
         .results{
-          position: relative;
+          position: absolute;
+          padding: 5px;
+          border-radius: 5px;
+          top: 100%;
           width: 100%;
           background-color: #FFF5E0;
-          padding: 5px;
           text-decoration: none;
+          z-index: 1;
+          box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
 
-          a{
-            text-decoration: none;
+          .result{
+            padding: 10px;
+
+            a{
+              text-decoration: none;
+              color: #0F154E;
+              font-size: 1.15em;
+            }
           }
         }
       }
@@ -156,8 +167,13 @@ header {
 
 input{
   @include mixins.search-bar;
+  width: 100%;
   height: 35px;
   font-size: 1.15em;
+
+  &:focus{
+    outline: none;
+  }
 }
 
 .menu{
