@@ -48,7 +48,7 @@ export const useCharacterStore = defineStore('characters', () => {
       ],
       bio: [
         "Je jedním z šesti dětí titánů Krona a Rhei a stejně jako všechny ostatní kromě Dia byl po narození spolykán svým otcem. Poté, co Zeus zachránil své sourozence, se k němu přidal ve válce proti titánům.",
-        "Po válce s titány si Poseidón, Zeus a Hádés losovali části světa, kterým budou vládnout. Poseidón si vylosoval moře a stal se tak bohem moře.",
+        "Po válce s titány si Poseidón, Zeus a Hádés losovali části světa, kterým budou vládnout. Poseidón si vylosoval moře a stal se tak jeho bohem.",
         "Poseidónova vznětlivost tvořila časté spory mezi ním a ostatními bohy i lidmi. Příkladem je jeho spor s Diem, když nevydržel jeho arogantní chování a tak se spojil s Hérou a Athénou, ale Zeus tento spor vyhrál.", 
         "Jeho spor s Athénou začal, když od ní chtěl získat Athény a řekl, že by pro ně byl mnohem víc užitečný. Svým trojzubcem uděřil do skály a vytovřil tak proud mořské vody, který vytryskl v chrámu Erechtheion. Athéna zasadila olivovník a první král Athén se rozhodl, že bude více užitečný, jelikož z něj získají olivy, olej a dřevo, Athéna tak tento spor vyhrála."
       ],
@@ -261,8 +261,8 @@ export const useCharacterStore = defineStore('characters', () => {
       bio: [
         "Je jednou z šesti dětí titánů Krona a Rhei a stejně jako všechny ostatní kromě Dia byla po narození spolykána svým otcem. Poté, co Zeus zachránil své sourozence, se k němu přidala ve válce proti titánům.",
         "Ve svých raných letech se Démétér zamilovala do Íasióna a na svatbě Kadma a Harmonie ho svedla. Diovi nepřišlo vhodné, aby měla vztah s pouhým smrtelníkem a tak ho zasáhl bleskem. Démétér už byla v té době těhotná s dvojčaty: Ploutonem, bohem bohatství a Filomelem, patronem orání.",
-        "Nejdůležitějším dítětem Démétér je však Persefona a její unesení Hádésem. Hádés se do Persefony zamiloval a když jednoho dne sbírala s přítelkyněmi květiny, nalákal jí nádherným krásně vonícím narcisem a poté ji unesl svým vozem. Po deseti dnech se toto Démétér dozvěděla a šla truchlit mezi smrtleníky přestrojená za stařenu. Během této doby však začala zanedbávat své povinnosti jako bohyně plodnosti a zemědělství. Země začala chátrat a Zeus si uvědomil, že to takhle nemůže pokračovat a Persefona musí být navrácena.",
-        "Do podsvětí byl poslán Hermés, aby Persefonu navrátil matce, ale zjisil, že Persefona už snědla semínko granátového jablka, což ji zavázalo k podsvětí. Zeus věděl, že by mu to Démétér neodpustila a tak nastal kompromis: Persefona by každý rok strávila jednu třetinu s Hádésem a zbylé dvě s Démétér."
+        "Nejdůležitějším dítětem Démétér je však Persefona a její unesení Hádem. Hádés se do Persefony zamiloval a když jednoho dne sbírala s přítelkyněmi květiny, nalákal jí nádherným krásně vonícím narcisem a poté ji unesl svým vozem. Po deseti dnech se toto Démétér dozvěděla a šla truchlit mezi smrtleníky přestrojená za stařenu. Během této doby však začala zanedbávat své povinnosti jako bohyně plodnosti a zemědělství. Země začala chátrat a Zeus si uvědomil, že to takhle nemůže pokračovat a Persefona musí být navrácena.",
+        "Do podsvětí byl poslán Hermés, aby Persefonu navrátil matce, ale zjisil, že Persefona už snědla semínko granátového jablka, což ji zavázalo k podsvětí. Zeus věděl, že by mu to Démétér neodpustila a tak nastal kompromis: Persefona by každý rok strávila jednu třetinu s Hádem a zbylé dvě s Démétér."
       ],
       facts: [
         "Její truchlení Persefony je důvodem, proč existují zimní měsíce."
@@ -272,61 +272,85 @@ export const useCharacterStore = defineStore('characters', () => {
       name: "Hádés",
       id: "hades",
       image: "/hades.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      symbols: ["Kerberos", "Roh hojnosti", "Cypřiš", "Žezlo", "Klíče"],
+      father: ["kronos"],
+      mother: ["rhea"],
+      children: ["Makaria", "Zagreus"],
+      home: ["Podsvětí"],
+      partners: ["Persefona", "Leuké", "Minté"],
+      siblings: ["hestia", "hera", "poseidon", "demeter", "zeus", "Cheirón"],
+      info: [
+        "Hádés je bohem podsvětí, místa, kam se lidské duše dostávájí po smrti. Svůj domov téměř nikdy neopouštěl.",
+        "Bývá zobrazován jen zřídka, jelikož je to strašidelná postava, která všem naháněla hrůzu. Většinou bývá vyobrazen s plnovousem, truchlivým pohledem a svou přilbou. Obvykle vedle něj stojí Kerberos, jeho tříhlavý pes, který střeží bránu do podsvětí."
+      ],
+      bio: [
+        "Je jedním z šesti dětí titánů Krona a Rhei a stejně jako všechny ostatní kromě Dia byl po narození spolykán svým otcem. Poté, co Zeus zachránil své sourozence, se k němu přidal ve válce proti titánům.",
+        "Po válce s titány si Hádés, Zeus a Poseidón losovali části světa, kterým budou vládnout. Hádés si vylosoval podsvětí a stal se tak jeho bohem.",
+        "Hádés neměl mnoho partnerek, nejdůležitější z nich je Persefona a její unesení. Hádés se do Persefony zamiloval a když jednoho dne sbírala s přítelkyněmi květiny, nalákal jí nádherným krásně vonícím narcisem a poté ji unesl svým vozem. Po deseti dnech se toto dozvěděla její matka Démétér, která šla truchlit mezi smrtleníky přestrojená za stařenu. Během této doby však začala zanedbávat své povinnosti jako bohyně plodnosti a zemědělství. Země začala chátrat a Zeus si uvědomil, že to takhle nemůže pokračovat a Persefona musí být navrácena.",
+        "Do podsvětí byl poslán Hermés, aby Persefonu navrátil matce, ale zjisil, že Persefona už snědla semínko granátového jablka, což ji zavázalo k podsvětí. Zeus věděl, že by mu to Démétér neodpustila a tak nastal kompromis: Persefona by každý rok strávila jednu třetinu s Hádem a zbylé dvě s Démétér.", 
+        "Je možné, že Hádés a Persefona spolu neměli žádné děti, ale říká se, že Zagreus byl jejich syn. O Makarii se také říká, že byla Hádova dcera, ale o matce žádné zmínky nejsou."
+      ],
+      facts: [
+        "V rané řecké mytologii byl považován za boha bohatství a hojnosti, které se pojily k bohatsví nacházejícím se v hlubinách země."
+      ]
     },
     {
       name: "Hestia",
       id: "hestia",
       image: "/hestia.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      symbols: ["Oheň", "Krb", "Konvice"],
+      father: ["kronos"],
+      mother: ["rhea"],
+      home: ["Hora Olymp", "Delfy"],
+      siblings: ["hades", "hera", "poseidon", "demeter", "zeus", "Cheirón"],
+      info: [
+        "Hestia je jednou z původních dvanácti Olympanů. Je bohyní krbu. Byla čistá a mírumilovná, ale jelikož se vždy potřebovala doma starat o ohniště, nevyskytuje se v mnoha bájích a proto byla později nahrazena divočejším Dionýsem.",
+        "Existuje velmi málo vyobrazení Hestie. Obvykle je zobrazena jako skromná žena se závojem. Občas stojí u ohně nebo drží květiny či hůl."
+      ],
+      bio: [
+        "Je jednou z šesti dětí titánů Krona a Rhei a stejně jako všechny ostatní kromě Dia byla po narození spolykána svým otcem. Poté, co Zeus zachránil své sourozence, se k němu přidala ve válce proti titánům.",
+        "Oheň je očišťující živel a Hestia byla proto uctívána jako panenská bohyně, stejně jako Athéna a Artemis. Říká se, že tak učinila, aby udržela mír na Olympu. Apollón a Poseidón si ji oba chtěli vzít a měla obavy, že volba jednoho z nich by mohla vytvořit nějaký konflikt. Hestia tak přísahala věčné panenství položením své ruky na Diovo čelo. Jako odměnu jí Zeus udělil ústřední místo v domě a nejbohatší část božských darů od lidí."
+      ],
+      facts: [
+        "Při Olympijských hrách sportovci v její svatyni zapalovali pochodně s jejím posvátným ohněm, který pak nosili do svých domovských měst, šířili tak ducha jednoty a sportu."
+      ]
     },
     {
       name: "Dionýsos",
       id: "dionysos",
       image: "/dionysos.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      symbols: ["Tyrsus", "Borovice", "Borová šiška"],
+      father: ["zeus"],
+      mother: ["Semelé"],
+      children: ["Déianeira", "Oinopión", "Fthonos", "Kómos", "Hymén", "Thoás", "Stafylos"],
+      home: ["Hora Olymp"],
+      partners: ["Ariadna"],
+      siblings: ["afrodita", "apollon", "athena", "artemis", "ares", "hefaistos", "hermes", "herakles", "muzy", "perseus", "gracie", "Aeakus", "Angelos", "Eileithýia", "Enýó", "Eris", "Ersa", "Hébé", "Helena Trójská", "Litai", "Mínós", "Moiry", "Pandia", "Persefona", "Rhadamanthys", "Hóry"],
+      info: [
+        "Dionýsos je bohem plodnosti a vína, později byl považován i za patrona umění. Stvořil víno a rozšířil vinařství. Jeho spojení s vínem ukazovala i jeho dvojí povaha: uměl přinášet božskou radost a extázi, ale na druhou stranu jeho hněv byl brutální, což odráželo dvě strany vína.",
+        "V raném řeckém umění byl zobrazován jako vousatý muž, ale později byl zobrazován jako maldý a zženštilý.",
+        "Není jedním z původních Olympanů, ale později v bájích nahradil Hestii, která se v nich kvůli své povinnosti k ohništi nemohla moc vyskytovat."
+      ],
+      bio: [
+        "Dionýsos byl synem Dia a Semelé. Je tak jediným bohem, jehož matkou je smrtlenice. Semelé byla ráda, že je milenkou boha, i když nevěděla, který bůh to je. Brzy se to rozkřiklo a Héra byla opět rozzuřená nevěrností svého manžela. Vydala se za Semelé a přesvědčila ji, aby požádala svého milence vidět takového, jaký je. Když ji znovu navštívil, přesvědčila ho, aby přísahal, že jí splní její jedno přání. Poté ho požádala, aby ukázal svou pravou podobu. Byl nešťastný, protože věděl, co se stane, ale i tak její přání splnil a po zjevení jeho pravé podoby Semelé okamžitě shořela na popel. Diovi se podařilo zachránit Dionýsa a zašít si ho do stehna do té doby, než byl připravený se narodit. Když se narodil z Dia, propůjčilo mu to jeho nesmrtelnost.",
+        "Héra, která stále zuřila, nechala titány Dionýsa roztrhat na kusy, ale Rhea ho pak přivedla zpátky k životu. Zeus ho pak pro jeho bezpečí poslal na výchovu k horským nymfám."
+      ],
+      facts: [
+        "Je jednou z mála postav, které se povedlo přivést mrtvého zpátky z podsvětí. Svou matku Semelé takto přivedl zpátky na Olymp."
+      ]
     },
     {
       name: "Chaos",
       id: "chaos",
       image: "/chaos.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      children: ["gaia", "tartarus", "nyx", "erebos", "Erós"],
+      info: [
+        "Chaos byl v řecké mytologii tím úplně prvním, co kdy bylo. Je to všechen prázdný prostor, který existoval při počátku času. Byl však něcím více než jenom prázdnotou, byl prvotním rysem vesmíru, hmoty, energie a všeho, co z něj dále vzešlo. Je personifikován jako žena."
+      ],
+      bio: [
+        "Podle Hesióda je Chaos něco mnohem hmatatelnějšího než jenom úplné bezedno. Také naznačuje, že Chaos je nějakým obydlím pro titány a je tedy nějakým místem mezi Zemí a Tartarem.",
+        "Mnozí ale tvrdí, že Chaos je na počátku všeho a stojí za vším stvořením. Právě z něj takto vyšli tři prvotní bohové, Gaia (země), Erós (láska) a Tartarus (podsvětí). Gaia se takto později stala matkou všeho krásného na Zemi.",
+      ],
     },
     {
       name: "Erebos",
