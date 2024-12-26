@@ -30,7 +30,7 @@ export const useCategoryStore = defineStore('categories', () => {
           { name: "Uranos", id: "uranos", image: "/uranos.jpg" },
           { name: "Nyx", id: "nyx", image: "/nyx.jpg" },
           { name: "Pontos", id: "pontos", image: "/pontos.jpg" },
-          { name: "Tartarus", id: "tartarus", image: "/tartarus.jpg" },
+          { name: "Tartaros", id: "tartaros", image: "/tartaros.jpg" },
           { name: "Múzy", id: "muzy", image: "/muzy.jpg" },
           { name: "Pan", id: "pan", image: "/pan.jpg" },
           { name: "Grácie", id: "gracie", image: "/gracie.jpg" },
