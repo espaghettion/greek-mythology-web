@@ -187,7 +187,7 @@ export const useCharacterStore = defineStore('characters', () => {
         "Bývá zobrazován jako atletický mladík, kterého jde poznat pomocí jeho helmy (petasos) a jeho okřídlených sandálů (talaria). Jeho okřídlená hůlka propletená dvěma hady mohla lidi uspávat nebo probouzet, často se plete s Aeskulapovou holí a proto se často nesprávně používá jako symbol medicíny."
       ],
       bio: [
-        "Hermés se narodil za úsvitu v jeskyni na hoře Kyllini a již v poledne se mu povedlo vynalézt lyru, na které zahrál oslavnou hymnu o svém narození. Pro vytvoření téti lyry zabil želvu, poté jí z krunýře vydlabal tělo a natáhl na něj sedm strun z ovčích střev, aby uctil Plejády.",
+        "Hermés se narodil za úsvitu v jeskyni na hoře Kyllini předčasně vyspělý a již v poledne se mu povedlo vynalézt lyru, na které zahrál oslavnou hymnu o svém narození. Pro vytvoření téti lyry zabil želvu, poté jí z krunýře vydlabal tělo a natáhl na něj sedm strun z ovčích střev, aby uctil Plejády.",
         "Když Apollón zjistil, kdo ukradl jeho dobytek, byl velice rozzuřený a nejspíš by to pro Hermése dopadlo špatně, kdyby ho neuklidnil krásnou písní doprovázenou jeho lyrou. Tuto lyru Apollónovi daroval a on mu za to odpustil a sliboval, že bude navždy jeho nejbližsím přítelem. Jako důkaz mu daroval kouzelný kaduceus, který se stal jedním z Hermésových symbolů.",
         "Přesto, že je spojovaný s plodností, se nikdy neoženil. Měl však docela dost partnerek, tou nejznámější byla bohyně lásky Afrodita."
       ],
@@ -410,7 +410,7 @@ export const useCharacterStore = defineStore('characters', () => {
       id: "nyx",
       image: "/nyx.jpg",
       mother: ["chaos"],
-      children: ["Aithér", "Hémerá", "Hypnos", "Geras", "moiry", "thanatos", "Eris", "charon"],
+      children: ["Aithér", "Apaté", "Hémerá", "Hypnos", "Geras", "moiry", "Nemesis", "thanatos", "Eris", "charon"],
       partners: ["erebos"],
       siblings: ["gaia", "erebos", "tartaros", "Erós"],
       info: [
@@ -461,121 +461,136 @@ export const useCharacterStore = defineStore('characters', () => {
       name: "Múzy",
       id: "muzy",
       image: "/muzy.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      symbols: ["Lyra", "Flétna", "Svitky", "Glóbus", "Komická a tragická maska", "Psací tabulka"],
+      father: ["zeus"],
+      mother: ["mnemosyne"],
+      children: ["sireny", "orfeus", "Korybanté", "Hyakinthos", "Linos", "Rhésos"],
+      home: ["Hora Olymp", "Hora Helikon"],
+      partners: ["apollon", "Pierus", "Oiagros"],
+      siblings: ["afrodita", "apollon", "artemis", "athena", "ares", "dionysos", "hefaistos", "herakles", "hermes", "perseus", "gracie", "Aeakus", "Angelos", "Eileithýia", "Enýó", "Eris", "Ersa", "Hébé", "Helena Trójská", "Litai", "Mínós", "moiry", "Pandia", "Persefona", "Rhadamanthys", "Hóry"],
+      info: [
+        "Múzy jsou bohyněmi básnické inspirace, zpěvu, tance a paměti. Na jejich milosti závisela všechna tvořivost, moudro a vhled umělců. Nejčastěji se považují za devět dcer Dia a Mnémosyné.",
+        "Každá Múza byla spojována s něčím specifickým:",
+        'Thálie („Veselá") byla Múzou komedie a často byla zobrazována s komickou maskou.',
+        'Úrania („Nebeská") byla Múzou astronomie a bývá zobrazována s glóbem v ruce.',
+        'Melpomené („Ta, která zpívá") byla Múzou tragédie a bývá zobrazována s tragickou škraboškou nebo jiným symbolem tragédie.',
+        'Polyhymnia („Ta, která zpívá mnoho hymen") byla Múzou hymnických zpěvů a bývá zobrazována se zadumaným pohledem pod závojem.',
+        'Erató („Krásná") byla Múzou lyrické poezie a bývá zobrazována s lyrou.',
+        'Kalliopé („Ta s krásným hlasem") byla Múzou epické poezie a bývá zobrazována s psací tabulkou.',
+        'Kleió („Oslavovatelka") byla Múzou historie a bývá zobrazována se svitkem v ruce.',
+        'Euterpé („Ta, která těší") byla Múzou hry na flétnu a proto je zobrazována s aulem (dvojitou flétnou).',
+        'Terpsichoré („Ta, která se těší z tance") byla Múzou sborové lyriky a tance, proto je zobrazována tančící a někdy drží lyru.'
+      ],
+      bio: [
+        "Podle Hesióda jsou Múzy dcerami Dia a Mnémosyné, bohyně paměti. Podle Theognida by jejich otec Zeus, ale jejich matka byla Harmonia. Alkmán si zase myslel, že jsou ve skutečnosti dcerami Úrana a Gaii. Někteří básníci se tyto příběhy později pokusili i spojit a navrhli dvě různé generace Múz.",
+        "Mělo se za to, že Múzy se narodili v Pierii na úpatí hory Olymp a tak se jim říkalo buď Múzy olympské nebo Múzy pierijské. Hora Helikon však byla místem, které jim leželo na srdci, jelikož se tu s nimi setkal Hesiódos a byl jimi inspirován k napsání své Theogonie."
+      ]
     },
     {
       name: "Pan",
       id: "pan",
       image: "/pan.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      symbols: ["Koza", "Panova flétna"],
+      father: ["hermes"],
+      mother: ["Dryopé"],
+      children: ["Silénos", "Iynx", "Iambé", "Krotos"],
+      home: ["Arkádie"],
+      partners: ["Syrinx", "Echó", "Seléné", "Pitys"],
+      siblings: ["Abdéros", "Autolykos", "Angelia", "Eurodos", "Hermafrodítos", "Týché", "Myrtilos"],
+      info: [
+        "Pan byl zčásti člověk a zčásti kozel. Byl bohem divokých hájů, pastýřů a stád.",
+        "Jeho hlavním místem uctívání byla Arkádie, kde se narodil a také strávil většinu svých dnů putováním po lesích, pronásledováním nymf, hraním strašidelných melodií na svojí píšťale a podřimováním."
+      ],
+      bio: [
+        "Stejně jako jeho otec Hermés se Pan narodil předčasně vyspělý. Měl kozí nohy a dva rohy, byl hlučné a veselé dítě. Jeho chůva tento názor nesdílela, utekla od něj, jakmile spatřila jeho tvář s vousy a rohy.",
+        'Protože bohové většinou vidí věci jinak než smrtelníci, Hermés se rozhodl Pana zabalit do kůží horských zajíců a přinést ho na Olymp. Když ho ostatní viděli, zaradovali se. Z této situace by také mohlo vycházet jeho jméno, které znamená „všichni".',
+        "Nymfa Syrinx byla stoupenkyní Artemidy a tak si nejvíc ve svém životě vážila své cudnosti. Jakmile ji Pan zahlédl, jeho cílem se stal přesný opak. Pronásledoval ji celým arkádským lesem. Když už nemohla dál, začala se modlit k říčním nymfám, aby ji zachránily. Nymfy vyslyšely její modlitby a proměnily ji v bažinné rákosí v moment, kdy ji Pan chtěl popadnout.",
+        "Když si Pan uvědomil, že objímá rákosí, povzdechl si. Tento vzdech otřásl rostlinami, které začaly vydávat nádhernou melodii. V tu chvíli se rozhodl rákosí nařezat a vytvořit z něj hudební nástroj, svou flétnu, kterou na památku nymfy pojmenoval Syrinx."
+      ],
+      facts: [
+        "Většinu času byl Pan velice příjemný, ale dokázal se opravdu rozčílit a vydat tak strašný výkřik, že každému, kdo ho uslyší, nažene hrůzu a úzkost. Dodnes tento pocit nese jméno vyvinuté z jeho boha: panika."
+      ]
     },
     {
       name: "Grácie",
       id: "gracie",
       image: "/gracie.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      father: ["zeus"],
+      mother: ["Eurynomé"],
+      siblings: ["afrodita", "athena", "apollon", "artemis", "ares", "dionysos", "hefaistos", "hermes", "herakles", "muzy", "perseus", "Aeakus", "Angelos", "Eileithýia", "Enýó", "Eris", "Ersa", "Hébé", "Helena Trójská", "Litai", "Mínós", "moiry", "Pandia", "Persefona", "Rhadamanthys", "Hóry"],
+      info: [
+        "Grácie byly menšími bohyněmi. Byly buď tři nebo jich mohlo být více, záleželo na specifické části Řecka. Jejich jména se podle místa mohla také lišit, ale nejvíce známými jsou Aglaia (nádhera), Eufrosyné (veselí) a Thálie (dobrá nálada).",
+        "Všechny byly patronkami různých radostí v životě, jako je zábava, odpočinek, hra a štěstí. Často byly zobrazovány jako tři nahé ženy tančící v kruhu."
+      ],
+      bio: [
+        "Jsou nejčastěji považovány za dcery Dia a Eurynomé, ale občas mohou také být viděny jako dcery Afrodity a Dionýsa nebo dcery Aiglé a Hélia."
+      ]
     },
     {
       name: "Moiry",
       id: "moiry",
       image: "/moiry.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      symbols: ["Nit", "Hůl", "Svitek", "Nůžky", "Vřeteno", "Kniha osudu"],
+      father: ["zeus"],
+      mother: ["themis"],
+      siblings: ["afrodita", "athena", "apollon", "artemis", "ares", "dionysos", "hefaistos", "hermes", "herakles", "gracie", "muzy", "perseus", "Aeakus", "Angelos", "Eileithýia", "Enýó", "Eris", "Ersa", "Hébé", "Helena Trójská", "Litai", "Mínós", "Pandia", "Persefona", "Rhadamanthys", "Hóry"],
+      info: [
+        "Moiry, také nazývané Sudičkami, jsou tři tkalcovské bohyně, které předou každému smrtelníkovi při jeho narození osud. Jejich jména jsou Klóthó (Předoucí), Lachesis (Udělující) a Atropos (Neodvratná).",
+        "Každá z nich byla zobrazována jako přadlena a měla jiný úkol, jak už prozrazují jejich jména. Klóthó spřádala nit života, Lachesis určovala její délku a Atropos ji stříhala nůžkami."
+      ],
+      bio: [
+        "V dřívějších bájích jsou považovány za dcery Nyx, která je zplodila bez otce. V pozdějších jsou však považovány za dcery Dia a Themis. Mohou také být považovány za dcery Ananké.",
+        "Nedá se říct, jestli do jejich záležtostí měl Zeus co mluvit, protože ani on nedokázal jejich rozhodnutí zrušit. Během Trójské války věděl, že jeho syn Sarpédón zemře, ale i tak s tím nemohl nic udělat, byl to jeho nehybný osud.",
+        "Jen jednou byl někdo schopen tento nehybný osud oklamat a byl to Apollón. Když se dozvěděl, že jeho oblíbenec Admétos má zemřít, opil Moiry a přesvědčil je, aby jeho život uštřily, pokud pro ně najde vhodnou náhradu. Tu nenašel, ale Admétova manželka Alkéstis před ně dobrovolně vystoupila a obětovala se za svého manžela."
+      ]
     },
     {
       name: "Adónis",
       id: "adonis",
       image: "/adonis.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      father: ["Theias"],
+      mother: ["Myrrha"],
+      partners: ["afrodita", "Persefona"],
+      info: [
+        "Adónis byl bohem krásy a touhy. Původně byl uctíván ve Fénicii a později ho přejali Řekové."
+      ],
+      bio: [
+        "Podle báje Afrodita proklela jeho matku Myrrhu, aby se zamilovala do svého otce, syrského krále Theia. Přiměla ho s ní souložit devět nocí v naprosté tmě, během kterých byl počat Adónis. Když zjistil, že to byla jeho dcera, pokusil se ji najít a zabít. Prosila bohy, aby jí změnili podobu a tak jí proměnili v myrhovník. V této podobě také porodila Adónise, do kterého se pak Afrodita zamilovala.",
+        "Afrodita pověřila Persefonu, aby ho vychovala. Vyrostl v krásného mladého muže a Persefona se tak do něj také zamilovala. Nechtěla ho vrátit Afroditě a tak vznikl spor, který nakonec vyřešil Zeus. Adónis měl každý rok strávit jednu třetinu s oběma bohyněmi a zbylou třetinu s tou, kterou bude chtít. Vybral si Afroditu a stal se z nich šťastný pár, který zplodil dva potomky: Golgos a Beroé.",
+        "Adónis byl skvělý lovec a Artemis na něj žárlila. Poslala na něj divokého kance, který ho při jedné z jeho loveckých výprav zabil. V jiné verzi tohoto kance poslal Árés, protože byl milencem Afrodity."
+      ]
     },
     {
       name: "Charón",
       id: "charon",
       image: "/charon.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
-    },
-    {
-      name: "Seléné",
-      id: "selene",
-      image: "/selene.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      father: ["erebos"],
+      mother: ["nyx"],
+      home: ["Podsvětí"],
+      siblings: ["Aithér", "Apaté", "Hémerá", "Hypnos", "Geras", "moiry", "Nemesis", "Eris", "thanatos"],
+      info: [
+        "Charón je pochmurný a tajemný převzoník, jehož úkolem je převážet duše mrtvých přes řeky Styx a Acherón do podsvětí. Jako potomek Nyx a Ereba hraje klíčovou roli při přechodu ze světa živých do říše mrtvých a ztělesňuje tuto nevyhnutelnou cestu, kterou musí podstoupit každá duše.",
+        "Často je zobrazován jako starý mlčenlivý lodník s plnovousem v rozderaném plášti. Občas je zobrazován jako okřídlený démon s planoucíma očima.",
+        "Bylo zvykem zesnulému vložit do úst nebo na oči minci, která byla myšlená jako platba za Cháronovy služby. Ti, kteří si to nemohli dovolit, navždy bloudili po březích řeky a nemohli najít klid.",
+        "Charón se objevuje v mnoha mýtech s hrdiny, kteří se vydávají do podsvětí ještě živí. V příběhu o Orfeovi a Eurydicé ho Orfeus pomocí své lyry okouzlí a přesvědčí, aby ho nechal vstoupit do podsvětí, kde se pak pokusí zachránit svou ženu. Héraklés ho zase donutí, aby ho převezl přes řeku Styx, protože potřebuje chytit Kerbera, tříhlavého psa, který střeží bránu do podsvětí."
+      ],
     },
     {
       name: "Thanatos",
       id: "thanatos",
       image: "/thanatos.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      father: ["erebos"],
+      mother: ["nyx"],
+      home: ["Podsvětí"],
+      siblings: ["Aithér", "Apaté", "Hémerá", "Hypnos", "Geras", "moiry", "Nemesis", "Eris", "charon"],
+      info: [
+        "Thanatos je v řecké mytologii ztělesněním smrti, jednoho z nejzákladnějších prvků vesmíru, stejně jako jeho sourozenci.",
+        "V žádných příbězích nehraje moc velkou roli, většinou byl vytlačen Hádem, bohem podsvětí."
+      ],
+      bio: [
+        "Byl synem Nyx, ztělesněním noci a Ereba, ztělesněním stínů a temnoty. Hypnos, ztělesnění spánku, byl jeho dvojče.",
+        "Věřilo se, že Thanatos byl nemilosrdný a tak ho smrtelníci i bohové nenáviděli. Bylo možné ho však přelstit. V jedné báji Zeus řekl Thanatovi, aby spoutal krále Sisyfa v podsvětí, protože jeho čas nastal. Sisyfovi se podrařilo Thanata spoutat a tím ochránil všechny před smrtí, dokud byl bůh smrti spoutaný. Árés ale nebyl spokojený, když v jeho válkách nikdo neumíral a tak Thanata osvobodil a Sisyfa mu vydal."
+      ],
     },
     {
       name: "Kronos",
