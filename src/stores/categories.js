@@ -7,7 +7,7 @@ export const useCategoryStore = defineStore('categories', () => {
     {
         name: "Bohové",
         id: "gods",
-        image: "",
+        image: "/placeholder.png",
         description: "Řecká mytologie je plná bohů. Rozdělují se na mnoho skupin, nejznámějšímí jsou Olympané, kteří všem vládnou s Diem v čele. Existuje však mnoho dalších bohů, co existovali před nebo při vládě Olympanů.",
         characters: [
           { name: "Zeus", id: "zeus", image: "/zeus.png" },

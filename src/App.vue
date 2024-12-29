@@ -124,6 +124,10 @@ header {
         width: 35%;
         position: relative;
 
+        @include mixins.responsive(smartphone-portrait){
+          width: 60%;
+        }
+
         .results{
           position: absolute;
           padding: 5px;

@@ -26,7 +26,7 @@ function nextCard(){
     <section class="category-link">
       <button class="previous-btn" @click="previousCard()"><i class="fa-solid fa-chevron-left"></i></button>
       <RouterLink :to="{name: 'category', params: {id: categoryStore.categories[selectedCard].id}}" :style="{ backgroundImage: `url(${categoryStore.categories[selectedCard].image})` }">
-        <p>{{ categoryStore.categories[selectedCard].name }}</p>
+        {{ categoryStore.categories[selectedCard].name }}
       </RouterLink>
       <button class="next-btn" @click="nextCard()"><i class="fa-solid fa-chevron-right"></i></button>
     </section>
@@ -41,6 +41,22 @@ function nextCard(){
   width: 50%;
   text-align: center;
   gap: 5px;
+
+  @include mixins.responsive(smartphone-portrait){
+    width: 90%;
+  }
+
+  @include mixins.responsive(smartphone-landscape){
+    width: 75%;
+  }
+
+  @include mixins.responsive(smartphone-tablet){
+    width: 65%;
+  }
+
+  @include mixins.responsive(laptop){
+    width: 60%;
+  }
 }
 
 .category-link{
@@ -78,12 +94,19 @@ function nextCard(){
     height: 100%;
     text-decoration: none;
     color: white;
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: 600;
     background-size: cover;
     background-position: center;
-    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    -webkit-mask-image: (to top, (rgba(0,0,0,1)) 50%, (rgba(0,0,0,1)) 100%);
     mask-image: linear-gradient(to top, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+    text-align: center;
+  }
+}
+
+h1{
+  @include mixins.responsive(smartphone-portrait){
+    font-size: 2em;
   }
 }
 </style>
