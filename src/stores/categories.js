@@ -44,7 +44,7 @@ export const useCategoryStore = defineStore('categories', () => {
     {
         name: "Titáni",
         id: "titans",
-        image: "https://cdn.pixabay.com/photo/2024/04/02/08/47/titan-8670350_960_720.jpg",
+        image: "/placeholder.png",
         description: "Mezi titány řadíme staré bohy, kteří jsou potomci Urana a Gaii a vládli před nástupem olympských bohů. V čele stál Kronos, který svrhnul Urana, než ho také svrhnul jeho vlastní syn Zeus. Nastala velká válka mezi Titány a Olympany, kterou byla vláda Titánů nadobro ukončena.",
         characters: [
           { name: "Kronos", id: "kronos", image: "/kronos.jpg" },
@@ -69,7 +69,7 @@ export const useCategoryStore = defineStore('categories', () => {
     {
         name: "Hrdinové",
         id: "heroes",
-        image: "https://cdn.pixabay.com/photo/2024/04/02/08/47/hero-8670351_960_720.jpg",
+        image: "/placeholder.png",
         description: "Hrdinové byli v řecké mytologii lidé, kteří za svůj život vykonali nějaké speciální nadlidské činy a byli spojeni se sílou a odvahou. Často byli také potomky některých bohů.",
         characters: [
           { name: "Perseus", id: "perseus", image: "/perseus.jpg" },
@@ -84,7 +84,7 @@ export const useCategoryStore = defineStore('categories', () => {
     {
         name: "Nadlidské stvoření",
         id: "creatures",
-        image: "https://cdn.pixabay.com/photo/2024/04/02/08/47/creature-8670352_960_720.jpg",
+        image: "/placeholder.png",
         description: "Nadlidské stvoření v řecké mytologii se nepočítala jako bohové, ale také se nedala zařadit mezi lidi, jelikož měla nadlidské rysy a schopnosti.",
         characters: [
           { name: "Kentauři", id: "kentauri", image: "/kentauri.jpg" },
