@@ -10,6 +10,8 @@ const categoryStore = useCategoryStore();
 const characterStore = useCharacterStore();
 const results = ref([]);
 const query = ref('');
+const lowerCaseQuery = ref('');
+const filteredCharacters = ref([]);
 
 const miniSearch = new MiniSearch({
   fields: ['name', 'id', 'symbols', 'home', 'partners'],
@@ -18,7 +20,37 @@ const miniSearch = new MiniSearch({
 miniSearch.addAll(characterStore.characters);
 
 function searchBar() {
-  results.value = miniSearch.search(query.value, {fuzzy: 2});
+  filteredCharacters.value = [];
+  results.value = [];
+  lowerCaseQuery.value = query.value.toLowerCase();
+
+  for(let i = 0; i < characterStore.characters.filter(value => value.name.toLowerCase().startsWith(lowerCaseQuery.value)).length; i ++){
+    filteredCharacters.value.push(characterStore.characters.filter(value => value.name.toLowerCase().startsWith(lowerCaseQuery.value))[i]);
+  }
+  for(let i = 0; i < characterStore.characters.filter(value => value.id.toLowerCase().startsWith(lowerCaseQuery.value)).length; i ++){
+    filteredCharacters.value.push(characterStore.characters.filter(value => value.id.toLowerCase().startsWith(lowerCaseQuery.value))[i]);
+  }
+  for(let i = 0; i < miniSearch.search(query.value, {fuzzy: 2}).length; i ++){
+    filteredCharacters.value.push(miniSearch.search(query.value, {fuzzy: 2})[i]);
+  }
+
+  filteredCharacters.value = filteredCharacters.value.filter((item, index, self) => 
+    index === self.findIndex(t => t.id === item.id)
+  );
+  console.log(filteredCharacters.value);
+  for(let i = 0; i < filteredCharacters.value.length; i++){
+    results.value.push(filteredCharacters.value[i]);
+  }
+
+
+
+
+
+  //if(characterStore.characters){
+    //results.value.push(characterStore.characters.filter(value => value.name.toLowerCase().startsWith(lowerCaseQuery.value)));
+    //console.log(results.value);
+  //}
+  //results.value.push(miniSearch.search(query.value, {fuzzy: 2}));
 }
 </script>
 
@@ -172,12 +204,17 @@ header {
 input{
   @include mixins.search-bar;
   width: 100%;
-  height: 35px;
+  height: 25px;
   font-size: 1.15em;
+  padding: 5px;
 
   &:focus{
     outline: none;
   }
+}
+
+::placeholder{
+  color: rgb(180, 180, 180);
 }
 
 .menu{

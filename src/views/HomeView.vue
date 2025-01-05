@@ -105,6 +105,8 @@ function nextCard(){
 }
 
 h1{
+  margin-top: 20px;
+
   @include mixins.responsive(smartphone-portrait){
     font-size: 2em;
   }

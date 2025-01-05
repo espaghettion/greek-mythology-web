@@ -70,6 +70,7 @@ watch(() => route.params, () => {
 
   .relations{
     @include mixins.flex-column;
+    width: 17%;
     padding: 30px;
     background-color: #FDF6E8;
     border-radius: 5px;

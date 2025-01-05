@@ -7,24 +7,24 @@ const characterStore = useCharacterStore();
         visible: Boolean,
         title: String,
         close: Function,
-        dialogCategory: String,
         dialogContent: Array,
     });
 </script>
 
 <template>
-    <section v-if="visible" class="dialog-overlay">
-        <section class="info-card" v-if="dialogContent && dialogCategory">
-            <h3>{{ dialogCategory }}</h3>
+    <section v-if="visible" class="dialog-overlay" @click="close">
+      <section class="info-card" v-if="dialogContent && title">
+            <h3>{{ title }}</h3>
             <section class="relations-wrapper">
               <section class="relation" v-for="(relation, i) in dialogContent" :key="i">
                 <RouterLink v-if="characterStore.characters.find(c => c.id == relation)" class="relation-content" :to="{name: 'character', params: {id : relation}}">{{ characterStore.characters.find(c => c.id == relation).name }}</RouterLink>
                 <p v-else class="relation-content">{{ relation }}</p>
-              </section>
             </section>
         </section>
-        <button @click="close">Zavřít</button>
+      </section>
+      <button @click="close">Zavřít</button>
     </section>
+
 </template>
   
 <style scoped lang="scss">
@@ -40,6 +40,7 @@ const characterStore = useCharacterStore();
       height: 100%;
       background: rgba(0, 0, 0, 0.5);
       z-index: 2;
+    }
 
       .info-card{
         display: flex;
@@ -76,7 +77,6 @@ const characterStore = useCharacterStore();
           }
         }
       }
-    }
 
     .relation-content{
         text-decoration: none;

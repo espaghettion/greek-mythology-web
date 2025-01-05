@@ -29,7 +29,6 @@ defineProps({
         :visible="showDialog"
         :title="relationCategory"
         :close="closeDialog"
-        :dialog-category="relationCategory"
         :dialog-content="relationContent"/>
       </section>
     </section>
@@ -61,10 +60,11 @@ defineProps({
     button{
         font-family: 'Bitter', sans-serif;
         border: none;
-        background: linear-gradient(0deg, rgba(14,26,143,1) 0%, rgba(8,12,49,1) 100%);
+        background: #121a61;
         border-radius: 5px;
         color: white;
-        font-size: 1.1em;
+        font-size: 0.8em;
+        padding: 5px;
 
         &:hover{
           cursor: pointer;
