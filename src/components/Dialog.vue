@@ -12,7 +12,7 @@ const characterStore = useCharacterStore();
 </script>
 
 <template>
-    <section v-if="visible" class="dialog-overlay" @click="close">
+    <section v-if="visible" class="dialog-overlay">
       <section class="info-card" v-if="dialogContent && title">
             <h3>{{ title }}</h3>
             <section class="relations-wrapper">
@@ -22,6 +22,7 @@ const characterStore = useCharacterStore();
             </section>
         </section>
       </section>
+      <section class="dialog-background" @click="close"></section>
       <button @click="close">Zavřít</button>
     </section>
 
@@ -38,8 +39,15 @@ const characterStore = useCharacterStore();
       min-height: 100vh;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.5);
       z-index: 2;
+
+      .dialog-background{
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        z-index: 3;
+      }
     }
 
       .info-card{
@@ -48,6 +56,7 @@ const characterStore = useCharacterStore();
         width: 30%;
         height: 50%;
         font-size: 1.2em;
+        z-index: 4;
 
         @include mixins.responsive(smartphone-portrait){
           width: 70%;
@@ -92,6 +101,7 @@ const characterStore = useCharacterStore();
         border-radius: 5px;
         color: white;
         font-size: 1.1em;
+        z-index: 4;
 
         &:hover{
           cursor: pointer;

@@ -20,7 +20,7 @@ export const useCharacterStore = defineStore('characters', () => {
         "Často byl spojován s moudrostí, vědomím, autoritou, osudem, bitvami a mocí."
       ],
       bio: [
-        "Je paradoxně nejstarším i nejmladším synem titánů Krona a Rhei. Kronos, který svrhnul svého otce Urana, se dozvěděl, že jeden z jeho potomků ho také svrhne a tak je začal hned po narození polykat. Takto bylo spolknuto jeho pět sourozenců. Zeus by byl také spolykán, ale Rhea místo toho dala Kronovi zabalený kámen a Dia schovala v jeskyni na krétské hoře Ida.",
+        "Je paradoxně nejstarším i nejmladším synem Titánů Krona a Rhei. Kronos, který svrhnul svého otce Urana, se dozvěděl, že jeden z jeho potomků ho také svrhne a tak je začal hned po narození polykat. Takto bylo spolknuto jeho pět sourozenců. Zeus by byl také spolykán, ale Rhea místo toho dala Kronovi zabalený kámen a Dia schovala v jeskyni na krétské hoře Ida.",
         "V této jeskyni byl vychován nymfami a poznal svou první manželku, Métis - bohyni rozumu. Díky jejím radám se přestrojil jako olympijský nosič pohárů a přiměl Krona, aby vypil otrávené víno. Z tohoto vína zvracel natolik, že vyzvracel Diovy sourozence, kteří byli připraveni na pomstu.",
         "Tímto začala válka mezi Titány a Olympskými bohy, která skončila nevyhnutelným svržením Krona.", 
         "Po svržení svého otce byl čas rozdělit svět mezi jeho tři syny. Udělali to formou losování, Poseidón dostal moře, Hádés podsvětí a Zeus nebe. Poté byl korunován jako vládce všech bohů."
@@ -34,7 +34,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Poseidón",
       id: "poseidon",
-      image: "/poseidon.jpg",
+      image: "/poseidon.png",
       symbols: ["Trojzubec", "Ryba", "Delfín", "Kůň", "Býk"],
       father: ["kronos"],
       mother: ["rhea"],
@@ -47,7 +47,7 @@ export const useCharacterStore = defineStore('characters', () => {
         "Jeho nejznámějším symbolem je jeho trojzubec, s kterým je často zobrazován, ačkoli jeho syn Tritón ho má také."
       ],
       bio: [
-        "Je jedním z šesti dětí titánů Krona a Rhei a stejně jako všechny ostatní kromě Dia byl po narození spolykán svým otcem. Poté, co Zeus zachránil své sourozence, se k němu přidal ve válce proti Titánům.",
+        "Je jedním z šesti dětí Titánů Krona a Rhei a stejně jako všechny ostatní kromě Dia byl po narození spolykán svým otcem. Poté, co Zeus zachránil své sourozence, se k němu přidal ve válce proti Titánům.",
         "Po válce s Titány si Poseidón, Zeus a Hádés losovali části světa, kterým budou vládnout. Poseidón si vylosoval moře a stal se tak jeho bohem.",
         "Poseidónova vznětlivost tvořila časté spory mezi ním a ostatními bohy i lidmi. Příkladem je jeho spor s Diem, když nevydržel jeho arogantní chování a tak se spojil s Hérou a Athénou, ale Zeus tento spor vyhrál.", 
         "Jeho spor s Athénou začal, když od ní chtěl získat Athény a řekl, že by pro ně byl mnohem víc užitečný. Svým trojzubcem uděřil do skály a vytovřil tak proud mořské vody, který vytryskl v chrámu Erechtheion. Athéna zasadila olivovník a první král Athén se rozhodl, že bude více užitečný, jelikož z něj získají olivy, olej a dřevo, Athéna tak tento spor vyhrála."
@@ -72,7 +72,7 @@ export const useCharacterStore = defineStore('characters', () => {
         "Héra je jednou z dvanácti Olympanů a manželkou Dia, je tedy také královnou Olympu. Je bohyní manželství a je spojována s rodinou a blahobytem žen a dětí. Toto je poněkud ironické, jelikož její manželství s Diem bylo nešťastné a mnohokrát ji podvedl."
       ],
       bio: [
-        "Je jednou z šesti dětí titánů Krona a Rhei a stejně jako všechny ostatní kromě Dia byla po narození spolykána svým otcem. Poté, co Zeus zachránil své sourozence, se k němu přidala ve válce proti Titánům.",
+        "Je jednou z šesti dětí Titánů Krona a Rhei a stejně jako všechny ostatní kromě Dia byla po narození spolykána svým otcem. Poté, co Zeus zachránil své sourozence, se k němu přidala ve válce proti Titánům.",
         "Hera byla Diem obelstěna, aby si ho vzala. Věděl, že miluje zvířata a tak se přeměnil na kukačku, která potřebovala pomoc. Přeměnil se zpátky poté, co si ho Héra vzala k prsu, aby ho zahřála. Héra se styděla za to, že bylo takto zneužita a tak odsouhlasila sňatek.",
         "Toto manželství však bylo nešťastné a Zeus ji mnohokrát podvedl. Dokonce ji podváděl s lidmi a nymfami, což ji rozčílilo mnohem víc, protože oproti ní to byly podřadné bytosti. Byla velice pomstychtivá a když její pomsta proti Diovi dopadla špatně, rozhodla se, že svůj hněv bude mířit spíše na jeho partnerky a děti."
       ],
@@ -81,7 +81,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Árés",
       id: "ares",
-      image: "/ares.jpg",
+      image: "/ares.png",
       symbols: ["Meč", "Oštěp", "Štít", "Helma", "Válečný vůz"],
       father: ["zeus"],
       mother: ["hera"],
@@ -106,7 +106,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Athéna",
       id: "athena",
-      image: "/athena.jpg",
+      image: "/athena.png",
       symbols: ["Sovy", "Olivovník", "Hadi", "Egida", "Brnění", "Helma", "Oštěp", "Hlava gorgony"],
       father: ["zeus"],
       mother: ["Métis"],
@@ -119,7 +119,7 @@ export const useCharacterStore = defineStore('characters', () => {
       ],
       bio: [
         "Když Zeus zjistil, že jeho dítě s Métis by ho mohlo svrhnout, zachoval se jako svůj otec a rozhodl se svou těhotnou manželku spolknout. Když nastal čas porodu, cítil hrozné bolesti hlavy, které nedokázal vydžet a tak ho Hefaistós udeřil svou sekerou a v tu chvíli Athéna vyskočila z jeho čela plně ozbrojená s mohutným výkřikem. V tu chvíli byl Zeus na svou dceru velice pyšný.",
-        "V mládí měla přítele jménem Pallas, kterého si vážila ze všeho nejvíce. Jednoho dne, když trénovali bojová cvičení ho omylem zabila. Chtěla zachovat jeho památku a tak si přidala jeho jméno ke svému a mezi mnoha lidmi je známá jako Pallas Athéna.",
+        "V mládí měla přítele jménem Pallás, kterého si vážila ze všeho nejvíce. Jednoho dne, když trénovali bojová cvičení ho omylem zabila. Chtěla zachovat jeho památku a tak si přidala jeho jméno ke svému a mezi mnoha lidmi je známá jako Pallás Athéna.",
         "S Poseidónem měla velice veřejný spor, protože Poseidón chtěl, aby mu předala Athény a řekl, že by pro ně byl mnohem užitečnější. Svým trojzubcem uděřil do skály a vytovřil tak proud mořské vody, který vytryskl v chrámu Erechtheion. Athéna zasadila olivovník a první král Athén se rozhodl, že bude více užitečný, jelikož z něj získají olivy, olej a dřevo, Athéna tak tento spor vyhrála."
       ],
       facts: [
@@ -130,7 +130,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Apollón",
       id: "apollon",
-      image: "/apollon.jpg",
+      image: "/apollon.png",
       symbols: ["Lyra", "Luk a šípy", "Vavřínový věnec", "Krajta", "Havran"],
       father: ["zeus"],
       mother: ["leto"],
@@ -152,7 +152,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Afrodita",
       id: "afrodita",
-      image: "/afrodita.jpg",
+      image: "/afrodita.png",
       symbols: ["Hřebenatka", "Delfín", "Růže", "Myrta", "Hrdlička", "Vrabec", "Zrcadlo", "Opasek", "Labuť"],
       father: ["uranos"],
       children: ["Aineiás", "Anterós", "Deimós", "Erós", "Fobos", "Harmonia", "Pothos", "Himerós", "Hermafrodítos", "Rhodos", "Eryx", "Peithó", "Priapos"],
@@ -163,7 +163,7 @@ export const useCharacterStore = defineStore('characters', () => {
         "Afrodita je jednou z Olympanů. Je bohyní lásky, krásy a sexuálního uspokojení. Je zobrazována jako nádherná, nenasytná a zároveň nedosažitelná. Sice byla vdaná za Hefaista, ale měla vztahy se skoro všemi Olympany a mnoha lidmi."
       ],
       bio: [
-        "Narození Afrodity má dvě verze. V jedné verzi byla Afrodita dcerou a Dia a titánky Dióny. V té druhé mnohem známější verzi jejímu narození předchází kastrace Urana jeho synem Kronem. Uranovy varlata tak padají do moře a Afrodita je zrozena z hřebenatky nahá, více nádherná než cokoliv, co kdy kdo viděl.",
+        "Narození Afrodity má dvě verze. V jedné verzi byla Afrodita dcerou a Dia a Titánky Dióny. V té druhé mnohem známější verzi jejímu narození předchází kastrace Urana jeho synem Kronem. Uranovy varlata tak padají do moře a Afrodita je zrozena z hřebenatky nahá, více nádherná než cokoliv, co kdy kdo viděl.",
         "Afrodita byla tak nádherná, že jenom tři panenské bohyně jí dokázaly odolat. Toto byl na Olympu problém, protože ji ihned všichni chtěli pro sebe a tak ji Zeus provdal za Hefaista, jednoho z nejošklivějších Olympanů. Toto však problém nevyřešilo, protože Afrodita neměla v plánu být věrná.",
         "Jejím nejznámějším milencem byl bůh války Árés. Hélios je však zahlédl a informoval o tom Hefaista. Ten na ně vyzrál tak, že vytvořil bronzovou síť, kterou dal na postel, ve které spolu měli ležet. Když se nechali chytit, vtrhnul do pokoje s dalšími olympskými bohy a oběma se jim smáli několik dní. Přesto spolu však měli mnoho dětí."
       ],
@@ -174,7 +174,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Hermés",
       id: "hermes",
-      image: "/hermes.jpg",
+      image: "/hermes.png",
       symbols: ["Petasos", "Talaria", "Kaduceus", "Lyra", "Brašna"],
       father: ["zeus"],
       mother: ["Maia"],
@@ -198,7 +198,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Artemis",
       id: "artemis",
-      image: "/artemis.jpg",
+      image: "/artemis.png",
       symbols: ["Luk a šípy", "Měsíc", "Jelen", "Lovecký pes"],
       father: ["zeus"],
       mother: ["leto"],
@@ -221,7 +221,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Hefaistós",
       id: "hefaistos",
-      image: "/hefaistos.jpg",
+      image: "/hefaistos.png",
       symbols: ["Kladivo", "Kovadlina", "Kleště"],
       father: ["zeus"],
       mother: ["hera"],
@@ -246,7 +246,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Démétér",
       id: "demeter",
-      image: "/demeter.jpg",
+      image: "/demeter.png",
       symbols: ["Žezlo", "Roh hojnosti", "Chléb", "Pšenice", "Kukuřice", "Pochodeň"],
       father: ["kronos"],
       mother: ["rhea"],
@@ -259,7 +259,7 @@ export const useCharacterStore = defineStore('characters', () => {
         "Bývá zobrazována jako plně oděná žena, která buď královsky sedí nebo hrdě stojí s napřaženou rukou. Někdy bývá zobrazována se svou dcerou Persefonou, která je jí vždy nablízku. Jsou si velice podobné, dokonce mají i stejné symboly."
       ],
       bio: [
-        "Je jednou z šesti dětí titánů Krona a Rhei a stejně jako všechny ostatní kromě Dia byla po narození spolykána svým otcem. Poté, co Zeus zachránil své sourozence, se k němu přidala ve válce proti Titánům.",
+        "Je jednou z šesti dětí Titánů Krona a Rhei a stejně jako všechny ostatní kromě Dia byla po narození spolykána svým otcem. Poté, co Zeus zachránil své sourozence, se k němu přidala ve válce proti Titánům.",
         "Ve svých raných letech se Démétér zamilovala do Íasióna a na svatbě Kadma a Harmonie ho svedla. Diovi nepřišlo vhodné, aby měla vztah s pouhým smrtelníkem a tak ho zasáhl bleskem. Démétér už byla v té době těhotná s dvojčaty: Ploutonem, bohem bohatství a Filomelem, patronem orání.",
         "Nejdůležitějším dítětem Démétér je však Persefona a její unesení Hádem. Hádés se do Persefony zamiloval a když jednoho dne sbírala s přítelkyněmi květiny, nalákal jí nádherným krásně vonícím narcisem a poté ji unesl svým vozem. Po deseti dnech se toto Démétér dozvěděla a šla truchlit mezi smrtleníky přestrojená za stařenu. Během této doby však začala zanedbávat své povinnosti jako bohyně plodnosti a zemědělství. Země začala chátrat a Zeus si uvědomil, že to takhle nemůže pokračovat a Persefona musí být navrácena.",
         "Do podsvětí byl poslán Hermés, aby Persefonu navrátil matce, ale zjisil, že Persefona už snědla semínko granátového jablka, což ji zavázalo k podsvětí. Zeus věděl, že by mu to Démétér neodpustila a tak nastal kompromis: Persefona by každý rok strávila jednu třetinu s Hádem a zbylé dvě s Démétér."
@@ -271,7 +271,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Hádés",
       id: "hades",
-      image: "/hades.jpg",
+      image: "/hades.png",
       symbols: ["Kerberos", "Roh hojnosti", "Cypřiš", "Žezlo", "Klíče"],
       father: ["kronos"],
       mother: ["rhea"],
@@ -284,7 +284,7 @@ export const useCharacterStore = defineStore('characters', () => {
         "Bývá zobrazován jen zřídka, jelikož je to strašidelná postava, která všem naháněla hrůzu. Většinou bývá vyobrazen s plnovousem, truchlivým pohledem a svou přilbou. Obvykle vedle něj stojí Kerberos, jeho tříhlavý pes, který střeží bránu do podsvětí."
       ],
       bio: [
-        "Je jedním z šesti dětí titánů Krona a Rhei a stejně jako všechny ostatní kromě Dia byl po narození spolykán svým otcem. Poté, co Zeus zachránil své sourozence, se k němu přidal ve válce proti Titánům.",
+        "Je jedním z šesti dětí Titánů Krona a Rhei a stejně jako všechny ostatní kromě Dia byl po narození spolykán svým otcem. Poté, co Zeus zachránil své sourozence, se k němu přidal ve válce proti Titánům.",
         "Po válce s Titány si Hádés, Zeus a Poseidón losovali části světa, kterým budou vládnout. Hádés si vylosoval podsvětí a stal se tak jeho bohem.",
         "Hádés neměl mnoho partnerek, nejdůležitější z nich je Persefona a její unesení. Hádés se do Persefony zamiloval a když jednoho dne sbírala s přítelkyněmi květiny, nalákal jí nádherným krásně vonícím narcisem a poté ji unesl svým vozem. Po deseti dnech se toto dozvěděla její matka Démétér, která šla truchlit mezi smrtleníky přestrojená za stařenu. Během této doby však začala zanedbávat své povinnosti jako bohyně plodnosti a zemědělství. Země začala chátrat a Zeus si uvědomil, že to takhle nemůže pokračovat a Persefona musí být navrácena.",
         "Do podsvětí byl poslán Hermés, aby Persefonu navrátil matce, ale zjisil, že Persefona už snědla semínko granátového jablka, což ji zavázalo k podsvětí. Zeus věděl, že by mu to Démétér neodpustila a tak nastal kompromis: Persefona by každý rok strávila jednu třetinu s Hádem a zbylé dvě s Démétér.", 
@@ -297,7 +297,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Hestia",
       id: "hestia",
-      image: "/hestia.jpg",
+      image: "/hestia.png",
       symbols: ["Oheň", "Krb", "Konvice"],
       father: ["kronos"],
       mother: ["rhea"],
@@ -308,7 +308,7 @@ export const useCharacterStore = defineStore('characters', () => {
         "Existuje velmi málo vyobrazení Hestie. Obvykle je zobrazena jako skromná žena se závojem. Občas stojí u ohně nebo drží květiny či hůl."
       ],
       bio: [
-        "Je jednou z šesti dětí titánů Krona a Rhei a stejně jako všechny ostatní kromě Dia byla po narození spolykána svým otcem. Poté, co Zeus zachránil své sourozence, se k němu přidala ve válce proti Titánům.",
+        "Je jednou z šesti dětí Titánů Krona a Rhei a stejně jako všechny ostatní kromě Dia byla po narození spolykána svým otcem. Poté, co Zeus zachránil své sourozence, se k němu přidala ve válce proti Titánům.",
         "Oheň je očišťující živel a Hestia byla proto uctívána jako panenská bohyně, stejně jako Athéna a Artemis. Říká se, že tak učinila, aby udržela mír na Olympu. Apollón a Poseidón si ji oba chtěli vzít a měla obavy, že volba jednoho z nich by mohla vytvořit nějaký konflikt. Hestia tak přísahala věčné panenství položením své ruky na Diovo čelo. Jako odměnu jí Zeus udělil ústřední místo v domě a nejbohatší část božských darů od lidí."
       ],
       facts: [
@@ -318,7 +318,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Dionýsos",
       id: "dionysos",
-      image: "/dionysos.jpg",
+      image: "/dionysos.png",
       symbols: ["Tyrsus", "Borovice", "Borová šiška"],
       father: ["zeus"],
       mother: ["Semelé"],
@@ -342,7 +342,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Chaos",
       id: "chaos",
-      image: "/chaos.jpg",
+      image: "/chaos.png",
       children: ["gaia", "tartaros", "nyx", "erebos", "Erós"],
       info: [
         "Chaos byl v řecké mytologii tím úplně prvním, co kdy bylo. Je to všechen prázdný prostor, který existoval při počátku času. Byl však něcím více než jenom prázdnotou, byl prvotním rysem vesmíru, hmoty, energie a všeho, co z něj dále vzešlo. Je personifikován jako žena."
@@ -355,7 +355,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Erebos",
       id: "erebos",
-      image: "/erebos.jpg",
+      image: "/erebos.png",
       mother: ["chaos"],
       children: ["Aithér", "Hémerá", "Hypnos", "Geras", "moiry", "thanatos"],
       partners: ["nyx"],
@@ -371,7 +371,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Gaia",
       id: "gaia",
-      image: "/gaia.jpg",
+      image: "/gaia.png",
       mother: ["chaos"],
       children: ["Eurybia", "Forkýs", "Kétó", "Kyklopové", "Meliády", "Erínye", "Néreus", "Hekatoncheirové", "obri", "pontos", "Titáni", "Thaumás", "Týfón", "uranos"],
       partners: ["uranos", "pontos", "tartaros"],
@@ -391,7 +391,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Úranos",
       id: "uranos",
-      image: "/uranos.jpg",
+      image: "/uranos.png",
       mother: ["gaia"],
       children: ["afrodita", "koios", "krios", "hyperion", "kronos", "iapetos", "rhea", "themis", "tethys", "mnemosyne", "foibe", "theia", "Hekatoncheirové", "Erínye", "obri", "Kyklopové", "Meliády"],
       partners: ["gaia"],
@@ -408,7 +408,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Nyx",
       id: "nyx",
-      image: "/nyx.jpg",
+      image: "/nyx.png",
       mother: ["chaos"],
       children: ["Aithér", "Apaté", "Hémerá", "Hypnos", "Geras", "moiry", "Nemesis", "thanatos", "Eris", "charon"],
       partners: ["erebos"],
@@ -425,7 +425,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Pontos",
       id: "pontos",
-      image: "/pontos.jpg",
+      image: "/pontos.png",
       mother: ["gaia"],
       children: ["Eurybia", "Forkýs", "Kétó", "Néreus", "Thaumás"],
       partners: ["gaia"],
@@ -443,7 +443,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Tartaros",
       id: "tartaros",
-      image: "/tartaros.jpg",
+      image: "/tartaros.png",
       mother: ["chaos"],
       children: ["Týfón"],
       partners: ["gaia"],
@@ -460,7 +460,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Múzy",
       id: "muzy",
-      image: "/muzy.jpg",
+      image: "/muzy.png",
       symbols: ["Lyra", "Flétna", "Svitky", "Glóbus", "Komická a tragická maska", "Psací tabulka"],
       father: ["zeus"],
       mother: ["mnemosyne"],
@@ -489,7 +489,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Pan",
       id: "pan",
-      image: "/pan.jpg",
+      image: "/pan.png",
       symbols: ["Koza", "Panova flétna"],
       father: ["hermes"],
       mother: ["Dryopé"],
@@ -514,7 +514,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Grácie",
       id: "gracie",
-      image: "/gracie.jpg",
+      image: "/gracie.png",
       father: ["zeus"],
       mother: ["Eurynomé"],
       siblings: ["afrodita", "athena", "apollon", "artemis", "ares", "dionysos", "hefaistos", "hermes", "herakles", "muzy", "perseus", "Aeakus", "Angelos", "Eileithýia", "Enýó", "Eris", "Ersa", "Hébé", "Helena Trójská", "Litai", "Mínós", "moiry", "Pandia", "Persefona", "Rhadamanthys", "Hóry"],
@@ -529,7 +529,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Moiry",
       id: "moiry",
-      image: "/moiry.jpg",
+      image: "/moiry.png",
       symbols: ["Nit", "Hůl", "Svitek", "Nůžky", "Vřeteno", "Kniha osudu"],
       father: ["zeus"],
       mother: ["themis"],
@@ -547,7 +547,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Adónis",
       id: "adonis",
-      image: "/adonis.jpg",
+      image: "/adonis.png",
       father: ["Theias"],
       mother: ["Myrrha"],
       partners: ["afrodita", "Persefona"],
@@ -563,7 +563,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Charón",
       id: "charon",
-      image: "/charon.jpg",
+      image: "/charon.png",
       father: ["erebos"],
       mother: ["nyx"],
       home: ["Podsvětí"],
@@ -578,7 +578,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Thanatos",
       id: "thanatos",
-      image: "/thanatos.jpg",
+      image: "/thanatos.png",
       father: ["erebos"],
       mother: ["nyx"],
       home: ["Podsvětí"],
@@ -595,127 +595,158 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Kronos",
       id: "kronos",
-      image: "/kronos.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      image: "/kronos.png",
+      symbols: ["Srp", "Kosa"],
+      father: ["uranos"],
+      mother: ["gaia"],
+      children: ["zeus", "poseidon", "hades", "demeter", "hera", "hestia", "Cheirón"],
+      partners: ["rhea"],
+      siblings: ["rhea", "okeanos", "hyperion", "koios", "krios", "iapetos", "mnemosyne", "tethys", "theia", "foibe", "themis", "afrodita", "Hekatoncheirové", "obri", "Kyklopové", "Erínye", "Meliády"],
+      info: [
+        "Kronos byl nejmladším synem Úrana a Gaii, vůdcem Titánů a krátkou dobu i vládcem celého světa, všech bohů i lidí. Stál za svržením svého tyranského otce, ale později se stal stejně tyranským jako on a byl také svržen svým nejmladším synem Diem.",
+        "Jelikož jeho jméno bylo zaměňováno se slovem pro čas (Chronos), byl často zobrazován jako otec času, s nímž ale sdílel několik rysů: vousy, kosu a nemilosrdnost. Občas jsou od sebe skoro k nerozeznání."
+      ],
+      bio: [
+        "Úranos všechny své potomky nenáviděl, proto je nenechal opustit lůno své matky. Gaia byla v strašných bolestech a tak vymyslela plán, jak se Úrana zbavit. Vytvořila adamantový srp a poprosila své děti o pomoc. Kronos byl jediný, koho se nezmocnil strach a tak se rozhodl své matce pomoct.",
+        "Gaia tedy dala Kronovi srp a ukryla ho na jiném místě ve svém lůně. Hned příští noc, když chtěl Úranos mít styk s Gaiou, Kronos vytáhl ruku a usekl mu genitálie. Tím byli všichni jeho sourozenci propuštěni a on se stal vládcem všech bohů a lidí.",
+        "Když se dostal k moci, oženil se se svou sestrou Rheou a po nějakou dobu se vše zdálo být dokonalé. Gaia byla konečně zbavena břemene a tak začala být více štědrá. Produkovala úrodu a potravu pro všechny lidi a ti tak mohli žít bezstarostné životy.",
+        "V určité chvíli Kronos však změnil své způsoby a stal se násilným. Byl znepokojen proroctvím, že ho jedno z jeho dětí svrhne a tak je začal všechny po narození polykat. Když Rhea viděla, že se Kronos mění na jejich otce, šla za Gaiou a poprosila ji o pomoc.",
+        "Gaia jí poradila, aby šla na Krétu, kde potom porodila Dia. Kronovi poté dala zabalený kámen, který spolkl místo jejich syna, zatímco Zeus byl vychováván nymfami na Krétě. Když nadešel čas, Diovi se v přestrojení za nosiče poháru povedlo Kronovi podstrčit jedovaté víno, které vyvolalo zvracení. Kronos takto vyzvracel všechny své potomky, kteří byli připraveni na pomstu. Tímto začala dlouhá válka mezi Olympany a Titány, která skončila svržením vlády Titánů."
+      ],
     },
     {
-      name: "Okeanos",
+      name: "Ókeanos",
       id: "okeanos",
-      image: "/okeanos.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      image: "/okeanos.png",
+      father: ["uranos"],
+      mother: ["gaia"],
+      children: ["Ókeanovny"],
+      partners: ["tethys"],
+      siblings: ["rhea", "kronos", "hyperion", "koios", "krios", "iapetos", "mnemosyne", "tethys", "theia", "foibe", "themis", "afrodita", "Hekatoncheirové", "obri", "Kyklopové", "Erínye", "Meliády"],
+      info: [
+        "Ókeanos byl jedním z potomků Úrana a Gaii, je tedy jedním z Titánů. Existuje také verze, ve které je potomkem Gaii a Chaosu.",
+        "Byl zobrazován s býčími rohy a hadím ocasem místo nohou. Později se také považoval za boha moře nebo jeho zosobnění."
+      ],
+      bio: [
+        "Ókeanos se oženil se svou sestrou Téthys a měli spolu mnoho dětí, které se nazývaly Ókeanovny. Byli to menší bohové a bohyně řek, pramenů a moře. Ókeanos a Téthys byli tak plodní, že přemnožení jejich potomků způsobilo záplavy a povodně, proto se později rozvedli. Do války mezi Olympany a Titány se nezapojili, Zeus je tedy nechal dál vládnout jejich vodní říši."
+      ],
     },
     {
-      name: "Atlas",
+      name: "Atlás",
       id: "atlas",
-      image: "/atlas.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      image: "/atlas.png",
+      symbols: ["Glóbus", "Souhvězdí"],
+      father: ["iapetos"],
+      mother: ["Klymené"],
+      children: ["Plejády", "Hyády", "Hyás", "Kalypsó", "Maira", "Hesperidky"],
+      partners: ["Pleioné", "Aithra", "Hesperis"],
+      siblings: ["prometheus", "Epimétheus", "Menoitios"],
+      info: [
+        "Atlás je jedním z nejznámějších Titánů. Byl jejich vůdcem ve válce s Olympany a dostal za to po prohře patřičný test: musel navždy držet nebesa.",
+        "Bývá zobrazován jako velký vousatý muž, který se mírně prohýbá a trpí pod tíhou nebes, které jsou zobrazována jako zeměkoule s nejznámějšími souhvězdími."
+      ],
+      bio: [
+        "Podle Hésioda byl Atlás synem titána Iapeta a ókeanovny Klymené. Někteří však tvrdí, že jeho matkou byla jiná ókeanovna jménem Asie. Měl tři bratry (Prométhea, Epiméthea a Menoetia) a nejspíše i tolik žen.",
+        "Ve válce Titánů a Olympanů se Iapetovi synové postavili na opačné strany. Prométheus a Epimétheus se rozhodli pomoci Diovi, zatímco Atlás a Menoitios se postavili se stranu Titánů. Atlás se později stal vůdcem Titánů, ale to pro něj nedopadlo dobře, jelikož nakonec dostal ten nejhorší trest ze všech. Byl odsouzen k držení nebes a jelikož se nemohl pohnout a většina neznala jeho sídlo, objevuje se jenom v dvou v mýtech, kde ho potkali řečtí hrdinové.",
+        "Prvním z nich byl Héraklés, který dostal za úkol přinést Eurystheovi několik zlatých jablek z Hesperid. Nabídl Atlásovi, že si s ním vymění pozice, aby Titán přinesl jablka od svých dcer a nevytvořil během toho tak velký rozruch. Atlás měl však vlastní plán, jablka chtěl doručit sám a Hérakla nechat v jeho pozici. Héraklés ho však přelstil a poprosil ho, aby se s ním jen na chvíli ještě vyměnil, protože se chtěl dostat do lepší polohy. Samozřejmě se místo toho jenom zmocnil jablek a Atláse už tam nechal.",
+        "Druhým a posledním hrdinou, co ho navštívil, byl Perseus. Ten ho poprosil o pohostinství, ale Atlás měl obavy, že to byl jenom další zesměšňující trik a tak ho odmítl. Perseus mu ukázal hlavu Medúsy a přeměnil ho tak na skálu."
+      ],
     },
     {
-      name: "Prometheus",
+      name: "Prométheus",
       id: "prometheus",
-      image: "/prometheus.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      image: "/prometheus.png",
+      symbols: ["Oheň"],
+      father: ["iapetos"],
+      mother: ["Klymené"],
+      children: ["Deukalión"],
+      siblings: ["atlas", "Epimétheus", "Menoitios"],
+      info: [
+        "Prométheus byl syn titána Iapeta a ókeanovny Klymené. Přesto, že byl jedním z titánů, se ve válce proti Olympanům postavil na Diovu stranu. Později se s ním ale začat hádat o jeho nesprávném zacházení s lidmi. Vedlo to k tomu, že bohům ukradl oheň a daroval ho lidem. Za toto byl spoután "
+      ],
+      bio: [
+        "Díky tomu, že se se svým bratrem Epimétheem připojil ve válce na stranu Olympanů unikl krutým trestům, které potkaly jeho ostatní bratry. Když se však Zeus stal vládcem všech bohů, Prométheus měl problémy s jeho vládou a nepřišla mu spravedlivá. Lidé si podle něj zasloužili lepšího vůdce.",
+        "Spor mezi Prométheem a Diem začal, když mu Zeus dal za úkol rozdělit býka na dvě části, jednu pro bohy a jednu pro lidi. Prométheus, který byl vždy milovníkem druhých, se ho pokusil oklamat tak, že vytvořil porci kostí obalených tukem a porci nejjemnějšího masa pokrytého vnitřnostmi vola. Zeus si kupodivu vybral kosti a nastavil tak precedens, podle kterého si lidé mohli nechat maso a obětovat bohům kosti.",
+        "Dia toto rozzuřilo a za trest se rozhodl před lidmi schovat dar ohně. Prométheovi to přišlo nespravedlivé, tak oheň ukradl a přinesl ho lidem. Zeus na toto zareagoval tak, že pověřil Héfaista, aby vytvořil krásného a prohnaného tvora. Tato bytost byla první žena v dějinách, Pandora. Pandoru brzy po příchodu na Zemi přijal Epimétheus za svou. Jakmile se to stalo, Pandora otevřela nádobu (v pozdějších verzích skříňku), kterou si s sebou přinesla a vypustila tak do světa nejrůznější bolesti a nemoci.",
+        "Prométhea Zeus potrestal tak, že ho spoutal na skále, kde mu orel stále ukousával část jater, která zase přes noc dorostla. Trest takto mohl trvat nekonečně dlouho. Héraklés na Prométhea narazil při cestě k Hesperidkám a rozhodl se ho osvobodit. Prométheus mu za to poradil, aby pro zlaté jablka poslal jeho bratra Atláse. Po tomto se Prométheus a Zeus konečně usmířili."
+      ]
     },
     {
       name: "Hyperión",
       id: "hyperion",
-      image: "/hyperion.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      image: "/hyperion.png",
+      father: ["uranos"],
+      mother: ["gaia"],
+      children: ["Hélios", "Seléné", "Éós"],
+      partners: ["theia"],
+      siblings: ["rhea", "kronos", "okeanos", "koios", "krios", "iapetos", "mnemosyne", "tethys", "theia", "foibe", "themis", "afrodita", "Hekatoncheirové", "obri", "Kyklopové", "Erínye", "Meliády"],
+      info: [
+        "Hyperión byl jedním z potomků Úrana a Gaii, byl tedy jedním z Titánů. Symbolizoval světlo, moudrost a bdělost. Byl otcem slunce, měsíce a úsvitu. V některých textech je slunce zmíněno jako Hélios Hyperión, ale jsou to dva různí bohové, přičemž Hélios je fyzickou podobou slunce.",
+        "Byl považován za jeden ze čtyř sloupů, které drží nebe a zemi od sebe a jelikož jeho dcera byla úsvit, považoval se za sloup východu. Ostatními sloupy byli Koios (sloup severu), Krios (sloup jihu) a Iapetos (sloup západu). Tito čtyři Titáni drželi otce Úrana na místě, zatímco ho Kronos vykastroval."
+      ],
+      bio: [
+        "Hyperión se oženil se svou sestrou Theiou a měli spolu tři potomky: Hélia (slunce), Seléné (měsíc) a Éós (úsvit).",
+        "Ve válce mezi Olympany a Titány nebyl zmíněn."
+      ],
     },
     {
       name: "Rhea",
       id: "rhea",
-      image: "/rhea.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      image: "/rhea.png",
+      father: ["uranos"],
+      mother: ["gaia"],
+      children: ["zeus", "poseidon", "hades", "demeter", "hera", "hestia", "Cheirón"],
+      partners: ["kronos"],
+      siblings: ["kronos", "okeanos", "hyperion", "koios", "krios", "iapetos", "mnemosyne", "tethys", "theia", "foibe", "themis", "afrodita", "Hekatoncheirové", "obri", "Kyklopové", "Erínye", "Meliády"],
+      info: [
+        "Rhea byla dcerou Úrana a Gaii, byla tedy jednou z Titánů. Byla zodpovědná za to, jak věci v Kronově říši plynou.",
+        "Často byla symbolizována jako dvojice lvů, kteří táhli nebeský vůz. Tento symbol se často umisťoval na městské brány."
+      ],
+      bio: [
+        "Rhea se oženila se svým bratrem Kronem poté, co vykastroval jejich otce Úrana a osvobodil tak všechny své sourozence. Stal se tak vládcem všech bohů a lidí, ale za nějakou dobu se stal stejným tyranem jako jeho otec.",
+        "Měli spolu 6 dětí (Hestia, Hádés, Demétér, Poseidón, Héra a Zeus), Kronos je všechny po narození spolykal kromě Dia, kterého Rhea ukryla na Krétě a dala namísto něj Kronovi zabalený kámen. Díky tomuto byl Zeus vychován nymfami a byl schopný svého otce později svrhnout."
+      ]
     },
     {
       name: "Styx",
       id: "styx",
-      image: "/styx.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      image: "/styx.png",
+      father: ["okeanos"],
+      mother: ["tethys"],
+      children: ["Níké", "Zélos", "Biá", "Kratos"],
+      partners: ["Pallás"],
+      siblings: ["Ókeanovny"],
+      info: [
+        "Styx byla dcerou Ókeana a Téthys, byla tedy jednou z ókeanoven. Byla bohyní řeky Styx.",
+        "Řeka Styx byla hranicí mezi Zemí a podsvětím. Achilles byl do této řeky ponořen svou matkou, aby se stal nepřemožitelným. Držela ho však za patu, která se tak stala jeho jedinou slabinou. Tím vznikl výraz Achillova pata."
+      ],
+      bio: [
+        "Během války mezi Titány a Olympany bojovala Styx na straně Olympanů. Na její počest dal Zeus její jméno závazné přísaze, kterou bohové skládali.",
+        "Byla manželkou titána Palláse, s kterým měla 4 děti: Níké, Zélos, Biá a Kratos."
+      ]
     },
     {
       name: "Létó",
       id: "leto",
-      image: "/leto.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      image: "/leto.png",
+      father: ["koios"],
+      mother: ["foibe"],
+      children: ["artemis", "apollon"],
+      partners: ["zeus"],
+      info: [
+        "Létó byla dcerou Koia a Foibé, byla tedy jednou z Titánů. Byla jednou z Diových mnoha milenek, byla také jednou z jeho nejoblíbenějších."
+      ],
+      bio: [
+        "Zeus si vzal Héru, když byla Létó už těhotná. Přesto Héra žárlila a tvořila jí po dobu těhotenství potíže, nakonec ji vyhnala z Olympu.",
+        "Když Létó putovala po Zemi, nikdo ji nepustil k sobě domů, protože se báli, že by rozčílili Héru. Héra na ni také poslala draka Pýthóna, který ji pronásledoval a nedovolil jí porodit na pevné půdě.",
+        "Nikdo ji nechtěl přijmout kromě ostrova Délos, kde Létó napřed porodila Artemidu přitom, co balancovala své tělo na větvi olivovníku. Artemis jí poté pomohla porodit Apollóna.",
+        "Její problémy chvíli pokračovaly, ale její dvě rychle rostoucí děti ji teď mohly chránit. Apollón ve věku čtyř dnů zabil draka Pýthóna a když se obr Tityos pokusil Létó znásilnit, její děti ho zabily. Po tomto se jí povedlo vrátit zpátky na Olymp."
+      ],
     },
     {
       name: "Iapetos",
       id: "iapetos",
-      image: "/iapetos.jpg",
+      image: "/iapetos.png",
       symbols: [],
       father: [],
       mother: [],
@@ -730,7 +761,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Koios",
       id: "koios",
-      image: "/koios.jpg",
+      image: "/koios.png",
       symbols: [],
       father: [],
       mother: [],
@@ -745,7 +776,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Krios",
       id: "krios",
-      image: "/krios.jpg",
+      image: "/krios.png",
       symbols: [],
       father: [],
       mother: [],
@@ -760,7 +791,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Mnémosyné",
       id: "mnemosyne",
-      image: "/mnemosyne.jpg",
+      image: "/mnemosyne.png",
       symbols: [],
       father: [],
       mother: [],
@@ -775,7 +806,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Foibé",
       id: "foibe",
-      image: "/foibe.jpg",
+      image: "/foibe.png",
       symbols: [],
       father: [],
       mother: [],
@@ -790,7 +821,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Téthys",
       id: "tethys",
-      image: "/tethys.jpg",
+      image: "/tethys.png",
       symbols: [],
       father: [],
       mother: [],
@@ -805,7 +836,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Theia",
       id: "theia",
-      image: "/theia.jpg",
+      image: "/theia.png",
       symbols: [],
       father: [],
       mother: [],
@@ -820,7 +851,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Themis",
       id: "themis",
-      image: "/themis.jpg",
+      image: "/themis.png",
       symbols: [],
       father: [],
       mother: [],
@@ -835,22 +866,27 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Perseus",
       id: "perseus",
-      image: "/perseus.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      image: "/perseus.png",
+      father: ["zeus"],
+      mother: ["Danaé"],
+      children: ["Gorgofona", "Perses", "Alkaios", "Élektryón", "Heleus", "Méstor", "Autochthe", "Cynurus", "Sthenelos", "Erythra", "Erythras"],
+      home: ["Serifos", "Argos", "Mykény"],
+      partners: ["Andromeda"],
+      siblings: ["afrodita", "athena", "apollon", "artemis", "ares", "dionysos", "hefaistos", "hermes", "herakles", "muzy", "gracie", "Aeakus", "Angelos", "Eileithýia", "Enýó", "Eris", "Ersa", "Hébé", "Helena Trójská", "Litai", "Mínós", "moiry", "Pandia", "Persefona", "Rhadamanthys", "Hóry"],
+      info: [
+        "Perseus byl synem Dia a Danaé, což z něj dělalo poloboha. Je jedním z nejznámějších hrdinů v řecké mytologii, jeden z jeho hrdinských činů bylo useknutí hlavy Medúsy, jediné z gorgon, která nebyla nesmrtelná. Její hlavu využil jako zbraň v mnoha dalších z jeho dobrodružství."
+      ],
+      bio: [
+        "Zeus zplodil Persea s uvězněnou princeznou Danaé, kterou její otec uvěznil poté, co se od věštce dozvěděl, že ho jeho vnuk svrhne. Dostal se k ní v podobě zlatého deště prasklinami ve stropě její cely. Její otec poté svou dceru i vnuka nechal hodit do moře v dřevěné truhle. Truhla nakonec bezpečně doplula na ostrov Serifos, kterému vládl král Polydektés. Jeho bratr Diktys byl rybář a truhlu chytil do své sítě, poté osvobodil Danaé a Persea. Nabídl jim u něj místo k bydlení a tam Perseus vyrostl do silného mladého muže.",
+        "Diktys Danaé a Persea před obyvateli Serifu ukrýval, aby se vyhnul možným konfliktům. Dařilo se mu to pár let, ale když se o nich ostatní konečně dozvěděli, Polydektés se hned zamiloval do Danaé a dokonce ji požádal o ruku. Danaé ho odmítla, to se mu však nelíbilo a v jeho očích byl jedinou překážkou mladý Perseus. Vymyslel tedy plán, jak se Persea zbavit a získat Danaé.",
+        "Polydektés předstíral, že požádal o ruku Hippodameiu, dceru krále élidské Písy, Oinomaa. Každý občan Serifu byl povinen jako svatební dar přinést koně. Perseus byl příliš chudý a tak se zeptal Polydekta, jestli nemůže přinést cokoliv jiného. V tu chvíli ho Polydektés požádal o hlavu Medúsy.",
+        "Perseus se tedy vydal na cestu za Medúsou, během které potkal mnoho postav, dokonce i Hermése a Athénu, díky jimž byl schopný získat předměty, které mu pomohly v jeho boji proti Medúse. Mezi ně patřil Hádův plášť neviditelnosti, Hermésovy okřídlené sandály a Athénin reflektivní štít. Nakonec se mu povedlo useknout Medúse hlavu a vrátit se s ní na Serifos, ale během této cesty ještě narazil na titána Atlase, kterého přeměnil na skálu. Poté ještě zabil mořskou příšeru jménem Cetus a zachránil Aethiopskou princeznu Andromedu, která mu měla být obětována. Když se vrátil na Serifos a zjistil, že Polydektés obtěžoval jeho matku, použil na něj hlavu Medúsy a Polydektés zkameněl."
+      ]
     },
     {
       name: "Odysseus",
       id: "odysseus",
-      image: "/odysseus.jpg",
+      image: "/odysseus.png",
       symbols: [],
       father: [],
       mother: [],
@@ -865,7 +901,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Achilles",
       id: "achilles",
-      image: "/achilles.jpg",
+      image: "/achilles.png",
       symbols: [],
       father: [],
       mother: [],
@@ -880,7 +916,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Orfeus",
       id: "orfeus",
-      image: "/orfeus.jpg",
+      image: "/orfeus.png",
       symbols: [],
       father: [],
       mother: [],
@@ -895,7 +931,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Héraklés",
       id: "herakles",
-      image: "/herakles.jpg",
+      image: "/herakles.png",
       symbols: [],
       father: [],
       mother: [],
@@ -910,7 +946,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Théseus",
       id: "theseus",
-      image: "/theseus.jpg",
+      image: "/theseus.png",
       symbols: [],
       father: [],
       mother: [],
@@ -925,7 +961,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Kentauři",
       id: "kentauri",
-      image: "/kentauri.jpg",
+      image: "/kentauri.png",
       info: [
         "Kentauři jsou napůl muži a napůl koně. Mají hlavu a torzo muže, ale tělo koně.",
         "Nejznámějším kentaurem je Cheirón. Většina kentaurů byla zobrazována jako divoké bytosti, Cheirón byl však moudrý a civilizovaný. Byl nesmrtelný, ale Héraklés ho omylem zranil šípem potaženým krví bílé hydry, který mu způsobil velké bolesti.",
@@ -935,7 +971,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Dryády",
       id: "dryady",
-      image: "/dryady.jpg",
+      image: "/dryady.png",
       info: [
         "Dryády jsou nymfy nebo duše stromů, které na sebe berou podobu krásných žen.",
         "Dříve tímto názvem byly myšleny specificky nymfy dubových stromů, ale význam se později rozšířil ke všem typům stromů. Podle těchto stromů se pak dryády dělily na různé skupiny.",
@@ -945,7 +981,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Najády",
       id: "najady",
-      image: "/najady.jpg",
+      image: "/najady.png",
       info: [
         "Najády jsou vodní nymfy nebo duše v podobě krásných žen, které se vyskytují u studánek, pramenů, potoků, řek a dalších sladkovodních ploch.",
         "Byly často uctívané v místních kultech jako nezbytné pro lidi. Lidé při obřadech dosažení plnoletosti věnovali své dětské vlasy místní najádě jara. Na některých místech se jejich vodám připisovaly rituální očisty s léčebnými účinky. Rituálně se v nich topila zvířata."
@@ -954,7 +990,7 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Nymfy",
       id: "nymfy",
-      image: "/nymfy.jpg",
+      image: "/nymfy.png",
       symbols: [],
       father: [],
       mother: [],
@@ -969,92 +1005,70 @@ export const useCharacterStore = defineStore('characters', () => {
     {
       name: "Satyrové",
       id: "satyrove",
-      image: "/satyrove.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      image: "/satyrove.png",
+      info: [
+        "Satyrové jsou z části lidé a z části kozy, které obývají lesy a hory. Jsou nejvíce známí pro svou lásku k hudbě, tančení a zábavě a kvůli tomu bývají spojováni s Dionýsem, bohem slavností a vína. Jsou ztělesněním bezstarostnosti a symbolem divoké, nezkrocené přírody.",
+        "Jsou většinou zobrazováni s horní částí těla člověka a spodní částí těla kozy, také mohou mít malé rohy. Tento vzhled ukazuje její spojení s lidskou i zvířecí říší.",
+        "V bájích se často ukazuje jejich spojení s Dionýsem tím, že se účastní jeho rituálů."
+      ],
     },
     {
       name: "Sirény",
       id: "sireny",
-      image: "/sireny.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      image: "/sireny.png",
+      father: ["Achelóos"],
+      mother: ["muzy"],
+      info: [
+        "Narozdíl od novějších zobrazení, které začaly zhruba v 8. století našeho letopočtu jako ženy s rybím ocasem, byly sirény v řecké mytologii napůl ženy a napůl ptáci. Svými krásnými písněmi lákaly námořníky na své ostrovy, na kterých poté zemřeli. Jejich osudem bylo zemřít, pokud by někdo někdy přežil jejich písně. Když se to Odysseovi povedlo, vrhly se do moře a utopily se.",
+        "Byly dcerami boha Achela a jedné z Múz, ale není jisté, která z nich to byla, jelikož mnoho zdrojů se liší. "
+      ],
     },
     {
       name: "Sfinx",
       id: "sfinx",
-      image: "/sfinx.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      image: "/sfinx.png",
+      father: ["Orthos"],
+      mother: ["Echidna"],
+      info: [
+        "Sfinx (nebo Sfinga) byla nestvůra, která měla hlavu člověka a tělo lva. Měla také křídla orla a hadí ocas. V řecké mytologii byla považována za ženu a existovala jenom jedna, dcera Ortha a Echidny.",
+        'Sídlila za městem Théby a všem, co se snažili vstoupit položila známou otázku: „Který tvor má jeden hlas, ale ráno má čtyři nohy, odpoledne dvě a v noci tři?“ Každého, kdo se pokusil odpovědět, sežrala, než přišel Oidipus, který správně odpověděl „člověk“, který se jako dítě plazí po čtyřech, v dospělosti chodí po dvou a ve stáří potřebuje hůl.',
+        "Pak následovala druhá otázka: „Jsou dvě sestry, jedna rodí druhou, ta zase rodí první. Kdo jsou?“ Správná odpověď jsou den a noc, slova, která jsou v řečtině obě ženského rodu.",
+        "Poté, co Oidipus na obě otázky odpověděl správně, se Sfinx zabila, buď se shodila ze skály, na které spočívala nebo samu sebe sežrala."
+      ],
     },
     {
       name: "Obři",
       id: "obri",
-      image: "/obri.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      image: "/obri.png",
+      father: ["uranos"],
+      mother: ["gaia"],
+      info: [
+        "Obři, také známí jako Giganti byli potomci Gaii a Úrana. Narodili se, když Kronos Úranovi usekl srpem genitálie a jeho krev oplodnila Gaiu.",
+        "Bojovali ve válce proti Olympanům, na které je seslala Gaia, když uvěznili Titány hluboko v Tartaru. Byli silnými soupeři, jelikož na své rodné půdě byli nesmrtelní. Zeus přivolal na pomoc svého syna Hérakla a tuto válku nakonec obři prohráli. Gaia později na Olympany poslala ještě svého potomka s Tartarem, draka Týfóna.",
+        "Dříve byli zobrazováni s lidským vzhledem, později jim však byly přidávány různé zvířecí rysy, například křídla, hadí těla nebo lví hlavy."
+      ],
     },
     {
       name: "Gorgony",
       id: "gorgony",
-      image: "/gorgony.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      image: "/gorgony.png",
+      father: ["Týfón"],
+      mother: ["Echidna"],
+      info: [
+        "Gorgony byly tři sestry známé za své smrtící schopnosti a hrůzostrašný vzhled. Nejvíc známé jsou jejich hlavy, na kterých místo vlasů měly mnoho hadů, ale měly i zvířecí uši, kovové pěsti a šupinaté tělo. Byly tak obludné, že při pohledu na kteroukoliv z nich člověk zkameněl. Jejich jména byla Sthéno, Euryalé a ta nejznámější, Medúsa, která jako jediná z nich byla smrtelná.",
+        "Za jejich rodiče se tradičně považují Týfón a Echidna, kterým se říká otec a matka všech příšer. Medúsa však byla občas označována za dceru Forkýse a Kétó",
+        "Smrtelnost Medúsy hraje velkou roli v jejím střetu s Perseem, který nakonec vedl k její smrti. S pomocí darů od bohů, tedy okřídlenými sandály, kouzelnou přilbou, která ho dělala neviditelným a reflektivním štítem, pomocí kterého se na ni mohl koukat, se mu povedlo jí useknout hlavu."
+      ],
     },
     {
       name: "Harpyje",
       id: "harpyje",
-      image: "/harpyje.jpg",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      image: "/harpyje.png",
+      info: [
+        "Harpyje byly nestvůry s tělem ptáka, ale tváří ženy. Byly ztělesněním bouře a divokých větrů, také nosily zločince za Erínyemi, aby je potrestaly.",
+        "Ze začátku byly zobrazovány jako okřídlené ženy a byly tím velice podobné Sirénám, které se ale později také změnily. Později se začaky zobrazovat jako pták s hlavou dívky nebo ženy, to se pak ještě změnilo na hlavu staré ošklivé ženy.",
+        "Když Zeus dal thráckému králi Fíneovi dar proroctví, Fíneus ho použil na odhalení božího plánu. Rozzuřený Zeus ho oslepil a posadil na ostrov, kde byla spousta jídla. Žádné jídlo však nebyl schopen sníst, protože mu ho harpyje vždy ukradly."
+      ],
     },
   ]);
 

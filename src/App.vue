@@ -37,20 +37,9 @@ function searchBar() {
   filteredCharacters.value = filteredCharacters.value.filter((item, index, self) => 
     index === self.findIndex(t => t.id === item.id)
   );
-  console.log(filteredCharacters.value);
   for(let i = 0; i < filteredCharacters.value.length; i++){
     results.value.push(filteredCharacters.value[i]);
   }
-
-
-
-
-
-  //if(characterStore.characters){
-    //results.value.push(characterStore.characters.filter(value => value.name.toLowerCase().startsWith(lowerCaseQuery.value)));
-    //console.log(results.value);
-  //}
-  //results.value.push(miniSearch.search(query.value, {fuzzy: 2}));
 }
 </script>
 
