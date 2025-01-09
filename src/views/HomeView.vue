@@ -36,6 +36,21 @@ function nextCard(){
 <style lang="scss" scoped>
 @use '../mixins.scss' as mixins;
 
+body{
+  height: 100%;
+  min-height: 100vh;
+
+  #app{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main{
+    flex-grow: 1;
+  }
+}
+
 .info{
   @include mixins.flex-column;
   width: 50%;
@@ -63,6 +78,7 @@ function nextCard(){
   @include mixins.flex-row;
   width: 100%;
   height: 600px;
+  flex-grow: 1;
 
   button{
     border: none;

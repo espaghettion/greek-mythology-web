@@ -55,7 +55,7 @@ function searchBar() {
       <section class="search">
         <section class="searchbar">
           <input v-model="query" @input="searchBar" placeholder="Vyhledávání"/>
-          <ul v-if="results.length > 0" class="results">
+          <ul v-if="results.length > 0 && query.length > 0" class="results">
             <li v-for="(result, i) in results" :key="i" class="result">
               <RouterLink @click="query = ''; results = []" :to="{name: 'character', params: {id: result.id}}">{{ result.name }}</RouterLink>
             </li>
@@ -212,6 +212,7 @@ input{
   padding: 10px;
   position: absolute;
   right: 0;
+  top: 78px;
   background-color: #FFF5E0;
   box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;

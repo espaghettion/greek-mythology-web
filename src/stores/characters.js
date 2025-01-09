@@ -704,7 +704,7 @@ export const useCharacterStore = defineStore('characters', () => {
       ],
       bio: [
         "Rhea se oženila se svým bratrem Kronem poté, co vykastroval jejich otce Úrana a osvobodil tak všechny své sourozence. Stal se tak vládcem všech bohů a lidí, ale za nějakou dobu se stal stejným tyranem jako jeho otec.",
-        "Měli spolu 6 dětí (Hestia, Hádés, Demétér, Poseidón, Héra a Zeus), Kronos je všechny po narození spolykal kromě Dia, kterého Rhea ukryla na Krétě a dala namísto něj Kronovi zabalený kámen. Díky tomuto byl Zeus vychován nymfami a byl schopný svého otce později svrhnout."
+        "Měli spolu 6 dětí (Hestia, Hádés, Démétér, Poseidón, Héra a Zeus), Kronos je všechny po narození spolykal kromě Dia, kterého Rhea ukryla na Krétě a dala namísto něj Kronovi zabalený kámen. Díky tomuto byl Zeus vychován nymfami a byl schopný svého otce později svrhnout."
       ]
     },
     {
@@ -747,121 +747,140 @@ export const useCharacterStore = defineStore('characters', () => {
       name: "Iapetos",
       id: "iapetos",
       image: "/iapetos.png",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      father: ["uranos"],
+      mother: ["gaia"],
+      children: ["prometheus", "atlas", "Epimétheus", "Menoitios"],
+      partners: ["Klymené"],
+      siblings: ["rhea", "kronos", "okeanos", "koios", "krios", "hyperion", "mnemosyne", "tethys", "theia", "foibe", "themis", "afrodita", "Hekatoncheirové", "obri", "Kyklopové", "Erínye", "Meliády"],
+      info: [
+        "Iapetos byl synem Úrana a Gaii, byl tedy jedním z Titánů. Jeho jméno pochází z řeckého slova pro probodnutí a proto byl považován za boha řemesla, ale některé prameny ho považují za boha smrtelnosti.",
+        "Byl považován za jeden ze čtyř sloupů, které drží nebe a zemi od sebe. Považoval se za sloup západu, tato role byla později předána jeho synu Atlásovi. Ostatními sloupy byli Koios (sloup severu), Krios (sloup jihu) a Hyperión (sloup východu). Tito čtyři Titáni drželi otce Úrana na místě, zatímco ho Kronos vykastroval.",
+        "Předpokládalo se, že jeho syné byli předci všech lidí a své špatné vlastnosti jim předali. Prométheus jim předal intrikánství, Atlás přílišnou odvahu, Epimétheus hloupost a Menoitios násilí."
+      ],
+      bio: [
+        "S ókeanovnou Klymené měl 4 syny: Prométheus, Atlás, Epimétheus a Menoitios."
+      ]
     },
     {
       name: "Koios",
       id: "koios",
       image: "/koios.png",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      father: ["uranos"],
+      mother: ["gaia"],
+      children: ["leto", "Asteria"],
+      partners: ["foibe"],
+      siblings: ["rhea", "kronos", "okeanos", "iapetos", "krios", "hyperion", "mnemosyne", "tethys", "theia", "foibe", "themis", "afrodita", "Hekatoncheirové", "obri", "Kyklopové", "Erínye", "Meliády"],
+      info: [
+        "Koios byl synem Úrana a Gaii, byl tedy jedním z Titánů.",
+        "Byl považován za jeden ze čtyř sloupů, které drží nebe a zemi od sebe. Považoval se za sloup severu, ostatními sloupy byli Iapetos (sloup západu), Krios (sloup jihu) a Hyperión (sloup východu). Tito čtyři Titáni drželi otce Úrana na místě, zatímco ho Kronos vykastroval.",
+      ],
+      bio: [
+        "Koios není za své vlastní činy moc známý, ale je významný prostřednictvím svých dětí. Oženil se se svou sestrou Foibé, jejich dcera Létó byla jednou z milenek Dia a matkou Artemidy a Apollóna.",
+        "Během války mezi Olympany a Titány bojoval na straně Titánů a po prohře byl za toto potrestán a uvězněn v podsvětí. Pokusil se z něj dostat pryč, ale byl zastaven tříhlavým psem Kerberem, který střeží bránu."
+      ],
     },
     {
       name: "Krios",
       id: "krios",
       image: "/krios.png",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      father: ["uranos"],
+      mother: ["gaia"],
+      children: ["Astraios", "Pallás", "Perses"],
+      partners: ["Eurybia"],
+      siblings: ["rhea", "kronos", "okeanos", "iapetos", "koios", "hyperion", "mnemosyne", "tethys", "theia", "foibe", "themis", "afrodita", "Hekatoncheirové", "obri", "Kyklopové", "Erínye", "Meliády"],
+      info: [
+        "Krios byl synem Úrana a Gaii, byl tedy jedním z Titánů.",
+        "Byl považován za jeden ze čtyř sloupů, které drží nebe a zemi od sebe. Považoval se za sloup jihu, ostatními sloupy byli Iapetos (sloup západu), Koios (sloup severu) a Hyperión (sloup východu). Tito čtyři Titáni drželi otce Úrana na místě, zatímco ho Kronos vykastroval.",
+      ],
+      bio: [
+        "Oženil se s Eurybií, dcerou boha Ponta. Měli spolu 3 děti: Astraios, Pallás a Perses",
+        "Během války mezi Olympany a Titány bojoval na straně Titánů, ale neměl žádnou specifickou roli. Po prohře byl za toto potrestán a uvězněn v podsvětí."
+      ],
     },
     {
       name: "Mnémosyné",
       id: "mnemosyne",
       image: "/mnemosyne.png",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      father: ["uranos"],
+      mother: ["gaia"],
+      children: ["muzy"],
+      partners: ["zeus"],
+      siblings: ["rhea", "kronos", "okeanos", "iapetos", "koios", "hyperion", "krios", "tethys", "theia", "foibe", "themis", "afrodita", "Hekatoncheirové", "obri", "Kyklopové", "Erínye", "Meliády"],
+      info: [
+        "Mnémosyné byla dcerou Úrana a Gaii, byla tedy jednou z Titánů. Byla to věštecká bohyně paměti a občas se jí říkalo Mnémé, toto bylo ale jméno jiné bohyně."
+      ],
+      bio: [
+        "Zeus s Mnémosyné spal devět dní za sebou a takto spolu zplodili devět Múz."
+      ],
     },
     {
       name: "Foibé",
       id: "foibe",
       image: "/foibe.png",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      father: ["uranos"],
+      mother: ["gaia"],
+      children: ["leto", "Asteria"],
+      partners: ["koios"],
+      siblings: ["rhea", "kronos", "okeanos", "iapetos", "koios", "hyperion", "krios", "tethys", "theia", "mnemosyne", "themis", "afrodita", "Hekatoncheirové", "obri", "Kyklopové", "Erínye", "Meliády"],
+      info: [
+        "Mnémosyné byla dcerou Úrana a Gaii, byla tedy jednou z Titánů."
+      ],
+      bio: [
+        "Foibé je významná prostřednictvím svých dětí. Vzala si svého bratra Koia, jejich dcera Létó byla jednou z milenek Dia a matkou Artemidy a Apollóna.",
+        "Do války mezi Olympany a Titány se nezapojila a byla tak ušetřena uvěznění v Tartaru."
+      ],
     },
     {
       name: "Téthys",
       id: "tethys",
       image: "/tethys.png",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      father: ["uranos"],
+      mother: ["gaia"],
+      children: ["Ókeanovny"],
+      partners: ["okeanos"],
+      siblings: ["rhea", "kronos", "okeanos", "iapetos", "koios", "hyperion", "krios", "foibe", "theia", "mnemosyne", "themis", "afrodita", "Hekatoncheirové", "obri", "Kyklopové", "Erínye", "Meliády"],
+      info: [
+        "Téthys byla dcerou Úrana a Gaii, byla tedy jednou z Titánů.",
+        "Přestože byla matkou mnoho menších bohů a bohyní, sama nebyla aktivně uctívána."
+      ],
+      bio: [
+        "Téthys si vzala svého bratra Ókeana a měli spolu mnoho dětí, které se nazývaly Ókeanovny. Byli to menší bohové a bohyně řek, pramenů a moře. Ókeanos a Téthys byli tak plodní, že přemnožení jejich potomků způsobilo záplavy a povodně, proto se později rozvedli. Do války mezi Olympany a Titány se nezapojili, Zeus je tedy nechal dál vládnout jejich vodní říši.",
+        "Během války vychovávala Héru jako svou nevlastní dceru poté, co jí tím Rhea pověřila.",
+        "Podle jedné báje se Héře nelíbilo, Kallistó a Arkas byli umístěni na nebesa v podobě souhvězdí Velké medvědice a Malého medvěda. Požádala tedy Téthys, aby s tím něco udělala. Téthys odepřela souhvězdím možnost se dotknout moře a spadnout pod obzor a tak byla navždy odsouzena ke kroužení na obloze."
+      ]
     },
     {
       name: "Theia",
       id: "theia",
       image: "/theia.png",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      father: ["uranos"],
+      mother: ["gaia"],
+      children: ["Hélios", "Seléné", "Éós"],
+      partners: ["hyperion"],
+      siblings: ["rhea", "kronos", "okeanos", "iapetos", "koios", "hyperion", "krios", "foibe", "tethys", "mnemosyne", "themis", "afrodita", "Hekatoncheirové", "obri", "Kyklopové", "Erínye", "Meliády"],
+      info: [
+        "Theia byla dcerou Úrana a Gaii, byla tedy jednou z Titánů. Byla považována za bohyni nesmírné krásy a jasu a uctívána jako ta, která obdařila stříbro, zlato a drahokamy leskem a třpytem.",
+        "Kromě této role byla také uctívána jako věštecká bohyně. Byla spojena s věšteckou svatyní ve Fthiótidě, kde věřili, že uděluje vize do budoucnosti."
+      ],
+      bio: [
+        "Vzala si svého bratra Hypériona a měli spolu tři potomky: Hélia (slunce), Seléné (měsíc) a Éós (úsvit). Každý z nich reprezentoval nějaký z aspektů světla, kterých byla Theia ztělesněním."
+      ]
     },
     {
       name: "Themis",
       id: "themis",
       image: "/themis.png",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      father: ["uranos"],
+      mother: ["gaia"],
+      children: ["Hóry"],
+      partners: ["zeus"],
+      siblings: ["rhea", "kronos", "okeanos", "iapetos", "koios", "hyperion", "krios", "foibe", "tethys", "mnemosyne", "theia", "afrodita", "Hekatoncheirové", "obri", "Kyklopové", "Erínye", "Meliády"],
+      info: [
+        "Theia byla dcerou Úrana a Gaii, byla tedy jednou z Titánů. Byla ztělesněním morálního řádu. Také symbolizuje zákon a božské právo. Stvořila všechny božské zákony, podle kterých se vše řídí."
+      ],
+      bio: [
+        "Podle Hesióda byla druhou manželkou Dia. Toto manželství mu pomohlo upevnit jeho moc nad všemi bohy a lidmi."
+      ]
     },
     {
       name: "Perseus",
