@@ -906,76 +906,112 @@ export const useCharacterStore = defineStore('characters', () => {
       name: "Odysseus",
       id: "odysseus",
       image: "/odysseus.png",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      father: ["Láertés"],
+      mother: ["Antikleia"],
+      children: ["Télemachos", "Agrius", "Nausinous", "Nausithous", "Télegonos", "Polipórthes", "Latinos"],
+      partners: ["Pénelopé", "Kirké", "Kalypsó"],
+      info: [
+        "Odysseus je legendární hrdina řecké mytologie. Je králem ostrova Ithaka a hlavním hrdinou eposu Odyssea. Mezi řeky byl známý jako výmluvný řečník, byl také vynalézavý a mazaný."
+      ],
+      bio: [
+        "Byl synem Láerta, krále Ithaky, a Antikleii, jejíž otcem byl Autolykos, syn Hermése. Jeho dědeček byl díky svému otci jedním z nejlepších zlodějů a Odysseus takto z matčiny strany zdědil svou mazanost.",
+        "Jednou se při návštěvě svého dědečka se strýci vydal na lov kance, kterého se mu podařilo zabít, ale ponechal mu na noze hlubokou jizvu, která později v jeho životě sehrála důležitou roli.",
+        "Odysseus byl jedním z nápadníků Heleny, nevlastní dcery krále Tyndarea. Byl však z nich nepochybně nejváhavější, a to nejen proto, že si byl dostatečně jistý, že vyvoleným ženichem bude Menelaos, ale také proto, že ho mnohem více ho okouzlila její sestřenice Pénelopé, dcera Tyndareova bratra Ikaria. Nápadníků bylo příliš mnoho, aby se mohli všem zavděčit a Tyndareós se tak začal bát možného konfliktu, který vznikne, až jednoho vyberou. Odysseus mu poradil, aby všichni složili slib, že budou konečnou volbu respektovat a manželé budou podporovat. Když byl vybrán Menelaos, všichni ostatní opustili Spartu a Tyndareós pomohl Odysseovi získat ruku Penélopé.",
+        "Po svatbě se manželé vrátili na Ithaku, kde žili šťastný život, který se stal ještě šťastnějším, když se jim narodil syn Télemachos. Když byl Télemachos ještě dítě, Helenu unesl trójský princ Paris. Na základě slibu Menelaos všechny svolal, aby mu pomohli ji přivést zpět. Odysseus se nechtěl zúčastnit, protože mu bylo vyvěštěno, že pokud se zúčastní, nevrátí se domů velmi dlouho. Rozhodl se tedy předstírat šílenství, ale nevyšlo mu to a Palamédés, který byl vyslán, aby ho naverboval, nebyl přesvědčen. Odysseus toto Palamédovi nikdy neodpustil.",
+        "Odysseovo naverbování bylo však klíčovou událostí, která rozhodla výsledek Trójské války, bez Odyssea by nejspíš Řekové Tróju nikdy nedobyli. Jeho největší přínos v této válce spočíval ve lsti, kterou vymyslel. Řekové ponechali obřího dřevěného koně poblíž trojských bran. Uvnitř tohoto koně se ukrývali řečtí bojovníci a zbytek předstíral, že odplouvá. Trójané po nějaké době začali věřit tomu, že válka skončila a kůň je jenom božím darem a tak ho odvezli do bran svého města. Celý den oslavovali vítězství, ale jakmile padla noc, z koně vyskočili řečtí bojovníci a otevřeli bránu pro zbytek Řeků, kteří dopluli zpátky na břeh a všichni se vrhli na opilé bezbranné Trójany, čímž dosáhli vítězství.",
+        "Po konci Trójské války mu trvalo dalších 10 let, než se mu podařilo vrátit zpátky na Ithaku a během této cesty prožívá mnoho dalších dobrodružství. Při návratu předstírá, že je Kréťan, který se vrací z Trójské války. Penélopé oznamuje, že je po dvaceti letech konečně připravená se znovu vdát a vezme si toho nápadníka, který dokáže napnout Odysseův luk a vystřelit šíp skrze dvanáct seker. Žádnému z nich se to nepodaří až na Odyssea, který je stále v přestrojení. Poté, co výzvu splnil, se odhalil a všechny nápadníky zabil.",
+        "Příběhy o Odysseově smrti jsou velice protichůdné. Některé tvrdí, že se svou ženou žili šťastně až do smrti. Jiné tvrdí, že po zjištění důkazu nevěry svou ženu opustil nebo dokonce zabil a vydal se na další cestu do království Thesprotie, kde se znovu oženil." 
+      ]
     },
     {
       name: "Achilles",
       id: "achilles",
       image: "/achilles.png",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      father: ["Péleus"],
+      mother: ["Thetis"],
+      info: [
+        "Achilles, syn Pélea a Thetis, byl největším ze všech řeckých hrdinů, kteří se zúčastnili trojské války."
+      ],
+      bio: [
+        "Thetis věděla, že jejímu dítěti je souzeno buď zemřít jako slavný válečník, nebo prožít dlouhý život v neznámu, a proto Achillea jako nemluvně vykoupala ve vodách řeky Styx, čímž ho učinila téměř nesmrtelným: zranitelná zůstala pouze pata, za kterou ho držela.",
+        "Když si Thetis uvědomila, že se blíží Trójská válka, a byla si plně vědoma toho, že její syn je stále předurčen k tomu, aby zemřel v bitvě, uchýlila se k neobvyklé taktice, aby Achillea ochránila: převlékla ho za dívku a ukryla ho na dvoře krále Lykoméda na Skyrosu. Plán nějakou dobu dobře fungoval, ale pak se Odysseus od proroka Kalchase dozvěděl, že Řekové bez Achillovy pomoci válku prohrají.",
+        "Dozvěděl se tedy, kde se nachází, a lstí ho přiměl k odhalení své totožnosti tím, že se buď převlékl za podomního obchodníka prodávajícího šperky a ženské šaty, nebo předstíral útok na Skyros. V prvním případě Odysseus mezi své zboží zařadil i kopí a zájem o něj projevila pouze jedna dívka jménem Pyrrha. v druhém případě všichni kromě této Pyrrhy ze scény utekli. Ať tak či onak, Odysseovi to bylo až příliš jasné: Pyrrha nemohla být nikdo jiný než Achilles.",
+        "Achillova jediná slabina se nakonec stává jeho zkázou. Paris, Hektorův zbabělý bratr, dokáže zabít největšího z hrdinů šípem, který zasáhne Achillovu patu, jedinou zranitelnou část jeho těla. Ať už byl otráven nebo ne, šíp byl zcela jistě veden bohem Apollónem, protože Paris nebyl žádným lukostřelcem proslulosti."
+      ]
     },
     {
       name: "Orfeus",
       id: "orfeus",
       image: "/orfeus.png",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      father: ["Oiagros"],
+      mother: ["Kalliopé"],
+      partners: ["Eurydika"],
+      siblings: ["Linus", "Rhésos"],
+      info: [
+        "Orfeus byl řecký hudebník, básník a prorok. Byl velmi hudebně nadaný a svým hlasem dokázal okouzlit zvířata, stromy a dokonce i skály."
+      ],
+      bio: [
+        "Jeho rodiči byli thrácký král Oiagros a a múza Kalliopé.",
+        "Když Orfeus dospěl, vydal se na Olymp, kde se setkal s Apollónem, bohem hudby. Apollón byl tak ohromen, že Orfeovi daroval lyru a naučil ho na ni hrát. Orfeus se vrátil do Thrákie, kde se se svou hudbou rychle proslavil. Každý, kdo ho slyšel hrát nebo zpívat, se hned zamiloval, včetně Eurydiky.",
+        "Orfeus a Eurydika se vzali a žili spolu šťastný život, ale potom se stalo něco tragického. Eurydika se jednoho dne procházela, když se ji pokusil znásilnit satyr. Snažila se vyhnout, ale spadla tak do hnízda zmijí, kde byla smrtelně pokousána. Když Orfeus našel její tělo, začal zpívat ty nejsmutnější písně, které při poslechu rozplakaly i bohy a nymfy. Poradili mu, aby se vydal do podsvětí a přivedl ji zpět.",
+        "Orfeus se řídil jejich radou a šel do podsvětí. Když se setkal s Hádem a jeho ženou Persefonou, prosil je, aby ho nechali vzít svou ženu zpět. Poté, co jim zazpíval, jejich srdce byla obměkčena natolik, že souhlasili. Musel ale dodržet jedno pravidlo: neohlížet se za sebe, dokud se nedostane na povrch. Když došel k otvoru jeskyně a jeho žena ho následovala, ohlédl se za sebe, aby se přesvědčil, že byla za ním. Protože však ještě nedošla k otvoru, zmizela navždy do podsvětí.",
+        "Orfeus na konci svého života neuctíval žádné bohy kromě slunce, které nazýval Apollón. Jednoho dne se vydal vzdát hold slunci poblíž Dionýsovy věštírny. Byl však chycen Bakchantkami a zabit, protože byl nevěrný bohu Dionýsovi. Ačkoli Orfeus zemřel tragickou smrtí, jeho odkaz jako hudebníka a básníka přetrval věky."
+      ]
     },
     {
       name: "Héraklés",
       id: "herakles",
       image: "/herakles.png",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      father: ["zeus"],
+      mother: ["Alkména"],
+      children: ["Alexiarés", "Anicetos", "Hyllos", "Makaria", "Telefos"],
+      partners: ["Déianeira", "Hébé", "Megara", "Omfalé"],
+      siblings: ["afrodita", "apollon", "athena", "artemis", "ares", "dionysos", "hefaistos", "hermes", "muzy", "perseus", "gracie", "Aeakus", "Angelos", "Eileithýia", "Enýó", "Eris", "Ersa", "Hébé", "Helena Trójská", "Litai", "Mínós", "moiry", "Pandia", "Persefona", "Rhadamanthys", "Hóry"],
+      info: [
+        "Héraklés byl ztělesněním statečnosti a mužnosti a nejvýznamnějším ochráncem olympského řádu, který neochvějně chránil před různými příšerami a pozemskými padouchy. Přestože jeho vznětlivost a neovladatelnost způsobily jemu i nemalému počtu nevinných smrtelníků nezasloužené potíže, rozsah jeho práce byl takového řádu, že mu vynesl cenu nesmrtelnosti."
+      ],
+      bio: [
+        "Jak už to u hrdinů bývá, Héraklés byl zplozen ze svazku smrtelné ženy (Alkmény) a boha (Dia).",
+        "V přestrojení za jejího manžela Amfitryóna se Zeus vyspal s Alkménou téže noci, kdy to udělal sám Amfitryón. O devět měsíců později Alkména porodila dvojčata: Ífikla svému manželovi a Hérakla Diovi. Héra, rozzlobená Diovou nevěrou, aniž by věděla, který z Alkméniných chlapců je Diův, dala dvojčatům do kolébky tajně dva hady. Ífiklés se při pohledu na ně rozplakal, ale Héraklés je v mžiku uškrtil. Teď už bylo najednou jasné, kdo z těch dvou je bůh a kdo smrtelník.",
+        "V dětství měl Héraklés ty nejlepší učitele, a když dospíval, už je všechny předčil v postavě i síle. Jeho dobrodružství začala v osmnáctém roce jeho života, kdy zabil Kithaironského lva. Byl výjimečným příkladem mužnosti a mužnosti a v devatenácti letech už zplodil více než padesát dětí a porazil celou armádu.",
+        "Héraklés se nejvíce proslavil cyklem dvanácti úkolů, které vykonal, když sloužil svému bratranci Eurystheovi. Mezi původních deset úkolů patří:", 
+        "1. Zabít nemejského lva",
+        "2. Zabít lernskou hydru",
+        "3. Chytit kerynejskou laň se zlatými parohy",
+        "4. Chytit erymanthského kance",
+        "5. Vyčistit Augiášovy chlévy",
+        "6. Zahnat stymfálské ptáky",
+        "7. Přivést krétského divokého býka",
+        "8. Přihnat Diomédovy lidožravé koně",
+        "9. Přinést pás královny Amazonek",
+        "10. Přihnat dobytek obra Géryona",
+        "Poté, co Héraklés dokončil poslední z těchto deseti úkolů, dal mu Eurystheus ještě dva další, protože podle jeho názoru se druhý a pátý nemohly přesně počítat jako vykonané samotným Héraklem.",
+        "Jedenáctým úkolem bylo ukrást zlatá jablka ze zahrady Hesperidek, nymf západu slunce. Existují dvě verze, jak se Héraklovi podařilo jablka získat. Podle jedné verze se dostal do Hesperidské zahrady, kde zabil Ladona, draka strážce jablek, a jablka si vzal. Podle jiné verze narazil na Atláse, titánského boha, který byl odsouzen držet na svých bedrech nebesa. Atlás byl také otcem Hesperidek, a tak měl do zahrady kdykoli přístup. Héraklés na radu Prométhea přemluvil Atláse, aby si na chvíli vyměnili místa a Atlás přinesl jablka. Atlás souhlasil a skutečně jablka vzal. Po návratu se však rozhodl, že nechce vzít nebesa zpět na svá bedra. Héraklés ho přelstil a řekl, že si nebesa nechá, ale chce se nejprve dostat do pohodlnější polohy. Atlas souhlasil, že si nebesa na chvíli vezme zpět, ale Héraklés odešel a jablka si vzal s sebou.",
+        "Dvanáctým a posledním úkolem, který musel Héraklés splnit, bylo zajmout Kerbera, tříhlavého psa, který střežil bránu do podsvětí. Před odchodem do podsvětí se Héraklés rozhodl nechat se zasvětit do eleusínských mystérií, aby se naučil, jak cestovat zaživa ze světa živých do říše mrtvých a naopak. Jakmile se dostal do podsvětí, setkal se s Theseem a Peirithem, dvěma hrdiny, které Hádés uvěznil v podsvětí za pokus o krádež Persefony. Podle jedné verze příběhu se jim kolem nohou omotali hadi a pak se proměnili v kámen. Podle jiné verze bůh podsvětí předstíral pohostinnost a pozval je na hostinu. Židle, na nichž hrdinové seděli, však kouzlem způsobily zapomnění, a tak je tam udržely. Héraklés vytáhl Thésea ze židle a podařilo se mu ho zachránit, avšak část jeho stehna se k ní přilepila, čímž poskytl vysvětlení údajně štíhlých stehen Athéňanů. Když se však hrdina pokusil zachránit Peirithea, začala se třást země. Zdá se, že protože toužil po Persefoně pro sebe, bylo to tak urážlivé, že mu nebylo dovoleno odejít. Héraklés našel Háda a požádal ho, aby mohl Kerbera odvést na povrch. Bůh souhlasil pod podmínkou, že k tomu nesmí být použity žádné zbraně. Héraklovi se podařilo psa zkrotit rukama a na zádech ho přenesl na Tíryns. Eurystheus zděšeně utekl do své nádoby a požádal Hérakla, aby netvora odvedl zpět do podsvětí a osvobodil ho od dalších prací.",
+      ]
     },
     {
       name: "Théseus",
       id: "theseus",
       image: "/theseus.png",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
+      father: ["Aigeus", "poseidon"],
+      mother: ["Aithra"],
+      children: ["Hippolytos", "Melanippus", "Akamás", "Démofón", "Ífigeneia"],
+      partners: ["Faidra", "Hippolyta", "Ariadna", "Antiopé", "Helena"],
+      info: [
+        "Théseus, syn Poseidóna nebo Aigea a Aithry, byl široce považován za největšího athénského hrdinu, krále, který dokázal politicky sjednotit Attiku."
+      ],
+      bio: [
+        "Té noci, kdy byl Théseus počat, spala jeho matka Aithra s Aigeem, králem Athén, a Poseidónem, bohem moře. Ať už byl jeho otec kdokoli, Théseův výjimečný původ byl patrný již v jeho raných letech. Brzy poté, co Théseus dosáhl dospělosti, ho Aithra poslala do Athén.",
+        "Když Théseus dorazil do Athén, měl tu smůlu, že ho poznala nesprávná osoba: ne jeho otec Aigeus, ale jeho tehdejší manželka, čarodějka Médea. Je zřejmé, že Médea nechtěla, aby po Aigeovi na trůn nastoupil syn z předchozího manželství, a tak se rozhodla Thésea zabít. Neměla problém dostat Aigea na svou stranu, protože athénský král se stále bál, že ho zabije některý ze synů jeho bratra, nebo ještě hůř, někdo zvenčí. Brzy po příjezdu do Athén tedy Aigeus poslal Thesea, aby zajal maratónského býka.",
+        "Médea nečekala, že Théseus vyjde jako vítěz ze střetu s maratónským býkem. Přesto měla záložní plán, který zahrnoval hostinu a pohár jedu. Naštěstí sotva vteřinu předtím, než se jed dotkl Théseových rtů, Aigeus poznal jeho meč a sandály a také Médeiny kruté úmysly. Následovaly dvě prohlášení, jedno jmenovalo Thésea jako Aigeova právoplatného nástupce na trůn a druhé vyhnalo Médeu z Athén navždy.",
+        "Brzy po Théseově návratu do Athén měl Aigeus potřetí zaplatit každoroční tribut Mínósovi, králi Kréty. Konkrétně, jako odměnu za smrt Mínísova syna Androgea, kdysi krutě zabitého Athéňany ze žárlivosti a závisti, musely Athény pravidelně posílat čtrnáct svých nejušlechtilejších mladých mužů a žen na Krétu, kde se každý z nich měl setkat se stejným koncem: být uvržen do Daidalova labyrintu a být pohlcen monstrózním minotaurem.",
+        "Když nadešel čas, Théseus se nabídl, že odjede na Krétu, kde se do něj po příjezdu zamilovala Ariadna, Mínósova krásná dcera, právě ve chvíli, kdy spatřila svalnatého athénského prince. Rozhodla se mu pomoci a prosila Daidala, aby jí řekl tajemství labyrintu, s čímž nakonec starý řemeslník souhlasil. A když nadešel čas, aby Théseus vstoupil do labyrintu, Ariadna mu dala klubko nití (poskytnuté Daidalem), které mu mělo pomoci orientovat se uvnitř struktury a bezpečně ho z ní vyvést.",
+        "Utěšený tím, že bude vždy schopen najít cestu ven, se Théseus ponořil hluboko do labyrintu a našel minotaura v jeho hlubinách. I když byl minotaur brutální, byl nesrovnatelný s Théseovou silou a odhodláním: po krátkém boji Athéňan zabil monstrum a následoval nit zpět do bezpečí.",
+        "Théseus slíbil Ariadně, že se s ní ožení, ještě předtím, než udělal první krok do labyrintu. To byla ta první věc, kterou udělal poté, co z něj vyšel v pořádku. Po krátkém manželském obřadu vzal s sebou Ariadnu a spolu s ostatními mladými Athéňany opustil Krétu. Kupodivu jeho manželství s Ariadnou netrvalo déle než jen pár dní: jakmile jeho lodě dorazily na ostrov Dia, Théseus nechal spící Ariadnu za sebou a odplul. Někteří říkají, že to udělal, protože se mezitím zamiloval do jiné dívky. Jiní říkají, že neměl jinou možnost, než poslechnout vůli Dionýsa, který chtěl Ariadnu pro sebe. Tito tvrdí, že bůh dorazil na ostrov Dia jen chvíli poté, co ho Théseus opustil, a rychle odvezl Ariadnu na svém voze, aby se stala jeho milovanou a nesmrtelnou manželkou.",
+        "Než se Théseus vydal na Krétu, slíbil svému otci, že pokud přežije minotaura, změní černou plachtu své lodi na bílou. Aigeus by tak mohl z určité vzdálenosti rozeznat, zda je jeho syn stále naživu. Bohužel na svůj slib buď úplně zapomněl, nebo byl příliš rozrušený, aby změnu provedl včas. Když se Aigeus díval z nadhledu, nemohl snést pohled, kterého se nejvíc bál spatřit, a tak se rovnou vrhnul za svou smrtí.",
+        "Théseus byl nyní králem Athén. Výčet jeho úspěchů je poměrně dlouhý, ale většina autorů se shoduje, že největším z nich bylo úspěšné politické sjednocení Attiky pod Athénami. Kromě toho je Théseus připočítán za založení festivalu Panathenaea a Isthmických her.",
+      ]
     },
     {
       name: "Kentauři",
@@ -1005,21 +1041,6 @@ export const useCharacterStore = defineStore('characters', () => {
         "Najády jsou vodní nymfy nebo duše v podobě krásných žen, které se vyskytují u studánek, pramenů, potoků, řek a dalších sladkovodních ploch.",
         "Byly často uctívané v místních kultech jako nezbytné pro lidi. Lidé při obřadech dosažení plnoletosti věnovali své dětské vlasy místní najádě jara. Na některých místech se jejich vodám připisovaly rituální očisty s léčebnými účinky. Rituálně se v nich topila zvířata."
       ],
-    },
-    {
-      name: "Nymfy",
-      id: "nymfy",
-      image: "/nymfy.png",
-      symbols: [],
-      father: [],
-      mother: [],
-      children: [],
-      home: [],
-      partners: [],
-      siblings: [],
-      info: [],
-      bio: [],
-      facts: []
     },
     {
       name: "Satyrové",

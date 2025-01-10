@@ -90,7 +90,6 @@ export const useCategoryStore = defineStore('categories', () => {
           { name: "Kentauři", id: "kentauri", image: "/kentauri.png" },
           { name: "Dryády", id: "dryady", image: "/dryady.png" },
           { name: "Najády", id: "najady", image: "/najady.png" },
-          { name: "Nymfy", id: "nymfy", image: "/nymfy.png" },
           { name: "Satyrové", id: "satyrove", image: "/satyrove.png" },
           { name: "Sirény", id: "sireny", image: "/sireny.png" },
           { name: "Sfinx", id: "sfinx", image: "/sfinx.png" },
