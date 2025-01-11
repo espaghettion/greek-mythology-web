@@ -117,6 +117,7 @@ body{
     -webkit-mask-image: (to top, (rgba(0,0,0,1)) 50%, (rgba(0,0,0,1)) 100%);
     mask-image: linear-gradient(to top, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
     text-align: center;
+    background-position: center 20%;
   }
 }
 

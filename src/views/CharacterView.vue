@@ -76,6 +76,7 @@ watch(() => route.params, () => {
     border-radius: 5px;
     margin: 10px;
     gap: 25px;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.25);
 
     @include mixins.responsive(smartphone-landscape){
       padding: 20px;

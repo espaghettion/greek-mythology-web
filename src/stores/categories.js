@@ -7,7 +7,7 @@ export const useCategoryStore = defineStore('categories', () => {
     {
         name: "Bohové",
         id: "gods",
-        image: "/placeholder.png",
+        image: "/bohove.png",
         description: "Řecká mytologie je plná bohů. Rozdělují se na mnoho skupin, nejznámějšímí jsou Olympané, kteří všem vládnou s Diem v čele. Existuje však mnoho dalších bohů, co existovali před nebo při vládě Olympanů.",
         characters: [
           { name: "Zeus", id: "zeus", image: "/zeus.png" },
@@ -44,7 +44,7 @@ export const useCategoryStore = defineStore('categories', () => {
     {
         name: "Titáni",
         id: "titans",
-        image: "/placeholder.png",
+        image: "/titani.png",
         description: "Mezi titány řadíme staré bohy, kteří jsou potomci Urana a Gaii a vládli před nástupem olympských bohů. V čele stál Kronos, který svrhnul Urana, než ho také svrhnul jeho vlastní syn Zeus. Nastala velká válka mezi Titány a Olympany, kterou byla vláda Titánů nadobro ukončena.",
         characters: [
           { name: "Kronos", id: "kronos", image: "/kronos.png" },
@@ -69,7 +69,7 @@ export const useCategoryStore = defineStore('categories', () => {
     {
         name: "Hrdinové",
         id: "heroes",
-        image: "/placeholder.png",
+        image: "/hrdinove.png",
         description: "Hrdinové byli v řecké mytologii lidé, kteří za svůj život vykonali nějaké speciální nadlidské činy a byli spojeni se sílou a odvahou. Často byli také potomky některých bohů.",
         characters: [
           { name: "Perseus", id: "perseus", image: "/perseus.png" },
@@ -84,7 +84,7 @@ export const useCategoryStore = defineStore('categories', () => {
     {
         name: "Nadlidské stvoření",
         id: "creatures",
-        image: "/placeholder.png",
+        image: "/stvoreni.png",
         description: "Nadlidské stvoření v řecké mytologii se nepočítala jako bohové, ale také se nedala zařadit mezi lidi, jelikož měla nadlidské rysy a schopnosti.",
         characters: [
           { name: "Kentauři", id: "kentauri", image: "/kentauri.png" },
