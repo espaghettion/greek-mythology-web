@@ -24,7 +24,7 @@ function searchBar() {
   results.value = [];
   lowerCaseQuery.value = query.value.toLowerCase();
   const characters = characterStore.characters;
-  
+
   const nameMatches = characters.filter(value => value.name.toLowerCase().startsWith(lowerCaseQuery.value));
   const idMatches = characters.filter(value => value.id.toLowerCase().startsWith(lowerCaseQuery.value));
   const fuzzyMatches = miniSearch.search(query.value, { fuzzy: 2 });
@@ -41,7 +41,7 @@ function searchBar() {
 <template>
   <header>
     <section>
-      <img class="logo" src="./assets/logo.svg" alt="">
+      <RouterLink to="/"><img class="logo" src="./assets/logo.svg" alt=""></RouterLink>
     </section>
     <nav>
       <section class="homepage-link">
@@ -49,23 +49,26 @@ function searchBar() {
       </section>
       <section class="search">
         <section class="searchbar">
-          <input v-model="query" @input="searchBar" placeholder="Vyhledávání"/>
+          <input v-model="query" @input="searchBar" placeholder="Vyhledávání" />
           <ul v-if="results.length > 0 && query.length > 0" class="results">
             <li v-for="(result, i) in results" :key="i" class="result">
-              <RouterLink @click="query = ''; results = []" :to="{name: 'character', params: {id: result.id}}">{{ result.name }}</RouterLink>
+              <RouterLink @click="query = ''; results = []" :to="{ name: 'character', params: { id: result.id } }">{{
+                result.name }}</RouterLink>
             </li>
           </ul>
         </section>
         <section class="menu-btn">
-          <button @click="active = !active"><i class="fa-solid" :class="{ 'fa-xmark': active, 'fa-bars': !active }"></i></button>
+          <button @click="active = !active"><i class="fa-solid"
+              :class="{ 'fa-xmark': active, 'fa-bars': !active }"></i></button>
         </section>
       </section>
     </nav>
   </header>
   <article class="menu" :class="{ 'active': active }">
     <RouterLink @click="active = !active" class="link" to="/">Mytologie</RouterLink>
-    <RouterLink @click="active = !active" v-for="(category, i) in categoryStore.categories" :key="i" class="link" :to="{name: 'category', params: {id: category.id}}">{{ category.name }}</RouterLink>
-    <RouterLink @click="active = !active" class="link" to="/about">O stránce</RouterLink>
+    <RouterLink @click="active = !active" v-for="(category, i) in categoryStore.categories" :key="i" class="link"
+      :to="{ name: 'category', params: { id: category.id } }">{{ category.name }}</RouterLink>
+    <RouterLink @click="active = !active" class="link" to="/o-strance">O stránce</RouterLink>
   </article>
 
   <RouterView />
@@ -86,13 +89,13 @@ header {
     width: 60px;
   }
 
-  >section{
+  >section {
     @include mixins.flex-row;
     padding: 10px;
     justify-content: start;
   }
 
-  nav{
+  nav {
     @include mixins.flex-row;
     width: calc(100% - 80px);
     justify-content: start;
@@ -100,51 +103,51 @@ header {
     gap: 20px;
     padding: 10px;
 
-    .homepage-link{
-      a{
+    .homepage-link {
+      a {
         width: 100%;
         text-decoration: none;
         color: white;
         font-size: 2.5em;
       }
 
-      @include mixins.responsive(smartphone-portrait){
+      @include mixins.responsive(smartphone-portrait) {
         display: none;
       }
 
-      @include mixins.responsive(smartphone-landscape){
+      @include mixins.responsive(smartphone-landscape) {
         display: none;
       }
     }
 
-    section{
+    section {
       width: 50%;
 
-      @include mixins.responsive(smartphone-portrait){
+      @include mixins.responsive(smartphone-portrait) {
         width: 100%;
       }
 
-      @include mixins.responsive(smartphone-landscape){
+      @include mixins.responsive(smartphone-landscape) {
         width: 100%;
       }
     }
 
-    .search{
+    .search {
       @include mixins.flex-row;
       justify-content: end;
       gap: 20px;
 
-      .searchbar{
+      .searchbar {
         @include mixins.flex-column;
         align-items: end;
         width: 35%;
         position: relative;
 
-        @include mixins.responsive(smartphone-portrait){
+        @include mixins.responsive(smartphone-portrait) {
           width: 60%;
         }
 
-        .results{
+        .results {
           position: absolute;
           padding: 5px;
           border-radius: 5px;
@@ -155,10 +158,10 @@ header {
           z-index: 1;
           box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
 
-          .result{
+          .result {
             padding: 10px;
 
-            a{
+            a {
               text-decoration: none;
               color: #0F154E;
               font-size: 1.15em;
@@ -167,41 +170,41 @@ header {
         }
       }
 
-      .menu-btn{
+      .menu-btn {
         width: 40px;
       }
     }
   }
 
-  button{
+  button {
     @include mixins.search-bar;
     width: 40px;
     height: 40px;
     font-size: 1.3em;
 
-    &:hover{
+    &:hover {
       cursor: pointer;
     }
   }
 }
 
-input{
+input {
   @include mixins.search-bar;
   width: 100%;
   height: 25px;
   font-size: 1.15em;
   padding: 5px;
 
-  &:focus{
+  &:focus {
     outline: none;
   }
 }
 
-::placeholder{
+::placeholder {
   color: rgb(180, 180, 180);
 }
 
-.menu{
+.menu {
   display: none;
   width: 25%;
   padding: 10px;
@@ -213,29 +216,30 @@ input{
   text-align: center;
   font-weight: 600;
   border-radius: 5px;
+  border-top-right-radius: 0;
   z-index: 1;
 
-  @include mixins.responsive(smartphone-portrait){
+  @include mixins.responsive(smartphone-portrait) {
     width: calc(100% - 20px);
   }
 
-  @include mixins.responsive(smartphone-landscape){
+  @include mixins.responsive(smartphone-landscape) {
     width: 60%;
   }
 
-  @include mixins.responsive(tablet){
+  @include mixins.responsive(tablet) {
     width: 40%;
   }
 }
 
-.link{
+.link {
   @include mixins.decorated-text;
   width: 95%;
   padding: 10px;
   font-size: 1.8em;
 }
 
-.active{
+.active {
   @include mixins.flex-column;
   gap: 10px;
 }

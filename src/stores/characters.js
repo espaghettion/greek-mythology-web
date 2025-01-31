@@ -3,31 +3,31 @@ import { defineStore } from 'pinia'
 
 export const useCharacterStore = defineStore('characters', () => {
   const characters = ref([
-    { 
-      name: "Zeus", 
-      id: "zeus", 
-      image: "/zeus.png", 
-      symbols: ["Blesk", "Orel", "Egida", "Dub", "Býk"], 
-      father: ["kronos"], 
-      mother: ["rhea"], 
-      children: ["afrodita", "apollon", "ares", "artemis", "athena", "dionysos", "hefaistos", "hermes", "herakles", "perseus", "gracie", "Aeakus", "Angelos", "Eileithýia", "Enýó", "Eris", "Ersa", "Hébé", "Helena Trójská", "Harmonia", "Mínós", "Nemesis", "Pandia", "Persefona", "Rhadamanthys", "Hóry"], 
-      home: ["Hora Olymp"], 
-      partners: ["hera", "leto", "mnemosyne", "themis", "Métis", "Európa", "Íó", "Semelé", "Nemesis", "Persefona", "Danaé", "Thálie", "Kallistó", "Ganymédés", "Dióna", "Alkméné"], 
+    {
+      name: "Zeus",
+      id: "zeus",
+      image: "/zeus.png",
+      symbols: ["Blesk", "Orel", "Egida", "Dub", "Býk"],
+      father: ["kronos"],
+      mother: ["rhea"],
+      children: ["afrodita", "apollon", "ares", "artemis", "athena", "dionysos", "hefaistos", "hermes", "herakles", "perseus", "gracie", "Aeakus", "Angelos", "Eileithýia", "Enýó", "Eris", "Ersa", "Hébé", "Helena Trójská", "Harmonia", "Mínós", "Nemesis", "Pandia", "Persefona", "Rhadamanthys", "Hóry"],
+      home: ["Hora Olymp"],
+      partners: ["hera", "leto", "mnemosyne", "themis", "Métis", "Európa", "Íó", "Semelé", "Nemesis", "Persefona", "Danaé", "Thálie", "Kallistó", "Ganymédés", "Dióna", "Alkméné"],
       siblings: ["hestia", "hades", "hera", "poseidon", "demeter", "Cheirón"],
       info: [
-        "Zeus je jedním z dvanácti Olympanů. Je to bůh oblohy a hromu, král všech ostatních bohů a lidí a je tak vnímán jako hlavní postava řecké mytologie.", 
-        "Většinou bývá zobrazen s žezlem v jedné ruce a s bleskem v druhé, obě symbolizují jeho autoritu. Homérem byl často popisován jako \"nositel egidy\", což je obrovský štít, který s sebou občas nosil.", 
+        "Zeus je jedním z dvanácti Olympanů. Je to bůh oblohy a hromu, král všech ostatních bohů a lidí a je tak vnímán jako hlavní postava řecké mytologie.",
+        "Většinou bývá zobrazen s žezlem v jedné ruce a s bleskem v druhé, obě symbolizují jeho autoritu. Homérem byl často popisován jako \"nositel egidy\", což je obrovský štít, který s sebou občas nosil.",
         "Často byl spojován s moudrostí, vědomím, autoritou, osudem, bitvami a mocí."
       ],
       bio: [
         "Je paradoxně nejstarším i nejmladším synem Titánů Krona a Rhei. Kronos, který svrhnul svého otce Urana, se dozvěděl, že jeden z jeho potomků ho také svrhne a tak je začal hned po narození polykat. Takto bylo spolknuto jeho pět sourozenců. Zeus by byl také spolykán, ale Rhea místo toho dala Kronovi zabalený kámen a Dia schovala v jeskyni na krétské hoře Ida.",
         "V této jeskyni byl vychován nymfami a poznal svou první manželku, Métis - bohyni rozumu. Díky jejím radám se přestrojil jako olympijský nosič pohárů a přiměl Krona, aby vypil otrávené víno. Z tohoto vína zvracel natolik, že vyzvracel Diovy sourozence, kteří byli připraveni na pomstu.",
-        "Tímto začala válka mezi Titány a Olympskými bohy, která skončila nevyhnutelným svržením Krona.", 
+        "Tímto začala válka mezi Titány a Olympskými bohy, která skončila nevyhnutelným svržením Krona.",
         "Po svržení svého otce byl čas rozdělit svět mezi jeho tři syny. Udělali to formou losování, Poseidón dostal moře, Hádés podsvětí a Zeus nebe. Poté byl korunován jako vládce všech bohů."
       ],
       facts: [
-        "Měl dohromady 26 dětí.", 
-        "Svou první manželku spolykal, když se dozvěděl, že jeho dítě by pro něj mohlo být hrozbou. Tímto dítětem byla bohyně moudrosti Athéna, která se nakonec narodila z Diova čela.", 
+        "Měl dohromady 26 dětí.",
+        "Svou první manželku spolykal, když se dozvěděl, že jeho dítě by pro něj mohlo být hrozbou. Tímto dítětem byla bohyně moudrosti Athéna, která se nakonec narodila z Diova čela.",
         "Je jednou z nejvíce nevěrných postav z celé řecké mytologie."
       ]
     },
@@ -49,7 +49,7 @@ export const useCharacterStore = defineStore('characters', () => {
       bio: [
         "Je jedním z šesti dětí Titánů Krona a Rhei a stejně jako všechny ostatní kromě Dia byl po narození spolykán svým otcem. Poté, co Zeus zachránil své sourozence, se k němu přidal ve válce proti Titánům.",
         "Po válce s Titány si Poseidón, Zeus a Hádés losovali části světa, kterým budou vládnout. Poseidón si vylosoval moře a stal se tak jeho bohem.",
-        "Poseidónova vznětlivost tvořila časté spory mezi ním a ostatními bohy i lidmi. Příkladem je jeho spor s Diem, když nevydržel jeho arogantní chování a tak se spojil s Hérou a Athénou, ale Zeus tento spor vyhrál.", 
+        "Poseidónova vznětlivost tvořila časté spory mezi ním a ostatními bohy i lidmi. Příkladem je jeho spor s Diem, když nevydržel jeho arogantní chování a tak se spojil s Hérou a Athénou, ale Zeus tento spor vyhrál.",
         "Jeho spor s Athénou začal, když od ní chtěl získat Athény a řekl, že by pro ně byl mnohem víc užitečný. Svým trojzubcem uděřil do skály a vytovřil tak proud mořské vody, který vytryskl v chrámu Erechtheion. Athéna zasadila olivovník a první král Athén se rozhodl, že bude více užitečný, jelikož z něj získají olivy, olej a dřevo, Athéna tak tento spor vyhrála."
       ],
       facts: [
@@ -287,7 +287,7 @@ export const useCharacterStore = defineStore('characters', () => {
         "Je jedním z šesti dětí Titánů Krona a Rhei a stejně jako všechny ostatní kromě Dia byl po narození spolykán svým otcem. Poté, co Zeus zachránil své sourozence, se k němu přidal ve válce proti Titánům.",
         "Po válce s Titány si Hádés, Zeus a Poseidón losovali části světa, kterým budou vládnout. Hádés si vylosoval podsvětí a stal se tak jeho bohem.",
         "Hádés neměl mnoho partnerek, nejdůležitější z nich je Persefona a její unesení. Hádés se do Persefony zamiloval a když jednoho dne sbírala s přítelkyněmi květiny, nalákal jí nádherným krásně vonícím narcisem a poté ji unesl svým vozem. Po deseti dnech se toto dozvěděla její matka Démétér, která šla truchlit mezi smrtleníky přestrojená za stařenu. Během této doby však začala zanedbávat své povinnosti jako bohyně plodnosti a zemědělství. Země začala chátrat a Zeus si uvědomil, že to takhle nemůže pokračovat a Persefona musí být navrácena.",
-        "Do podsvětí byl poslán Hermés, aby Persefonu navrátil matce, ale zjisil, že Persefona už snědla semínko granátového jablka, což ji zavázalo k podsvětí. Zeus věděl, že by mu to Démétér neodpustila a tak nastal kompromis: Persefona by každý rok strávila jednu třetinu s Hádem a zbylé dvě s Démétér.", 
+        "Do podsvětí byl poslán Hermés, aby Persefonu navrátil matce, ale zjisil, že Persefona už snědla semínko granátového jablka, což ji zavázalo k podsvětí. Zeus věděl, že by mu to Démétér neodpustila a tak nastal kompromis: Persefona by každý rok strávila jednu třetinu s Hádem a zbylé dvě s Démétér.",
         "Je možné, že Hádés a Persefona spolu neměli žádné děti, ale říká se, že Zagreus byl jejich syn. O Makarii se také říká, že byla Hádova dcera, ale o matce žádné zmínky nejsou."
       ],
       facts: [
@@ -920,7 +920,7 @@ export const useCharacterStore = defineStore('characters', () => {
         "Po svatbě se manželé vrátili na Ithaku, kde žili šťastný život, který se stal ještě šťastnějším, když se jim narodil syn Télemachos. Když byl Télemachos ještě dítě, Helenu unesl trójský princ Paris. Na základě slibu Menelaos všechny svolal, aby mu pomohli ji přivést zpět. Odysseus se nechtěl zúčastnit, protože mu bylo vyvěštěno, že pokud se zúčastní, nevrátí se domů velmi dlouho. Rozhodl se tedy předstírat šílenství, ale nevyšlo mu to a Palamédés, který byl vyslán, aby ho naverboval, nebyl přesvědčen. Odysseus toto Palamédovi nikdy neodpustil.",
         "Odysseovo naverbování bylo však klíčovou událostí, která rozhodla výsledek Trójské války, bez Odyssea by nejspíš Řekové Tróju nikdy nedobyli. Jeho největší přínos v této válce spočíval ve lsti, kterou vymyslel. Řekové ponechali obřího dřevěného koně poblíž trojských bran. Uvnitř tohoto koně se ukrývali řečtí bojovníci a zbytek předstíral, že odplouvá. Trójané po nějaké době začali věřit tomu, že válka skončila a kůň je jenom božím darem a tak ho odvezli do bran svého města. Celý den oslavovali vítězství, ale jakmile padla noc, z koně vyskočili řečtí bojovníci a otevřeli bránu pro zbytek Řeků, kteří dopluli zpátky na břeh a všichni se vrhli na opilé bezbranné Trójany, čímž dosáhli vítězství.",
         "Po konci Trójské války mu trvalo dalších 10 let, než se mu podařilo vrátit zpátky na Ithaku a během této cesty prožívá mnoho dalších dobrodružství. Při návratu předstírá, že je Kréťan, který se vrací z Trójské války. Penélopé oznamuje, že je po dvaceti letech konečně připravená se znovu vdát a vezme si toho nápadníka, který dokáže napnout Odysseův luk a vystřelit šíp skrze dvanáct seker. Žádnému z nich se to nepodaří až na Odyssea, který je stále v přestrojení. Poté, co výzvu splnil, se odhalil a všechny nápadníky zabil.",
-        "Příběhy o Odysseově smrti jsou velice protichůdné. Některé tvrdí, že se svou ženou žili šťastně až do smrti. Jiné tvrdí, že po zjištění důkazu nevěry svou ženu opustil nebo dokonce zabil a vydal se na další cestu do království Thesprotie, kde se znovu oženil." 
+        "Příběhy o Odysseově smrti jsou velice protichůdné. Některé tvrdí, že se svou ženou žili šťastně až do smrti. Jiné tvrdí, že po zjištění důkazu nevěry svou ženu opustil nebo dokonce zabil a vydal se na další cestu do království Thesprotie, kde se znovu oženil."
       ]
     },
     {
@@ -974,7 +974,7 @@ export const useCharacterStore = defineStore('characters', () => {
         "Jak už to u hrdinů bývá, Héraklés byl zplozen ze svazku smrtelné ženy (Alkmény) a boha (Dia).",
         "V přestrojení za jejího manžela Amfitryóna se Zeus vyspal s Alkménou téže noci, kdy to udělal sám Amfitryón. O devět měsíců později Alkména porodila dvojčata: Ífikla svému manželovi a Hérakla Diovi. Héra, rozzlobená Diovou nevěrou, aniž by věděla, který z Alkméniných chlapců je Diův, dala dvojčatům do kolébky tajně dva hady. Ífiklés se při pohledu na ně rozplakal, ale Héraklés je v mžiku uškrtil. Teď už bylo najednou jasné, kdo z těch dvou je bůh a kdo smrtelník.",
         "V dětství měl Héraklés ty nejlepší učitele, a když dospíval, už je všechny předčil v postavě i síle. Jeho dobrodružství začala v osmnáctém roce jeho života, kdy zabil Kithaironského lva. Byl výjimečným příkladem mužnosti a mužnosti a v devatenácti letech už zplodil více než padesát dětí a porazil celou armádu.",
-        "Héraklés se nejvíce proslavil cyklem dvanácti úkolů, které vykonal, když sloužil svému bratranci Eurystheovi. Mezi původních deset úkolů patří:", 
+        "Héraklés se nejvíce proslavil cyklem dvanácti úkolů, které vykonal, když sloužil svému bratranci Eurystheovi. Mezi původních deset úkolů patří:",
         "1. Zabít nemejského lva",
         "2. Zabít lernskou hydru",
         "3. Chytit kerynejskou laň se zlatými parohy",

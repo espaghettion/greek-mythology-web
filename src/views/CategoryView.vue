@@ -26,40 +26,40 @@ watch(() => route.params, () => {
 <style lang="scss" scoped>
 @use '../mixins.scss' as mixins;
 
-  main{
-    gap: 30px;
+main {
+  gap: 30px;
+}
+
+.info {
+  @include mixins.flex-column;
+  width: 50%;
+  text-align: center;
+
+  @include mixins.responsive(smartphone-portrait) {
+    width: 90%;
   }
 
-  .info{
-    @include mixins.flex-column;
-    width: 50%;
-    text-align: center;
+  @include mixins.responsive(smartphone-landscape) {
+    width: 80%;
+  }
 
-    @include mixins.responsive(smartphone-portrait){
-      width: 90%;
+  @include mixins.responsive(tablet) {
+    width: 70%;
+  }
+
+  p {
+    line-height: 30px;
+    font-size: 1.2em;
+
+    @include mixins.responsive(smartphone-portrait) {
+      font-size: 1em;
+      line-height: 25px;
     }
 
-    @include mixins.responsive(smartphone-landscape){
-      width: 80%;
-    }
-
-    @include mixins.responsive(tablet){
-      width: 70%;
-    }
-
-    p{
-      line-height: 30px;
-      font-size: 1.2em;
-
-      @include mixins.responsive(smartphone-portrait){
-        font-size: 1em;
-        line-height: 25px;
-      }
-
-      @include mixins.responsive(smartphone-landscape){
-        font-size: 1.1em;
-        line-height: 27.5px;
-      }
+    @include mixins.responsive(smartphone-landscape) {
+      font-size: 1.1em;
+      line-height: 27.5px;
     }
   }
+}
 </style>

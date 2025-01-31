@@ -1,27 +1,27 @@
-@mixin flex-row{
+@mixin flex-row {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-@mixin flex-column{
+@mixin flex-column {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-@mixin decorated-text{
+@mixin decorated-text {
     font-weight: 600;
     border-radius: 5px;
     text-align: center;
     color: white;
-    background: linear-gradient(0deg, rgba(14,26,143,1) 0%, rgba(8,12,49,1) 100%);
+    background: linear-gradient(0deg, rgba(14, 26, 143, 1) 0%, rgba(8, 12, 49, 1) 100%);
     text-decoration: none;
 }
 
-@mixin search-bar{
+@mixin search-bar {
     font-family: 'Bitter', sans-serif;
     color: #ACAFCC;
     border: 3px solid #ACAFCC;
@@ -29,29 +29,33 @@
     border-radius: 5px;
 }
 
-@mixin responsive( $breakpoint ) {
-    @if $breakpoint == smartphone-portrait {
-        @media only screen and ( max-width: 575.98px ) {
+@mixin responsive($breakpoint ) {
+    @if $breakpoint ==smartphone-portrait {
+        @media only screen and (max-width: 575.98px) {
             @content;
         }
     }
-    @if $breakpoint == smartphone-landscape {
-        @media only screen and ( min-width: 575.99px ) and ( max-width: 767.99px ) {
+
+    @if $breakpoint ==smartphone-landscape {
+        @media only screen and (min-width: 575.99px) and (max-width: 767.99px) {
             @content;
         }
     }
-    @if $breakpoint == tablet {
-        @media only screen and ( min-width: 767.99px ) and ( max-width: 1199.97px ) {
+
+    @if $breakpoint ==tablet {
+        @media only screen and (min-width: 767.99px) and (max-width: 1199.97px) {
             @content;
         }
     }
-    @if $breakpoint == laptop {
-        @media only screen and ( min-width: 1199.98px  ) and ( max-width: 1399.98px ) {
+
+    @if $breakpoint ==laptop {
+        @media only screen and (min-width: 1199.98px) and (max-width: 1399.98px) {
             @content;
         }
     }
-    @if $breakpoint == desktop {
-        @media only screen and ( min-width: 1399.99px ) {
+
+    @if $breakpoint ==desktop {
+        @media only screen and (min-width: 1399.99px) {
             @content;
         }
     }
