@@ -5,9 +5,9 @@ import InfoCard from '@/components/InfoCard.vue';
 <template>
   <main>
     <article>
-      <InfoCard info-category="O stránce" :info-content="['to-do']" />
-      <InfoCard info-category="Upozornění" :info-content="['to-do']" />
-      <InfoCard info-category="Kontakt" :info-content="['to-do']" />
+      <InfoCard info-category="O stránce" :info-content="['Tato webová stránka vznikla jako maturitní práce s cílem zpřístupnit fascinující svět řecké mytologie široké veřejnosti. Najdete zde příběhy bohů, hrdinů a bájných stvoření, které po staletí inspirovaly umělce, spisovatele a filozofy. Stránka si klade za cíl nabídnout přehledné a zajímavé informace o tomto mytologickém světě.']" />
+      <InfoCard info-category="Upozornění" :info-content="['Obsah této stránky je určen především pro studijní a informační účely. Přestože je sestaven na základě dostupných zdrojů a historických textů, některé informace mohou být interpretovány různými způsoby. Pokud hledáte odborné nebo akademicky ověřené informace, doporučujeme konzultovat primární zdroje či odbornou literaturu.']" />
+      <InfoCard info-category="Kontakt" :info-content="['Máte dotazy, připomínky nebo návrhy na vylepšení? Neváhejte nás kontaktovat:', 'E-mail: recka.mytologie@gmail.com']" />
     </article>
   </main>
 </template>

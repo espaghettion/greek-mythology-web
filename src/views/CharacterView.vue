@@ -60,7 +60,7 @@ watch(() => route.params, () => {
     }
 
     @include mixins.responsive(smartphone-landscape){
-      width: 75%;
+      width: 55%;
     }
 
     @include mixins.responsive(tablet){
@@ -78,8 +78,17 @@ watch(() => route.params, () => {
     gap: 25px;
     box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.25);
 
+    @include mixins.responsive(smartphone-portrait){
+      width: 70%;
+    }
+
     @include mixins.responsive(smartphone-landscape){
       padding: 20px;
+      width: 25%;
+    }
+
+    @include mixins.responsive(tablet){
+      width: 25%;
     }
 
     img{

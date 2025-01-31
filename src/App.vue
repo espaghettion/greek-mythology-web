@@ -23,23 +23,18 @@ function searchBar() {
   filteredCharacters.value = [];
   results.value = [];
   lowerCaseQuery.value = query.value.toLowerCase();
+  const characters = characterStore.characters;
+  
+  const nameMatches = characters.filter(value => value.name.toLowerCase().startsWith(lowerCaseQuery.value));
+  const idMatches = characters.filter(value => value.id.toLowerCase().startsWith(lowerCaseQuery.value));
+  const fuzzyMatches = miniSearch.search(query.value, { fuzzy: 2 });
 
-  for(let i = 0; i < characterStore.characters.filter(value => value.name.toLowerCase().startsWith(lowerCaseQuery.value)).length; i ++){
-    filteredCharacters.value.push(characterStore.characters.filter(value => value.name.toLowerCase().startsWith(lowerCaseQuery.value))[i]);
-  }
-  for(let i = 0; i < characterStore.characters.filter(value => value.id.toLowerCase().startsWith(lowerCaseQuery.value)).length; i ++){
-    filteredCharacters.value.push(characterStore.characters.filter(value => value.id.toLowerCase().startsWith(lowerCaseQuery.value))[i]);
-  }
-  for(let i = 0; i < miniSearch.search(query.value, {fuzzy: 2}).length; i ++){
-    filteredCharacters.value.push(miniSearch.search(query.value, {fuzzy: 2})[i]);
-  }
-
-  filteredCharacters.value = filteredCharacters.value.filter((item, index, self) => 
-    index === self.findIndex(t => t.id === item.id)
+  const uniqueCharacters = [...nameMatches, ...idMatches, ...fuzzyMatches].filter(
+    (item, index, self) => index === self.findIndex(t => t.id === item.id)
   );
-  for(let i = 0; i < filteredCharacters.value.length; i++){
-    results.value.push(filteredCharacters.value[i]);
-  }
+
+  filteredCharacters.value = uniqueCharacters;
+  results.value = [...uniqueCharacters];
 }
 </script>
 
