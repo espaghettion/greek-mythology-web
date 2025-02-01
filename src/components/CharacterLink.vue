@@ -15,7 +15,7 @@ watch(() => route.params, () => {
 <template>
     <article>
         <RouterLink v-for="(character, i) in category.characters" :key="i"
-            :style="{ backgroundImage: `url(${character.image})` }"
+            :style="{ backgroundImage: `url(/greek-mythology-web/${character.image})` }"
             :to="{ name: 'character', params: { id: character.id } }">
             <p>{{ character.name }}</p>
         </RouterLink>

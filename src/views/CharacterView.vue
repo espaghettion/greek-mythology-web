@@ -24,7 +24,7 @@ watch(() => route.params, () => {
     </article>
     <article class="relations">
       <section>
-        <img :src="character.image" :alt="character.name">
+        <img :src="`/greek-mythology-web/` + character.image" :alt="character.name">
       </section>
       <CharacterRelations v-if="character.symbols" relation-category="Symboly" :relation-content="character.symbols" />
       <CharacterRelations v-if="character.father" relation-category="Otec" :relation-content="character.father" />

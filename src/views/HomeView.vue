@@ -27,7 +27,7 @@ function nextCard() {
     <section class="category-link">
       <button class="previous-btn" @click="previousCard()"><i class="fa-solid fa-chevron-left"></i></button>
       <RouterLink :to="{ name: 'category', params: { id: categoryStore.categories[selectedCard].id } }"
-        :style="{ backgroundImage: `url(${categoryStore.categories[selectedCard].image})` }">
+        :style="{ backgroundImage: `url(/greek-mythology-web/${categoryStore.categories[selectedCard].image})` }">
         {{ categoryStore.categories[selectedCard].name }}
       </RouterLink>
       <button class="next-btn" @click="nextCard()"><i class="fa-solid fa-chevron-right"></i></button>
